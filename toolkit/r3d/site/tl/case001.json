@@ -1,0 +1,1343 @@
+{
+ "total": 75.94,
+ "segments": [
+  {
+   "start": 0.0,
+   "dur": 3.865,
+   "say": "Is he allowed to sit here? Case one. The yellow box.",
+   "words": [
+    {
+     "w": "Is",
+     "t0": 0.16,
+     "t1": 0.283,
+     "k": false
+    },
+    {
+     "w": "he",
+     "t0": 0.283,
+     "t1": 0.468,
+     "k": false
+    },
+    {
+     "w": "allowed",
+     "t0": 0.468,
+     "t1": 0.776,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 0.776,
+     "t1": 0.961,
+     "k": false
+    },
+    {
+     "w": "sit",
+     "t0": 0.961,
+     "t1": 1.145,
+     "k": false
+    },
+    {
+     "w": "here?",
+     "t0": 1.145,
+     "t1": 1.33,
+     "k": false
+    },
+    {
+     "w": "Case",
+     "t0": 1.56,
+     "t1": 1.96,
+     "k": false
+    },
+    {
+     "w": "one.",
+     "t0": 1.96,
+     "t1": 2.26,
+     "k": false
+    },
+    {
+     "w": "The",
+     "t0": 2.45,
+     "t1": 2.625,
+     "k": false
+    },
+    {
+     "w": "yellow",
+     "t0": 2.625,
+     "t1": 3.064,
+     "k": true
+    },
+    {
+     "w": "box.",
+     "t0": 3.064,
+     "t1": 3.415,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 3.865,
+   "dur": 3.165,
+   "say": "This is Gary. He's turning right at the lights.",
+   "words": [
+    {
+     "w": "This",
+     "t0": 0.26,
+     "t1": 0.533,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 0.533,
+     "t1": 0.716,
+     "k": false
+    },
+    {
+     "w": "Gary.",
+     "t0": 0.716,
+     "t1": 1.08,
+     "k": false
+    },
+    {
+     "w": "He's",
+     "t0": 1.32,
+     "t1": 1.58,
+     "k": false
+    },
+    {
+     "w": "turning",
+     "t0": 1.58,
+     "t1": 1.97,
+     "k": true
+    },
+    {
+     "w": "right",
+     "t0": 1.97,
+     "t1": 2.23,
+     "k": true
+    },
+    {
+     "w": "at",
+     "t0": 2.23,
+     "t1": 2.36,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.36,
+     "t1": 2.49,
+     "k": false
+    },
+    {
+     "w": "lights.",
+     "t0": 2.49,
+     "t1": 2.815,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 7.03,
+   "dur": 3.065,
+   "say": "But the road he's turning into is backed up.",
+   "words": [
+    {
+     "w": "But",
+     "t0": 0.26,
+     "t1": 0.498,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 0.498,
+     "t1": 0.656,
+     "k": false
+    },
+    {
+     "w": "road",
+     "t0": 0.656,
+     "t1": 0.973,
+     "k": false
+    },
+    {
+     "w": "he's",
+     "t0": 0.973,
+     "t1": 1.29,
+     "k": false
+    },
+    {
+     "w": "turning",
+     "t0": 1.29,
+     "t1": 1.765,
+     "k": false
+    },
+    {
+     "w": "into",
+     "t0": 1.765,
+     "t1": 2.081,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 2.081,
+     "t1": 2.24,
+     "k": false
+    },
+    {
+     "w": "backed",
+     "t0": 2.24,
+     "t1": 2.557,
+     "k": true
+    },
+    {
+     "w": "up.",
+     "t0": 2.557,
+     "t1": 2.715,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 10.095,
+   "dur": 3.925,
+   "say": "The light goes green, and Gary goes into the box anyway.",
+   "words": [
+    {
+     "w": "The",
+     "t0": 0.26,
+     "t1": 0.409,
+     "k": false
+    },
+    {
+     "w": "light",
+     "t0": 0.409,
+     "t1": 0.708,
+     "k": false
+    },
+    {
+     "w": "goes",
+     "t0": 0.708,
+     "t1": 1.007,
+     "k": false
+    },
+    {
+     "w": "green,",
+     "t0": 1.007,
+     "t1": 1.38,
+     "k": true
+    },
+    {
+     "w": "and",
+     "t0": 1.67,
+     "t1": 1.882,
+     "k": false
+    },
+    {
+     "w": "Gary",
+     "t0": 1.882,
+     "t1": 2.164,
+     "k": false
+    },
+    {
+     "w": "goes",
+     "t0": 2.164,
+     "t1": 2.446,
+     "k": false
+    },
+    {
+     "w": "into",
+     "t0": 2.446,
+     "t1": 2.728,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.728,
+     "t1": 2.869,
+     "k": false
+    },
+    {
+     "w": "box",
+     "t0": 2.869,
+     "t1": 3.152,
+     "k": false
+    },
+    {
+     "w": "anyway.",
+     "t0": 3.152,
+     "t1": 3.575,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 14.02,
+   "dur": 5.465,
+   "say": "Now he's stuck in the middle. His light turns red, and the side road goes green.",
+   "words": [
+    {
+     "w": "Now",
+     "t0": 0.26,
+     "t1": 0.463,
+     "k": false
+    },
+    {
+     "w": "he's",
+     "t0": 0.462,
+     "t1": 0.732,
+     "k": false
+    },
+    {
+     "w": "stuck",
+     "t0": 0.732,
+     "t1": 1.002,
+     "k": true
+    },
+    {
+     "w": "in",
+     "t0": 1.002,
+     "t1": 1.137,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.137,
+     "t1": 1.272,
+     "k": false
+    },
+    {
+     "w": "middle.",
+     "t0": 1.272,
+     "t1": 1.61,
+     "k": false
+    },
+    {
+     "w": "His",
+     "t0": 2.02,
+     "t1": 2.262,
+     "k": false
+    },
+    {
+     "w": "light",
+     "t0": 2.262,
+     "t1": 2.585,
+     "k": false
+    },
+    {
+     "w": "turns",
+     "t0": 2.585,
+     "t1": 2.988,
+     "k": false
+    },
+    {
+     "w": "red,",
+     "t0": 2.988,
+     "t1": 3.23,
+     "k": true
+    },
+    {
+     "w": "and",
+     "t0": 3.51,
+     "t1": 3.729,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.729,
+     "t1": 3.875,
+     "k": false
+    },
+    {
+     "w": "side",
+     "t0": 3.875,
+     "t1": 4.167,
+     "k": false
+    },
+    {
+     "w": "road",
+     "t0": 4.167,
+     "t1": 4.458,
+     "k": false
+    },
+    {
+     "w": "goes",
+     "t0": 4.458,
+     "t1": 4.75,
+     "k": false
+    },
+    {
+     "w": "green.",
+     "t0": 4.75,
+     "t1": 5.115,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 19.485,
+   "dur": 2.365,
+   "say": "Gary's parked right across it.",
+   "words": [
+    {
+     "w": "Gary's",
+     "t0": 0.26,
+     "t1": 0.678,
+     "k": false
+    },
+    {
+     "w": "parked",
+     "t0": 0.678,
+     "t1": 1.096,
+     "k": false
+    },
+    {
+     "w": "right",
+     "t0": 1.096,
+     "t1": 1.43,
+     "k": false
+    },
+    {
+     "w": "across",
+     "t0": 1.43,
+     "t1": 1.848,
+     "k": true
+    },
+    {
+     "w": "it.",
+     "t0": 1.848,
+     "t1": 2.015,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 21.85,
+   "dur": 4.735,
+   "say": "Then, sirens. An ambulance comes up the side road, lights flashing.",
+   "words": [
+    {
+     "w": "Then,",
+     "t0": 0.26,
+     "t1": 1.11,
+     "k": false
+    },
+    {
+     "w": "sirens.",
+     "t0": 1.44,
+     "t1": 1.082,
+     "k": true
+    },
+    {
+     "w": "An",
+     "t0": 1.082,
+     "t1": 1.252,
+     "k": false
+    },
+    {
+     "w": "ambulance",
+     "t0": 1.252,
+     "t1": 2.018,
+     "k": true
+    },
+    {
+     "w": "comes",
+     "t0": 2.018,
+     "t1": 2.359,
+     "k": false
+    },
+    {
+     "w": "up",
+     "t0": 2.359,
+     "t1": 2.529,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.529,
+     "t1": 2.699,
+     "k": false
+    },
+    {
+     "w": "side",
+     "t0": 2.699,
+     "t1": 3.04,
+     "k": false
+    },
+    {
+     "w": "road,",
+     "t0": 3.04,
+     "t1": 3.38,
+     "k": false
+    },
+    {
+     "w": "lights",
+     "t0": 3.53,
+     "t1": 3.919,
+     "k": false
+    },
+    {
+     "w": "flashing.",
+     "t0": 3.919,
+     "t1": 4.385,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 26.585,
+   "dur": 2.725,
+   "say": "It can't get past. It stops dead.",
+   "words": [
+    {
+     "w": "It",
+     "t0": 0.26,
+     "t1": 0.396,
+     "k": false
+    },
+    {
+     "w": "can't",
+     "t0": 0.396,
+     "t1": 0.735,
+     "k": true
+    },
+    {
+     "w": "get",
+     "t0": 0.735,
+     "t1": 0.939,
+     "k": false
+    },
+    {
+     "w": "past.",
+     "t0": 0.939,
+     "t1": 1.21,
+     "k": false
+    },
+    {
+     "w": "It",
+     "t0": 1.44,
+     "t1": 1.627,
+     "k": false
+    },
+    {
+     "w": "stops",
+     "t0": 1.627,
+     "t1": 2.095,
+     "k": false
+    },
+    {
+     "w": "dead.",
+     "t0": 2.095,
+     "t1": 2.375,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 29.31,
+   "dur": 5.755,
+   "say": "Gary just shrugs. Window down. Turning right, mate. I'm allowed to wait in the box.",
+   "words": [
+    {
+     "w": "Gary",
+     "t0": 0.26,
+     "t1": 0.569,
+     "k": false
+    },
+    {
+     "w": "just",
+     "t0": 0.569,
+     "t1": 0.954,
+     "k": false
+    },
+    {
+     "w": "shrugs.",
+     "t0": 0.954,
+     "t1": 1.34,
+     "k": true
+    },
+    {
+     "w": "Window",
+     "t0": 1.66,
+     "t1": 2.14,
+     "k": false
+    },
+    {
+     "w": "down.",
+     "t0": 2.14,
+     "t1": 2.46,
+     "k": false
+    },
+    {
+     "w": "Turning",
+     "t0": 2.59,
+     "t1": 3.106,
+     "k": false
+    },
+    {
+     "w": "right,",
+     "t0": 3.106,
+     "t1": 3.45,
+     "k": false
+    },
+    {
+     "w": "mate.",
+     "t0": 3.79,
+     "t1": 3.411,
+     "k": false
+    },
+    {
+     "w": "I'm",
+     "t0": 3.411,
+     "t1": 3.658,
+     "k": false
+    },
+    {
+     "w": "allowed",
+     "t0": 3.658,
+     "t1": 4.07,
+     "k": true
+    },
+    {
+     "w": "to",
+     "t0": 4.07,
+     "t1": 4.317,
+     "k": false
+    },
+    {
+     "w": "wait",
+     "t0": 4.317,
+     "t1": 4.646,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 4.646,
+     "t1": 4.811,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 4.811,
+     "t1": 4.976,
+     "k": false
+    },
+    {
+     "w": "box.",
+     "t0": 4.976,
+     "t1": 5.305,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 35.065,
+   "dur": 3.285,
+   "say": "It takes nearly a minute for the queue to clear.",
+   "words": [
+    {
+     "w": "It",
+     "t0": 0.26,
+     "t1": 0.413,
+     "k": false
+    },
+    {
+     "w": "takes",
+     "t0": 0.413,
+     "t1": 0.795,
+     "k": false
+    },
+    {
+     "w": "nearly",
+     "t0": 0.795,
+     "t1": 1.177,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 1.177,
+     "t1": 1.33,
+     "k": false
+    },
+    {
+     "w": "minute",
+     "t0": 1.33,
+     "t1": 1.712,
+     "k": true
+    },
+    {
+     "w": "for",
+     "t0": 1.712,
+     "t1": 1.941,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.941,
+     "t1": 2.094,
+     "k": false
+    },
+    {
+     "w": "queue",
+     "t0": 2.094,
+     "t1": 2.4,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 2.4,
+     "t1": 2.629,
+     "k": false
+    },
+    {
+     "w": "clear.",
+     "t0": 2.629,
+     "t1": 2.935,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 38.35,
+   "dur": 3.055,
+   "say": "And there's a council camera on the corner.",
+   "words": [
+    {
+     "w": "And",
+     "t0": 0.26,
+     "t1": 0.505,
+     "k": false
+    },
+    {
+     "w": "there's",
+     "t0": 0.504,
+     "t1": 0.831,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 0.831,
+     "t1": 0.994,
+     "k": false
+    },
+    {
+     "w": "council",
+     "t0": 0.994,
+     "t1": 1.564,
+     "k": false
+    },
+    {
+     "w": "camera",
+     "t0": 1.564,
+     "t1": 1.972,
+     "k": true
+    },
+    {
+     "w": "on",
+     "t0": 1.972,
+     "t1": 2.135,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.135,
+     "t1": 2.298,
+     "k": false
+    },
+    {
+     "w": "corner.",
+     "t0": 2.298,
+     "t1": 2.705,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 41.405,
+   "dur": 1.915,
+   "say": "So, who's right?",
+   "words": [
+    {
+     "w": "So,",
+     "t0": 0.26,
+     "t1": 0.504,
+     "k": false
+    },
+    {
+     "w": "who's",
+     "t0": 0.504,
+     "t1": 0.885,
+     "k": false
+    },
+    {
+     "w": "right?",
+     "t0": 0.885,
+     "t1": 1.265,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 43.32,
+   "dur": 5.665,
+   "say": "Rule one seven four says you must not enter the box until your exit is clear.",
+   "words": [
+    {
+     "w": "Rule",
+     "t0": 0.26,
+     "t1": 0.615,
+     "k": false
+    },
+    {
+     "w": "one",
+     "t0": 0.615,
+     "t1": 0.881,
+     "k": false
+    },
+    {
+     "w": "seven",
+     "t0": 0.881,
+     "t1": 1.324,
+     "k": false
+    },
+    {
+     "w": "four",
+     "t0": 1.324,
+     "t1": 1.59,
+     "k": false
+    },
+    {
+     "w": "says",
+     "t0": 1.59,
+     "t1": 1.856,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 1.856,
+     "t1": 2.122,
+     "k": false
+    },
+    {
+     "w": "must",
+     "t0": 2.122,
+     "t1": 2.477,
+     "k": false
+    },
+    {
+     "w": "not",
+     "t0": 2.477,
+     "t1": 2.743,
+     "k": false
+    },
+    {
+     "w": "enter",
+     "t0": 2.743,
+     "t1": 3.098,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.098,
+     "t1": 3.275,
+     "k": false
+    },
+    {
+     "w": "box",
+     "t0": 3.275,
+     "t1": 3.63,
+     "k": false
+    },
+    {
+     "w": "until",
+     "t0": 3.63,
+     "t1": 4.073,
+     "k": false
+    },
+    {
+     "w": "your",
+     "t0": 4.073,
+     "t1": 4.339,
+     "k": false
+    },
+    {
+     "w": "exit",
+     "t0": 4.339,
+     "t1": 4.783,
+     "k": true
+    },
+    {
+     "w": "is",
+     "t0": 4.783,
+     "t1": 4.96,
+     "k": false
+    },
+    {
+     "w": "clear.",
+     "t0": 4.96,
+     "t1": 5.315,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 48.985,
+   "dur": 7.725,
+   "say": "You can wait in the box to turn right, but only when you're held up by oncoming traffic, or by cars waiting to turn right.",
+   "words": [
+    {
+     "w": "You",
+     "t0": 0.26,
+     "t1": 0.444,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 0.444,
+     "t1": 0.628,
+     "k": true
+    },
+    {
+     "w": "wait",
+     "t0": 0.628,
+     "t1": 0.874,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 0.874,
+     "t1": 0.997,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 0.997,
+     "t1": 1.119,
+     "k": false
+    },
+    {
+     "w": "box",
+     "t0": 1.119,
+     "t1": 1.365,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 1.365,
+     "t1": 1.549,
+     "k": false
+    },
+    {
+     "w": "turn",
+     "t0": 1.549,
+     "t1": 1.794,
+     "k": false
+    },
+    {
+     "w": "right,",
+     "t0": 1.794,
+     "t1": 2.04,
+     "k": false
+    },
+    {
+     "w": "but",
+     "t0": 2.41,
+     "t1": 2.608,
+     "k": false
+    },
+    {
+     "w": "only",
+     "t0": 2.608,
+     "t1": 2.939,
+     "k": false
+    },
+    {
+     "w": "when",
+     "t0": 2.939,
+     "t1": 3.137,
+     "k": false
+    },
+    {
+     "w": "you're",
+     "t0": 3.137,
+     "t1": 3.336,
+     "k": false
+    },
+    {
+     "w": "held",
+     "t0": 3.336,
+     "t1": 3.6,
+     "k": false
+    },
+    {
+     "w": "up",
+     "t0": 3.6,
+     "t1": 3.732,
+     "k": false
+    },
+    {
+     "w": "by",
+     "t0": 3.732,
+     "t1": 3.931,
+     "k": false
+    },
+    {
+     "w": "oncoming",
+     "t0": 3.931,
+     "t1": 4.393,
+     "k": true
+    },
+    {
+     "w": "traffic,",
+     "t0": 4.393,
+     "t1": 4.79,
+     "k": false
+    },
+    {
+     "w": "or",
+     "t0": 5.26,
+     "t1": 5.415,
+     "k": false
+    },
+    {
+     "w": "by",
+     "t0": 5.415,
+     "t1": 5.647,
+     "k": false
+    },
+    {
+     "w": "cars",
+     "t0": 5.647,
+     "t1": 5.958,
+     "k": false
+    },
+    {
+     "w": "waiting",
+     "t0": 5.958,
+     "t1": 6.423,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 6.423,
+     "t1": 6.655,
+     "k": false
+    },
+    {
+     "w": "turn",
+     "t0": 6.655,
+     "t1": 6.965,
+     "k": false
+    },
+    {
+     "w": "right.",
+     "t0": 6.965,
+     "t1": 7.275,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 56.71,
+   "dur": 6.335,
+   "say": "Gary wasn't waiting for oncoming traffic. His exit road was full. That's not the exception.",
+   "words": [
+    {
+     "w": "Gary",
+     "t0": 0.26,
+     "t1": 0.524,
+     "k": false
+    },
+    {
+     "w": "wasn't",
+     "t0": 0.524,
+     "t1": 0.919,
+     "k": false
+    },
+    {
+     "w": "waiting",
+     "t0": 0.919,
+     "t1": 1.315,
+     "k": false
+    },
+    {
+     "w": "for",
+     "t0": 1.315,
+     "t1": 1.513,
+     "k": false
+    },
+    {
+     "w": "oncoming",
+     "t0": 1.513,
+     "t1": 1.974,
+     "k": false
+    },
+    {
+     "w": "traffic.",
+     "t0": 1.974,
+     "t1": 2.37,
+     "k": false
+    },
+    {
+     "w": "His",
+     "t0": 2.85,
+     "t1": 3.11,
+     "k": false
+    },
+    {
+     "w": "exit",
+     "t0": 3.11,
+     "t1": 3.543,
+     "k": false
+    },
+    {
+     "w": "road",
+     "t0": 3.543,
+     "t1": 3.89,
+     "k": false
+    },
+    {
+     "w": "was",
+     "t0": 3.89,
+     "t1": 4.15,
+     "k": false
+    },
+    {
+     "w": "full.",
+     "t0": 4.15,
+     "t1": 4.41,
+     "k": true
+    },
+    {
+     "w": "That's",
+     "t0": 4.72,
+     "t1": 4.994,
+     "k": false
+    },
+    {
+     "w": "not",
+     "t0": 4.994,
+     "t1": 5.2,
+     "k": true
+    },
+    {
+     "w": "the",
+     "t0": 5.2,
+     "t1": 5.337,
+     "k": false
+    },
+    {
+     "w": "exception.",
+     "t0": 5.337,
+     "t1": 5.885,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 63.045,
+   "dur": 3.685,
+   "say": "So he gets a penalty charge from the council camera.",
+   "words": [
+    {
+     "w": "So",
+     "t0": 0.26,
+     "t1": 0.475,
+     "k": false
+    },
+    {
+     "w": "he",
+     "t0": 0.475,
+     "t1": 0.689,
+     "k": false
+    },
+    {
+     "w": "gets",
+     "t0": 0.689,
+     "t1": 0.975,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 0.975,
+     "t1": 1.118,
+     "k": false
+    },
+    {
+     "w": "penalty",
+     "t0": 1.118,
+     "t1": 1.619,
+     "k": true
+    },
+    {
+     "w": "charge",
+     "t0": 1.619,
+     "t1": 2.048,
+     "k": true
+    },
+    {
+     "w": "from",
+     "t0": 2.048,
+     "t1": 2.334,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.334,
+     "t1": 2.477,
+     "k": false
+    },
+    {
+     "w": "council",
+     "t0": 2.477,
+     "t1": 2.977,
+     "k": false
+    },
+    {
+     "w": "camera.",
+     "t0": 2.977,
+     "t1": 3.335,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 66.73,
+   "dur": 3.405,
+   "say": "And the ambulance? Someone was waiting for help.",
+   "words": [
+    {
+     "w": "And",
+     "t0": 0.26,
+     "t1": 0.459,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 0.459,
+     "t1": 0.592,
+     "k": false
+    },
+    {
+     "w": "ambulance?",
+     "t0": 0.592,
+     "t1": 1.19,
+     "k": false
+    },
+    {
+     "w": "Someone",
+     "t0": 1.44,
+     "t1": 1.826,
+     "k": false
+    },
+    {
+     "w": "was",
+     "t0": 1.826,
+     "t1": 2.019,
+     "k": false
+    },
+    {
+     "w": "waiting",
+     "t0": 2.019,
+     "t1": 2.405,
+     "k": true
+    },
+    {
+     "w": "for",
+     "t0": 2.405,
+     "t1": 2.598,
+     "k": false
+    },
+    {
+     "w": "help.",
+     "t0": 2.598,
+     "t1": 2.855,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 70.135,
+   "dur": 5.805,
+   "say": "The verdict. Gary, guilty. Would you have gone in? Follow for case two.",
+   "words": [
+    {
+     "w": "The",
+     "t0": 0.26,
+     "t1": 0.387,
+     "k": false
+    },
+    {
+     "w": "verdict.",
+     "t0": 0.387,
+     "t1": 0.83,
+     "k": false
+    },
+    {
+     "w": "Gary,",
+     "t0": 1.01,
+     "t1": 1.8,
+     "k": false
+    },
+    {
+     "w": "guilty.",
+     "t0": 2.06,
+     "t1": 1.81,
+     "k": true
+    },
+    {
+     "w": "Would",
+     "t0": 1.81,
+     "t1": 2.048,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 2.048,
+     "t1": 2.286,
+     "k": false
+    },
+    {
+     "w": "have",
+     "t0": 2.286,
+     "t1": 2.524,
+     "k": false
+    },
+    {
+     "w": "gone",
+     "t0": 2.524,
+     "t1": 2.761,
+     "k": false
+    },
+    {
+     "w": "in?",
+     "t0": 2.761,
+     "t1": 2.92,
+     "k": false
+    },
+    {
+     "w": "Follow",
+     "t0": 3.19,
+     "t1": 3.578,
+     "k": false
+    },
+    {
+     "w": "for",
+     "t0": 3.578,
+     "t1": 3.811,
+     "k": false
+    },
+    {
+     "w": "case",
+     "t0": 3.811,
+     "t1": 4.122,
+     "k": false
+    },
+    {
+     "w": "two.",
+     "t0": 4.122,
+     "t1": 4.355,
+     "k": false
+    }
+   ]
+  }
+ ]
+}

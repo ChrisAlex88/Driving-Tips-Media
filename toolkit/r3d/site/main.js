@@ -22,6 +22,12 @@ function captionHTML(segT, ts) {
   return `<div class="cap">${c.map(w => `<span class="${w.k ? 'k' : ''}">${w.w.replace(/[*]/g, '')}</span>`).join(' ')}</div>`;
 }
 
+function wordHTML(segT, ts) {
+  const ws = segT.words; if (!ws || !ws.length) return ''; let c = null;
+  for (const w of ws) if (ts >= w.t0 - 0.03) c = w;
+  if (!c || ts > ws[ws.length - 1].t1 + 0.4) return '';
+  return `<div class="word ${c.k ? 'k' : ''}">${c.w.replace(/[*.,!?;:"]/g, '')}</div>`;
+}
 window.renderAt = function (t) {
   let si = 0; for (let i = 0; i < TL.segments.length; i++) if (t >= TL.segments[i].start) si = i;
   const S = TL.segments[si], ts = t - S.start; const segDef = video.segs[si] || {};
@@ -54,6 +60,10 @@ window.renderAt = function (t) {
       html += `<div class="stamp" style="top:${o.y || 900}px;color:${col};border-color:${col};background:rgba(10,14,22,.55);opacity:${k};transform:translate(-50%,-50%) rotate(-6deg) scale(${1.6 - 0.6 * k})">${text}</div>`;
       this.ev(o.sfx || 'ding', at);
     },
+    tag(text, from, to = 99, o = {}) {
+      if (ts < from || ts > to) return; const k = easeOut(seg(ts, from, from + 0.2)); const out = to < 99 ? 1 - seg(ts, to - 0.15, to) : 1;
+      html += `<div class="tag ${o.col || 'red'}" style="top:${o.y || 560}px;opacity:${k * out};transform:translate(-50%,-50%) scale(${1.25 - 0.25 * k})">${text}</div>`;
+    },
     quiz(q, opts, right, reveal, o = {}) {
       const from = o.from ?? 0.1; if (ts < from) return;
       const k = easeOut(seg(ts, from, from + 0.35));
@@ -67,9 +77,9 @@ window.renderAt = function (t) {
   if (!NOR) renderer.render(scene, camera);
   // overlay
   const prog = `<div class="prog" style="width:${clamp(t / TL.total) * W}px"></div>`;
-  const brand = `<div class="brand"><span class="l">L</span>Driving Tips UK</div><div class="handle">@driving.tips.uk</div>`;
+  const brand = video.episode ? `<div class="ep"><span class="bar"></span><span class="nm">DRIVING TIPS UK</span><span>${video.episode}</span></div><div class="handle">@driving.tips.uk</div>` : `<div class="brand"><span class="l">L</span>Driving Tips UK</div><div class="handle">@driving.tips.uk</div>`;
   const head = segDef.head ? `<div class="headwrap">${segDef.kicker ? `<div class="kicker">${segDef.kicker}</div>` : ''}<div class="head" style="${segDef.headSize ? 'font-size:' + segDef.headSize + 'px' : ''}">${segDef.head}</div></div>` : '';
-  ov.innerHTML = prog + brand + head + html + (segDef.noCaps ? '' : captionHTML(S, ts));
+  ov.innerHTML = prog + brand + head + html + (segDef.noCaps ? '' : (video.wordCaps ? wordHTML(S, ts) : captionHTML(S, ts)));
   return true;
 };
 window.getEvents = () => events;

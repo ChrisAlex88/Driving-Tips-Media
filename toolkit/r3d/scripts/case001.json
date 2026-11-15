@@ -1,0 +1,92 @@
+[
+ {
+  "say": "Is he allowed to sit here? Case one. The *yellow* *box.*",
+  "lead": 0.1,
+  "hold": 0.4
+ },
+ {
+  "say": "This is Gary. He's *turning* *right* at the lights.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "But the road he's turning into is *backed* *up.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "The light goes *green,* and Gary goes into the box anyway.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Now he's *stuck* in the middle. His light turns *red,* and the side road goes *green.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Gary's parked right *across* it.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Then, *sirens.* An *ambulance* comes up the side road, lights flashing.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "It *can't* get past. It stops dead.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Gary just *shrugs.* Window down. Turning right, mate. I'm *allowed* to wait in the box.",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "It takes nearly a *minute* for the queue to clear.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "And there's a council *camera* on the corner.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "So, who's *right?*",
+  "lead": 0.2,
+  "hold": 0.6
+ },
+ {
+  "say": "Rule one seven four says you must not enter the box until your *exit* is *clear.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "You *can* wait in the box to turn right, but only when you're held up by *oncoming* traffic, or by cars waiting to turn right.",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "Gary wasn't waiting for oncoming traffic. His exit road was *full.* That's *not* the exception.",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "So he gets a *penalty* *charge* from the council camera.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "And the ambulance? Someone was *waiting* for help.",
+  "lead": 0.2,
+  "hold": 0.5
+ },
+ {
+  "say": "The verdict. Gary, *guilty.* Would you have gone in? Follow for case two.",
+  "lead": 0.2,
+  "hold": 1.4
+ }
+]

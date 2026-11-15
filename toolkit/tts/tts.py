@@ -1,6 +1,6 @@
 import sys, json, re, subprocess, os, numpy as np, onnxruntime as ort, wave
 D=os.path.dirname(os.path.abspath(__file__))
-VOC=json.load(open((D+'/config.json' if os.path.exists(D+'/config.json') else D+'/kx/src/kokoro_onnx/config.json')))['vocab']
+VOC=json.load(open(D+'/kx/src/kokoro_onnx/config.json'))['vocab']
 sess=ort.InferenceSession(D+'/kokoro.onnx',providers=['CPUExecutionProvider'])
 VOICES=np.load(D+'/voices.bin')
 INS={i.name:i for i in sess.get_inputs()}
