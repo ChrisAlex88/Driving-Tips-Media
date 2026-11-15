@@ -1,0 +1,969 @@
+{
+ "total": 57.27,
+ "segments": [
+  {
+   "start": 0.0,
+   "dur": 4.595,
+   "say": "A pedestrian steps onto the zebra crossing. So you stop. Easy.",
+   "words": [
+    {
+     "w": "A",
+     "t0": 0.16,
+     "t1": 0.296,
+     "k": false
+    },
+    {
+     "w": "pedestrian",
+     "t0": 0.296,
+     "t1": 0.975,
+     "k": false
+    },
+    {
+     "w": "steps",
+     "t0": 0.975,
+     "t1": 1.315,
+     "k": false
+    },
+    {
+     "w": "onto",
+     "t0": 1.315,
+     "t1": 1.587,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.587,
+     "t1": 1.723,
+     "k": false
+    },
+    {
+     "w": "zebra",
+     "t0": 1.723,
+     "t1": 2.062,
+     "k": true
+    },
+    {
+     "w": "crossing.",
+     "t0": 2.062,
+     "t1": 2.47,
+     "k": true
+    },
+    {
+     "w": "So",
+     "t0": 2.7,
+     "t1": 2.871,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 2.871,
+     "t1": 3.042,
+     "k": false
+    },
+    {
+     "w": "stop.",
+     "t0": 3.042,
+     "t1": 3.27,
+     "k": false
+    },
+    {
+     "w": "Easy.",
+     "t0": 3.72,
+     "t1": 4.195,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 4.595,
+   "dur": 4.185,
+   "say": "Now they've walked past your side of the road. Can you go?",
+   "words": [
+    {
+     "w": "Now",
+     "t0": 0.31,
+     "t1": 0.526,
+     "k": false
+    },
+    {
+     "w": "they've",
+     "t0": 0.526,
+     "t1": 0.814,
+     "k": false
+    },
+    {
+     "w": "walked",
+     "t0": 0.814,
+     "t1": 1.173,
+     "k": false
+    },
+    {
+     "w": "past",
+     "t0": 1.173,
+     "t1": 1.461,
+     "k": false
+    },
+    {
+     "w": "your",
+     "t0": 1.461,
+     "t1": 1.677,
+     "k": false
+    },
+    {
+     "w": "side",
+     "t0": 1.677,
+     "t1": 1.965,
+     "k": false
+    },
+    {
+     "w": "of",
+     "t0": 1.965,
+     "t1": 2.108,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.108,
+     "t1": 2.252,
+     "k": false
+    },
+    {
+     "w": "road.",
+     "t0": 2.252,
+     "t1": 2.54,
+     "k": false
+    },
+    {
+     "w": "Can",
+     "t0": 2.9,
+     "t1": 3.112,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 3.112,
+     "t1": 3.323,
+     "k": false
+    },
+    {
+     "w": "go?",
+     "t0": 3.323,
+     "t1": 3.535,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 8.78,
+   "dur": 1.525,
+   "say": "Look from above.",
+   "words": [
+    {
+     "w": "Look",
+     "t0": 0.26,
+     "t1": 0.51,
+     "k": false
+    },
+    {
+     "w": "from",
+     "t0": 0.51,
+     "t1": 0.842,
+     "k": false
+    },
+    {
+     "w": "above.",
+     "t0": 0.842,
+     "t1": 1.175,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 10.305,
+   "dur": 5.795,
+   "say": "No island means it's one crossing. They're still on it, so you wait until they're off.",
+   "words": [
+    {
+     "w": "No",
+     "t0": 0.31,
+     "t1": 0.534,
+     "k": false
+    },
+    {
+     "w": "island",
+     "t0": 0.534,
+     "t1": 0.982,
+     "k": false
+    },
+    {
+     "w": "means",
+     "t0": 0.982,
+     "t1": 1.355,
+     "k": false
+    },
+    {
+     "w": "it's",
+     "t0": 1.355,
+     "t1": 1.578,
+     "k": false
+    },
+    {
+     "w": "one",
+     "t0": 1.578,
+     "t1": 1.802,
+     "k": true
+    },
+    {
+     "w": "crossing.",
+     "t0": 1.802,
+     "t1": 2.25,
+     "k": false
+    },
+    {
+     "w": "They're",
+     "t0": 2.67,
+     "t1": 2.95,
+     "k": false
+    },
+    {
+     "w": "still",
+     "t0": 2.95,
+     "t1": 3.23,
+     "k": false
+    },
+    {
+     "w": "on",
+     "t0": 3.23,
+     "t1": 3.37,
+     "k": false
+    },
+    {
+     "w": "it,",
+     "t0": 3.37,
+     "t1": 3.51,
+     "k": false
+    },
+    {
+     "w": "so",
+     "t0": 3.77,
+     "t1": 3.981,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 3.981,
+     "t1": 4.191,
+     "k": false
+    },
+    {
+     "w": "wait",
+     "t0": 4.191,
+     "t1": 4.472,
+     "k": true
+    },
+    {
+     "w": "until",
+     "t0": 4.472,
+     "t1": 4.824,
+     "k": false
+    },
+    {
+     "w": "they're",
+     "t0": 4.824,
+     "t1": 5.105,
+     "k": false
+    },
+    {
+     "w": "off.",
+     "t0": 5.105,
+     "t1": 5.245,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 16.1,
+   "dur": 8.025,
+   "say": "You must give way to anyone on a zebra crossing. Get it wrong, and it's typically three points and a hundred pound fine.",
+   "words": [
+    {
+     "w": "You",
+     "t0": 0.31,
+     "t1": 0.509,
+     "k": false
+    },
+    {
+     "w": "must",
+     "t0": 0.509,
+     "t1": 0.775,
+     "k": true
+    },
+    {
+     "w": "give",
+     "t0": 0.775,
+     "t1": 0.975,
+     "k": false
+    },
+    {
+     "w": "way",
+     "t0": 0.975,
+     "t1": 1.174,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 1.174,
+     "t1": 1.374,
+     "k": false
+    },
+    {
+     "w": "anyone",
+     "t0": 1.374,
+     "t1": 1.773,
+     "k": false
+    },
+    {
+     "w": "on",
+     "t0": 1.773,
+     "t1": 1.906,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 1.906,
+     "t1": 2.039,
+     "k": false
+    },
+    {
+     "w": "zebra",
+     "t0": 2.039,
+     "t1": 2.371,
+     "k": false
+    },
+    {
+     "w": "crossing.",
+     "t0": 2.371,
+     "t1": 2.77,
+     "k": false
+    },
+    {
+     "w": "Get",
+     "t0": 3.24,
+     "t1": 3.488,
+     "k": false
+    },
+    {
+     "w": "it",
+     "t0": 3.488,
+     "t1": 3.653,
+     "k": false
+    },
+    {
+     "w": "wrong,",
+     "t0": 3.653,
+     "t1": 3.9,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 4.23,
+     "t1": 4.444,
+     "k": false
+    },
+    {
+     "w": "it's",
+     "t0": 4.444,
+     "t1": 4.659,
+     "k": false
+    },
+    {
+     "w": "typically",
+     "t0": 4.659,
+     "t1": 5.159,
+     "k": false
+    },
+    {
+     "w": "three",
+     "t0": 5.159,
+     "t1": 5.445,
+     "k": true
+    },
+    {
+     "w": "points",
+     "t0": 5.445,
+     "t1": 5.874,
+     "k": true
+    },
+    {
+     "w": "and",
+     "t0": 5.874,
+     "t1": 6.088,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 6.088,
+     "t1": 6.231,
+     "k": false
+    },
+    {
+     "w": "hundred",
+     "t0": 6.231,
+     "t1": 6.732,
+     "k": false
+    },
+    {
+     "w": "pound",
+     "t0": 6.732,
+     "t1": 7.089,
+     "k": false
+    },
+    {
+     "w": "fine.",
+     "t0": 7.089,
+     "t1": 7.375,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 24.125,
+   "dur": 2.795,
+   "say": "Now add an island in the middle.",
+   "words": [
+    {
+     "w": "Now",
+     "t0": 0.31,
+     "t1": 0.588,
+     "k": false
+    },
+    {
+     "w": "add",
+     "t0": 0.588,
+     "t1": 0.773,
+     "k": false
+    },
+    {
+     "w": "an",
+     "t0": 0.773,
+     "t1": 0.958,
+     "k": false
+    },
+    {
+     "w": "island",
+     "t0": 0.958,
+     "t1": 1.513,
+     "k": true
+    },
+    {
+     "w": "in",
+     "t0": 1.513,
+     "t1": 1.698,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.698,
+     "t1": 1.883,
+     "k": false
+    },
+    {
+     "w": "middle.",
+     "t0": 1.883,
+     "t1": 2.345,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 26.92,
+   "dur": 8.995,
+   "say": "A zebra with a central island is two separate crossings. Once they're off your half, they're on a different crossing. You can go, carefully.",
+   "words": [
+    {
+     "w": "A",
+     "t0": 0.31,
+     "t1": 0.456,
+     "k": false
+    },
+    {
+     "w": "zebra",
+     "t0": 0.456,
+     "t1": 0.821,
+     "k": false
+    },
+    {
+     "w": "with",
+     "t0": 0.821,
+     "t1": 1.04,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 1.04,
+     "t1": 1.186,
+     "k": false
+    },
+    {
+     "w": "central",
+     "t0": 1.186,
+     "t1": 1.697,
+     "k": false
+    },
+    {
+     "w": "island",
+     "t0": 1.697,
+     "t1": 2.136,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 2.136,
+     "t1": 2.282,
+     "k": false
+    },
+    {
+     "w": "two",
+     "t0": 2.282,
+     "t1": 2.501,
+     "k": true
+    },
+    {
+     "w": "separate",
+     "t0": 2.501,
+     "t1": 2.939,
+     "k": true
+    },
+    {
+     "w": "crossings.",
+     "t0": 2.939,
+     "t1": 3.45,
+     "k": false
+    },
+    {
+     "w": "Once",
+     "t0": 3.85,
+     "t1": 4.125,
+     "k": false
+    },
+    {
+     "w": "they're",
+     "t0": 4.125,
+     "t1": 4.401,
+     "k": false
+    },
+    {
+     "w": "off",
+     "t0": 4.401,
+     "t1": 4.538,
+     "k": false
+    },
+    {
+     "w": "your",
+     "t0": 4.538,
+     "t1": 4.745,
+     "k": false
+    },
+    {
+     "w": "half,",
+     "t0": 4.745,
+     "t1": 5.02,
+     "k": false
+    },
+    {
+     "w": "they're",
+     "t0": 5.37,
+     "t1": 5.589,
+     "k": false
+    },
+    {
+     "w": "on",
+     "t0": 5.589,
+     "t1": 5.699,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 5.699,
+     "t1": 5.808,
+     "k": false
+    },
+    {
+     "w": "different",
+     "t0": 5.808,
+     "t1": 6.191,
+     "k": false
+    },
+    {
+     "w": "crossing.",
+     "t0": 6.191,
+     "t1": 6.52,
+     "k": false
+    },
+    {
+     "w": "You",
+     "t0": 6.9,
+     "t1": 7.143,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 7.143,
+     "t1": 7.387,
+     "k": false
+    },
+    {
+     "w": "go,",
+     "t0": 7.387,
+     "t1": 7.63,
+     "k": true
+    },
+    {
+     "w": "carefully.",
+     "t0": 7.78,
+     "t1": 8.345,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 35.915,
+   "dur": 9.145,
+   "say": "But a crossing with traffic lights that goes straight across is one crossing, even with an island. Wait for anyone crossing from the other side.",
+   "words": [
+    {
+     "w": "But",
+     "t0": 0.36,
+     "t1": 0.579,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 0.579,
+     "t1": 0.725,
+     "k": false
+    },
+    {
+     "w": "crossing",
+     "t0": 0.725,
+     "t1": 1.163,
+     "k": false
+    },
+    {
+     "w": "with",
+     "t0": 1.163,
+     "t1": 1.381,
+     "k": false
+    },
+    {
+     "w": "traffic",
+     "t0": 1.381,
+     "t1": 1.819,
+     "k": true
+    },
+    {
+     "w": "lights",
+     "t0": 1.819,
+     "t1": 2.184,
+     "k": true
+    },
+    {
+     "w": "that",
+     "t0": 2.184,
+     "t1": 2.403,
+     "k": false
+    },
+    {
+     "w": "goes",
+     "t0": 2.403,
+     "t1": 2.695,
+     "k": false
+    },
+    {
+     "w": "straight",
+     "t0": 2.695,
+     "t1": 3.133,
+     "k": false
+    },
+    {
+     "w": "across",
+     "t0": 3.133,
+     "t1": 3.497,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 3.497,
+     "t1": 3.643,
+     "k": false
+    },
+    {
+     "w": "one",
+     "t0": 3.643,
+     "t1": 3.862,
+     "k": true
+    },
+    {
+     "w": "crossing,",
+     "t0": 3.862,
+     "t1": 4.3,
+     "k": false
+    },
+    {
+     "w": "even",
+     "t0": 4.6,
+     "t1": 4.938,
+     "k": false
+    },
+    {
+     "w": "with",
+     "t0": 4.938,
+     "t1": 5.14,
+     "k": false
+    },
+    {
+     "w": "an",
+     "t0": 5.14,
+     "t1": 5.275,
+     "k": false
+    },
+    {
+     "w": "island.",
+     "t0": 5.275,
+     "t1": 5.68,
+     "k": false
+    },
+    {
+     "w": "Wait",
+     "t0": 6.17,
+     "t1": 6.461,
+     "k": false
+    },
+    {
+     "w": "for",
+     "t0": 6.461,
+     "t1": 6.679,
+     "k": false
+    },
+    {
+     "w": "anyone",
+     "t0": 6.679,
+     "t1": 7.115,
+     "k": false
+    },
+    {
+     "w": "crossing",
+     "t0": 7.115,
+     "t1": 7.55,
+     "k": false
+    },
+    {
+     "w": "from",
+     "t0": 7.55,
+     "t1": 7.841,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 7.841,
+     "t1": 7.986,
+     "k": false
+    },
+    {
+     "w": "other",
+     "t0": 7.986,
+     "t1": 8.204,
+     "k": false
+    },
+    {
+     "w": "side.",
+     "t0": 8.204,
+     "t1": 8.495,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 45.06,
+   "dur": 7.875,
+   "say": "Quick quiz. Zebra with an island. The pedestrian has reached the far half. Can you go? A or B?",
+   "words": [
+    {
+     "w": "Quick",
+     "t0": 0.36,
+     "t1": 0.395,
+     "k": false
+    },
+    {
+     "w": "quiz.",
+     "t0": 0.395,
+     "t1": 0.43,
+     "k": false
+    },
+    {
+     "w": "Zebra",
+     "t0": 0.55,
+     "t1": 1.031,
+     "k": false
+    },
+    {
+     "w": "with",
+     "t0": 1.031,
+     "t1": 1.32,
+     "k": false
+    },
+    {
+     "w": "an",
+     "t0": 1.32,
+     "t1": 1.513,
+     "k": false
+    },
+    {
+     "w": "island.",
+     "t0": 1.512,
+     "t1": 2.09,
+     "k": false
+    },
+    {
+     "w": "The",
+     "t0": 2.36,
+     "t1": 2.494,
+     "k": false
+    },
+    {
+     "w": "pedestrian",
+     "t0": 2.494,
+     "t1": 3.164,
+     "k": false
+    },
+    {
+     "w": "has",
+     "t0": 3.164,
+     "t1": 3.365,
+     "k": false
+    },
+    {
+     "w": "reached",
+     "t0": 3.365,
+     "t1": 3.767,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.767,
+     "t1": 3.901,
+     "k": false
+    },
+    {
+     "w": "far",
+     "t0": 3.901,
+     "t1": 4.102,
+     "k": false
+    },
+    {
+     "w": "half.",
+     "t0": 4.102,
+     "t1": 4.37,
+     "k": false
+    },
+    {
+     "w": "Can",
+     "t0": 4.76,
+     "t1": 4.963,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 4.963,
+     "t1": 5.167,
+     "k": false
+    },
+    {
+     "w": "go?",
+     "t0": 5.167,
+     "t1": 5.37,
+     "k": false
+    },
+    {
+     "w": "A",
+     "t0": 5.6,
+     "t1": 5.779,
+     "k": true
+    },
+    {
+     "w": "or",
+     "t0": 5.779,
+     "t1": 5.957,
+     "k": false
+    },
+    {
+     "w": "B?",
+     "t0": 5.957,
+     "t1": 6.225,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 52.935,
+   "dur": 4.335,
+   "say": "It's A. You can go, carefully. Follow for more.",
+   "words": [
+    {
+     "w": "It's",
+     "t0": 0.26,
+     "t1": 0.499,
+     "k": false
+    },
+    {
+     "w": "A.",
+     "t0": 0.499,
+     "t1": 0.659,
+     "k": true
+    },
+    {
+     "w": "You",
+     "t0": 0.659,
+     "t1": 1.106,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 1.106,
+     "t1": 1.553,
+     "k": false
+    },
+    {
+     "w": "go,",
+     "t0": 1.553,
+     "t1": 2.0,
+     "k": false
+    },
+    {
+     "w": "carefully.",
+     "t0": 2.28,
+     "t1": 2.126,
+     "k": false
+    },
+    {
+     "w": "Follow",
+     "t0": 2.126,
+     "t1": 2.562,
+     "k": false
+    },
+    {
+     "w": "for",
+     "t0": 2.562,
+     "t1": 2.823,
+     "k": false
+    },
+    {
+     "w": "more.",
+     "t0": 2.823,
+     "t1": 3.085,
+     "k": false
+    }
+   ]
+  }
+ ]
+}

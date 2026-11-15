@@ -1,0 +1,52 @@
+[
+ {
+  "say": "A pedestrian steps onto the *zebra* *crossing.* So you stop. Easy.",
+  "lead": 0.1,
+  "hold": 0.35
+ },
+ {
+  "say": "Now they've walked past your side of the road. Can you *go?*",
+  "lead": 0.25,
+  "hold": 0.6
+ },
+ {
+  "say": "Look from *above.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "No island means it's *one* crossing. They're still on it, so you *wait* until they're off.",
+  "lead": 0.25,
+  "hold": 0.5
+ },
+ {
+  "say": "You *must* give way to anyone on a zebra crossing. Get it wrong, and it's typically *three* *points* and a hundred pound fine.",
+  "lead": 0.25,
+  "hold": 0.6
+ },
+ {
+  "say": "Now add an *island* in the middle.",
+  "lead": 0.25,
+  "hold": 0.4
+ },
+ {
+  "say": "A zebra with a central island is *two* *separate* crossings. Once they're off your half, they're on a different crossing. You can *go,* carefully.",
+  "lead": 0.25,
+  "hold": 0.6
+ },
+ {
+  "say": "But a crossing with *traffic* *lights* that goes straight across is *one* crossing, even with an island. Wait for anyone crossing from the other side.",
+  "lead": 0.3,
+  "hold": 0.6
+ },
+ {
+  "say": "Quick quiz. Zebra with an island. The pedestrian has reached the far half. Can you go? *A* or *B?*",
+  "lead": 0.3,
+  "hold": 1.6
+ },
+ {
+  "say": "It's *A.* You can go, carefully. Follow for more.",
+  "lead": 0.2,
+  "hold": 1.2
+ }
+]

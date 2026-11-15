@@ -1,0 +1,1005 @@
+{
+ "total": 54.87,
+ "segments": [
+  {
+   "start": 0.0,
+   "dur": 5.085,
+   "say": "You've had a few drinks, so you do the sensible thing. You sleep it off in your car.",
+   "words": [
+    {
+     "w": "You've",
+     "t0": 0.16,
+     "t1": 0.377,
+     "k": false
+    },
+    {
+     "w": "had",
+     "t0": 0.377,
+     "t1": 0.539,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 0.539,
+     "t1": 0.648,
+     "k": false
+    },
+    {
+     "w": "few",
+     "t0": 0.648,
+     "t1": 0.865,
+     "k": false
+    },
+    {
+     "w": "drinks,",
+     "t0": 0.865,
+     "t1": 1.19,
+     "k": false
+    },
+    {
+     "w": "so",
+     "t0": 1.4,
+     "t1": 1.6,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 1.6,
+     "t1": 1.801,
+     "k": false
+    },
+    {
+     "w": "do",
+     "t0": 1.801,
+     "t1": 2.001,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.001,
+     "t1": 2.135,
+     "k": false
+    },
+    {
+     "w": "sensible",
+     "t0": 2.135,
+     "t1": 2.67,
+     "k": true
+    },
+    {
+     "w": "thing.",
+     "t0": 2.67,
+     "t1": 2.87,
+     "k": false
+    },
+    {
+     "w": "You",
+     "t0": 3.22,
+     "t1": 3.44,
+     "k": false
+    },
+    {
+     "w": "sleep",
+     "t0": 3.44,
+     "t1": 3.806,
+     "k": false
+    },
+    {
+     "w": "it",
+     "t0": 3.806,
+     "t1": 3.953,
+     "k": false
+    },
+    {
+     "w": "off",
+     "t0": 3.953,
+     "t1": 4.099,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 4.099,
+     "t1": 4.245,
+     "k": false
+    },
+    {
+     "w": "your",
+     "t0": 4.245,
+     "t1": 4.465,
+     "k": false
+    },
+    {
+     "w": "car.",
+     "t0": 4.465,
+     "t1": 4.685,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 5.085,
+   "dur": 5.535,
+   "say": "Engine off. You're not driving. But you could still get ten points on your licence.",
+   "words": [
+    {
+     "w": "Engine",
+     "t0": 0.31,
+     "t1": 0.865,
+     "k": false
+    },
+    {
+     "w": "off.",
+     "t0": 0.865,
+     "t1": 1.05,
+     "k": false
+    },
+    {
+     "w": "You're",
+     "t0": 1.4,
+     "t1": 1.61,
+     "k": false
+    },
+    {
+     "w": "not",
+     "t0": 1.61,
+     "t1": 1.82,
+     "k": false
+    },
+    {
+     "w": "driving.",
+     "t0": 1.82,
+     "t1": 2.31,
+     "k": false
+    },
+    {
+     "w": "But",
+     "t0": 2.65,
+     "t1": 2.851,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 2.851,
+     "t1": 3.053,
+     "k": false
+    },
+    {
+     "w": "could",
+     "t0": 3.053,
+     "t1": 3.254,
+     "k": false
+    },
+    {
+     "w": "still",
+     "t0": 3.254,
+     "t1": 3.523,
+     "k": false
+    },
+    {
+     "w": "get",
+     "t0": 3.523,
+     "t1": 3.725,
+     "k": false
+    },
+    {
+     "w": "ten",
+     "t0": 3.725,
+     "t1": 3.926,
+     "k": true
+    },
+    {
+     "w": "points",
+     "t0": 3.926,
+     "t1": 4.329,
+     "k": true
+    },
+    {
+     "w": "on",
+     "t0": 4.329,
+     "t1": 4.463,
+     "k": false
+    },
+    {
+     "w": "your",
+     "t0": 4.463,
+     "t1": 4.665,
+     "k": false
+    },
+    {
+     "w": "licence.",
+     "t0": 4.665,
+     "t1": 5.135,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 10.62,
+   "dur": 6.355,
+   "say": "Because the law says you're in charge of the car. You're in it, with the keys, and over the limit.",
+   "words": [
+    {
+     "w": "Because",
+     "t0": 0.31,
+     "t1": 0.697,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 0.697,
+     "t1": 0.852,
+     "k": false
+    },
+    {
+     "w": "law",
+     "t0": 0.852,
+     "t1": 1.084,
+     "k": false
+    },
+    {
+     "w": "says",
+     "t0": 1.084,
+     "t1": 1.316,
+     "k": false
+    },
+    {
+     "w": "you're",
+     "t0": 1.316,
+     "t1": 1.549,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 1.549,
+     "t1": 1.704,
+     "k": true
+    },
+    {
+     "w": "charge",
+     "t0": 1.704,
+     "t1": 2.168,
+     "k": true
+    },
+    {
+     "w": "of",
+     "t0": 2.168,
+     "t1": 2.323,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.323,
+     "t1": 2.478,
+     "k": false
+    },
+    {
+     "w": "car.",
+     "t0": 2.478,
+     "t1": 2.71,
+     "k": false
+    },
+    {
+     "w": "You're",
+     "t0": 3.15,
+     "t1": 3.45,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 3.45,
+     "t1": 3.65,
+     "k": false
+    },
+    {
+     "w": "it,",
+     "t0": 3.65,
+     "t1": 3.85,
+     "k": false
+    },
+    {
+     "w": "with",
+     "t0": 4.09,
+     "t1": 4.34,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 4.34,
+     "t1": 4.507,
+     "k": false
+    },
+    {
+     "w": "keys,",
+     "t0": 4.507,
+     "t1": 4.84,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 5.08,
+     "t1": 5.268,
+     "k": false
+    },
+    {
+     "w": "over",
+     "t0": 5.268,
+     "t1": 5.518,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 5.518,
+     "t1": 5.643,
+     "k": false
+    },
+    {
+     "w": "limit.",
+     "t0": 5.643,
+     "t1": 5.955,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 16.975,
+   "dur": 6.855,
+   "say": "It's called drunk in charge. Ten penalty points, or a ban. And up to three months in prison.",
+   "words": [
+    {
+     "w": "It's",
+     "t0": 0.31,
+     "t1": 0.527,
+     "k": false
+    },
+    {
+     "w": "called",
+     "t0": 0.527,
+     "t1": 0.889,
+     "k": false
+    },
+    {
+     "w": "drunk",
+     "t0": 0.889,
+     "t1": 1.251,
+     "k": true
+    },
+    {
+     "w": "in",
+     "t0": 1.251,
+     "t1": 1.396,
+     "k": true
+    },
+    {
+     "w": "charge.",
+     "t0": 1.396,
+     "t1": 1.83,
+     "k": true
+    },
+    {
+     "w": "Ten",
+     "t0": 2.18,
+     "t1": 2.429,
+     "k": false
+    },
+    {
+     "w": "penalty",
+     "t0": 2.429,
+     "t1": 3.011,
+     "k": false
+    },
+    {
+     "w": "points,",
+     "t0": 3.011,
+     "t1": 3.51,
+     "k": false
+    },
+    {
+     "w": "or",
+     "t0": 3.63,
+     "t1": 3.83,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 3.83,
+     "t1": 4.03,
+     "k": false
+    },
+    {
+     "w": "ban.",
+     "t0": 4.03,
+     "t1": 4.33,
+     "k": false
+    },
+    {
+     "w": "And",
+     "t0": 4.66,
+     "t1": 4.845,
+     "k": false
+    },
+    {
+     "w": "up",
+     "t0": 4.845,
+     "t1": 4.969,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 4.969,
+     "t1": 5.154,
+     "k": false
+    },
+    {
+     "w": "three",
+     "t0": 5.154,
+     "t1": 5.402,
+     "k": true
+    },
+    {
+     "w": "months",
+     "t0": 5.402,
+     "t1": 5.711,
+     "k": true
+    },
+    {
+     "w": "in",
+     "t0": 5.711,
+     "t1": 5.834,
+     "k": false
+    },
+    {
+     "w": "prison.",
+     "t0": 5.834,
+     "t1": 6.205,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 23.83,
+   "dur": 3.905,
+   "say": "Even asleep, with the engine off, you can be charged.",
+   "words": [
+    {
+     "w": "Even",
+     "t0": 0.31,
+     "t1": 0.605,
+     "k": false
+    },
+    {
+     "w": "asleep,",
+     "t0": 0.605,
+     "t1": 0.96,
+     "k": false
+    },
+    {
+     "w": "with",
+     "t0": 1.29,
+     "t1": 1.509,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.509,
+     "t1": 1.655,
+     "k": false
+    },
+    {
+     "w": "engine",
+     "t0": 1.655,
+     "t1": 2.094,
+     "k": false
+    },
+    {
+     "w": "off,",
+     "t0": 2.094,
+     "t1": 2.24,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 2.45,
+     "t1": 2.648,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 2.648,
+     "t1": 2.846,
+     "k": true
+    },
+    {
+     "w": "be",
+     "t0": 2.846,
+     "t1": 3.043,
+     "k": false
+    },
+    {
+     "w": "charged.",
+     "t0": 3.043,
+     "t1": 3.505,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 27.735,
+   "dur": 2.045,
+   "say": "And it's not just tonight.",
+   "words": [
+    {
+     "w": "And",
+     "t0": 0.31,
+     "t1": 0.51,
+     "k": false
+    },
+    {
+     "w": "it's",
+     "t0": 0.51,
+     "t1": 0.71,
+     "k": false
+    },
+    {
+     "w": "not",
+     "t0": 0.71,
+     "t1": 0.911,
+     "k": false
+    },
+    {
+     "w": "just",
+     "t0": 0.911,
+     "t1": 1.244,
+     "k": false
+    },
+    {
+     "w": "tonight.",
+     "t0": 1.244,
+     "t1": 1.645,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 29.78,
+   "dur": 5.865,
+   "say": "The Highway Code warns you may still be unfit to drive the morning after drinking.",
+   "words": [
+    {
+     "w": "The",
+     "t0": 0.31,
+     "t1": 0.471,
+     "k": false
+    },
+    {
+     "w": "Highway",
+     "t0": 0.471,
+     "t1": 0.956,
+     "k": false
+    },
+    {
+     "w": "Code",
+     "t0": 0.956,
+     "t1": 1.279,
+     "k": false
+    },
+    {
+     "w": "warns",
+     "t0": 1.279,
+     "t1": 1.682,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 1.682,
+     "t1": 1.925,
+     "k": false
+    },
+    {
+     "w": "may",
+     "t0": 1.925,
+     "t1": 2.167,
+     "k": false
+    },
+    {
+     "w": "still",
+     "t0": 2.167,
+     "t1": 2.49,
+     "k": false
+    },
+    {
+     "w": "be",
+     "t0": 2.49,
+     "t1": 2.732,
+     "k": false
+    },
+    {
+     "w": "unfit",
+     "t0": 2.732,
+     "t1": 3.135,
+     "k": true
+    },
+    {
+     "w": "to",
+     "t0": 3.135,
+     "t1": 3.378,
+     "k": false
+    },
+    {
+     "w": "drive",
+     "t0": 3.378,
+     "t1": 3.781,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.781,
+     "t1": 3.943,
+     "k": false
+    },
+    {
+     "w": "morning",
+     "t0": 3.943,
+     "t1": 4.427,
+     "k": true
+    },
+    {
+     "w": "after",
+     "t0": 4.427,
+     "t1": 4.75,
+     "k": true
+    },
+    {
+     "w": "drinking.",
+     "t0": 4.75,
+     "t1": 5.315,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 35.645,
+   "dur": 7.295,
+   "say": "So after a night out, leave the car. Get a taxi or a lift, and collect it when you're sure you're fit to drive.",
+   "words": [
+    {
+     "w": "So",
+     "t0": 0.31,
+     "t1": 0.496,
+     "k": false
+    },
+    {
+     "w": "after",
+     "t0": 0.496,
+     "t1": 0.743,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 0.743,
+     "t1": 0.867,
+     "k": false
+    },
+    {
+     "w": "night",
+     "t0": 0.867,
+     "t1": 1.114,
+     "k": false
+    },
+    {
+     "w": "out,",
+     "t0": 1.114,
+     "t1": 1.3,
+     "k": false
+    },
+    {
+     "w": "leave",
+     "t0": 1.5,
+     "t1": 1.86,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.86,
+     "t1": 2.04,
+     "k": false
+    },
+    {
+     "w": "car.",
+     "t0": 2.04,
+     "t1": 2.31,
+     "k": false
+    },
+    {
+     "w": "Get",
+     "t0": 2.76,
+     "t1": 2.99,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 2.99,
+     "t1": 3.143,
+     "k": false
+    },
+    {
+     "w": "taxi",
+     "t0": 3.143,
+     "t1": 3.527,
+     "k": true
+    },
+    {
+     "w": "or",
+     "t0": 3.527,
+     "t1": 3.68,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 3.68,
+     "t1": 3.833,
+     "k": false
+    },
+    {
+     "w": "lift,",
+     "t0": 3.833,
+     "t1": 4.14,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 4.43,
+     "t1": 4.634,
+     "k": false
+    },
+    {
+     "w": "collect",
+     "t0": 4.634,
+     "t1": 5.043,
+     "k": false
+    },
+    {
+     "w": "it",
+     "t0": 5.043,
+     "t1": 5.179,
+     "k": false
+    },
+    {
+     "w": "when",
+     "t0": 5.179,
+     "t1": 5.383,
+     "k": false
+    },
+    {
+     "w": "you're",
+     "t0": 5.383,
+     "t1": 5.587,
+     "k": false
+    },
+    {
+     "w": "sure",
+     "t0": 5.587,
+     "t1": 5.792,
+     "k": false
+    },
+    {
+     "w": "you're",
+     "t0": 5.792,
+     "t1": 5.996,
+     "k": false
+    },
+    {
+     "w": "fit",
+     "t0": 5.996,
+     "t1": 6.2,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 6.2,
+     "t1": 6.405,
+     "k": false
+    },
+    {
+     "w": "drive.",
+     "t0": 6.405,
+     "t1": 6.745,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 42.94,
+   "dur": 7.525,
+   "say": "Quick quiz. Asleep in your parked car, over the limit, keys with you. Can you get points? A or B?",
+   "words": [
+    {
+     "w": "Quick",
+     "t0": 0.36,
+     "t1": 0.63,
+     "k": false
+    },
+    {
+     "w": "quiz.",
+     "t0": 0.63,
+     "t1": 0.9,
+     "k": false
+    },
+    {
+     "w": "Asleep",
+     "t0": 1.02,
+     "t1": 1.478,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 1.478,
+     "t1": 1.63,
+     "k": false
+    },
+    {
+     "w": "your",
+     "t0": 1.63,
+     "t1": 1.859,
+     "k": false
+    },
+    {
+     "w": "parked",
+     "t0": 1.859,
+     "t1": 2.241,
+     "k": false
+    },
+    {
+     "w": "car,",
+     "t0": 2.241,
+     "t1": 2.47,
+     "k": false
+    },
+    {
+     "w": "over",
+     "t0": 2.47,
+     "t1": 2.899,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.899,
+     "t1": 3.113,
+     "k": false
+    },
+    {
+     "w": "limit,",
+     "t0": 3.113,
+     "t1": 3.65,
+     "k": false
+    },
+    {
+     "w": "keys",
+     "t0": 4.0,
+     "t1": 4.132,
+     "k": false
+    },
+    {
+     "w": "with",
+     "t0": 4.132,
+     "t1": 4.231,
+     "k": false
+    },
+    {
+     "w": "you.",
+     "t0": 4.231,
+     "t1": 4.33,
+     "k": false
+    },
+    {
+     "w": "Can",
+     "t0": 4.45,
+     "t1": 4.546,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 4.546,
+     "t1": 4.642,
+     "k": false
+    },
+    {
+     "w": "get",
+     "t0": 4.642,
+     "t1": 4.738,
+     "k": false
+    },
+    {
+     "w": "points?",
+     "t0": 4.738,
+     "t1": 4.93,
+     "k": false
+    },
+    {
+     "w": "A",
+     "t0": 5.22,
+     "t1": 5.407,
+     "k": true
+    },
+    {
+     "w": "or",
+     "t0": 5.407,
+     "t1": 5.594,
+     "k": false
+    },
+    {
+     "w": "B?",
+     "t0": 5.594,
+     "t1": 5.875,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 50.465,
+   "dur": 4.405,
+   "say": "It's B. You can get ten points. Follow for more.",
+   "words": [
+    {
+     "w": "It's",
+     "t0": 0.26,
+     "t1": 0.488,
+     "k": false
+    },
+    {
+     "w": "B.",
+     "t0": 0.488,
+     "t1": 0.715,
+     "k": true
+    },
+    {
+     "w": "You",
+     "t0": 0.715,
+     "t1": 0.939,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 0.939,
+     "t1": 1.163,
+     "k": false
+    },
+    {
+     "w": "get",
+     "t0": 1.163,
+     "t1": 1.388,
+     "k": false
+    },
+    {
+     "w": "ten",
+     "t0": 1.388,
+     "t1": 1.612,
+     "k": false
+    },
+    {
+     "w": "points.",
+     "t0": 1.612,
+     "t1": 2.06,
+     "k": false
+    },
+    {
+     "w": "Follow",
+     "t0": 2.36,
+     "t1": 2.721,
+     "k": false
+    },
+    {
+     "w": "for",
+     "t0": 2.721,
+     "t1": 2.938,
+     "k": false
+    },
+    {
+     "w": "more.",
+     "t0": 2.938,
+     "t1": 3.155,
+     "k": false
+    }
+   ]
+  }
+ ]
+}

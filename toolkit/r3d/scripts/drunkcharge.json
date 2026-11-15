@@ -1,0 +1,52 @@
+[
+ {
+  "say": "You've had a few drinks, so you do the *sensible* thing. You sleep it off in your car.",
+  "lead": 0.1,
+  "hold": 0.35
+ },
+ {
+  "say": "Engine off. You're not driving. But you could still get *ten* *points* on your licence.",
+  "lead": 0.25,
+  "hold": 0.35
+ },
+ {
+  "say": "Because the law says you're *in* *charge* of the car. You're in it, with the keys, and over the limit.",
+  "lead": 0.25,
+  "hold": 0.35
+ },
+ {
+  "say": "It's called *drunk* *in* *charge.* Ten penalty points, or a ban. And up to *three* *months* in prison.",
+  "lead": 0.25,
+  "hold": 0.6
+ },
+ {
+  "say": "Even asleep, with the engine off, you *can* be charged.",
+  "lead": 0.25,
+  "hold": 0.35
+ },
+ {
+  "say": "And it's not just *tonight.*",
+  "lead": 0.25,
+  "hold": 0.35
+ },
+ {
+  "say": "The Highway Code warns you may still be *unfit* to drive the *morning* *after* drinking.",
+  "lead": 0.25,
+  "hold": 0.5
+ },
+ {
+  "say": "So after a night out, leave the car. Get a *taxi* or a lift, and collect it when you're sure you're fit to drive.",
+  "lead": 0.25,
+  "hold": 0.5
+ },
+ {
+  "say": "Quick quiz. Asleep in your parked car, over the limit, keys with you. Can you get points? *A* or *B?*",
+  "lead": 0.3,
+  "hold": 1.6
+ },
+ {
+  "say": "It's *B.* You can get ten points. Follow for more.",
+  "lead": 0.2,
+  "hold": 1.2
+ }
+]
