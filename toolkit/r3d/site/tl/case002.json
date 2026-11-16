@@ -1,0 +1,1699 @@
+{
+ "total": 98.91,
+ "segments": [
+  {
+   "start": 0.0,
+   "dur": 5.855,
+   "say": "This muppet is blocking the empty lane on purpose. And he thinks Gary's the one in the wrong.",
+   "words": [
+    {
+     "w": "This",
+     "t0": 0.16,
+     "t1": 0.402,
+     "k": false
+    },
+    {
+     "w": "muppet",
+     "t0": 0.402,
+     "t1": 0.805,
+     "k": true
+    },
+    {
+     "w": "is",
+     "t0": 0.805,
+     "t1": 0.966,
+     "k": false
+    },
+    {
+     "w": "blocking",
+     "t0": 0.966,
+     "t1": 1.449,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.449,
+     "t1": 1.61,
+     "k": false
+    },
+    {
+     "w": "empty",
+     "t0": 1.61,
+     "t1": 2.013,
+     "k": false
+    },
+    {
+     "w": "lane",
+     "t0": 2.013,
+     "t1": 2.335,
+     "k": false
+    },
+    {
+     "w": "on",
+     "t0": 2.335,
+     "t1": 2.497,
+     "k": false
+    },
+    {
+     "w": "purpose.",
+     "t0": 2.497,
+     "t1": 2.98,
+     "k": false
+    },
+    {
+     "w": "And",
+     "t0": 3.35,
+     "t1": 3.57,
+     "k": false
+    },
+    {
+     "w": "he",
+     "t0": 3.57,
+     "t1": 3.79,
+     "k": false
+    },
+    {
+     "w": "thinks",
+     "t0": 3.79,
+     "t1": 4.157,
+     "k": false
+    },
+    {
+     "w": "Gary's",
+     "t0": 4.157,
+     "t1": 4.524,
+     "k": true
+    },
+    {
+     "w": "the",
+     "t0": 4.524,
+     "t1": 4.671,
+     "k": false
+    },
+    {
+     "w": "one",
+     "t0": 4.671,
+     "t1": 4.891,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 4.891,
+     "t1": 5.038,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 5.038,
+     "t1": 5.185,
+     "k": false
+    },
+    {
+     "w": "wrong.",
+     "t0": 5.185,
+     "t1": 5.405,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 5.855,
+   "dur": 2.395,
+   "say": "Case two. The lane closed.",
+   "words": [
+    {
+     "w": "Case",
+     "t0": 0.26,
+     "t1": 0.631,
+     "k": false
+    },
+    {
+     "w": "two.",
+     "t0": 0.631,
+     "t1": 0.91,
+     "k": false
+    },
+    {
+     "w": "The",
+     "t0": 1.05,
+     "t1": 1.216,
+     "k": false
+    },
+    {
+     "w": "lane",
+     "t0": 1.216,
+     "t1": 1.547,
+     "k": false
+    },
+    {
+     "w": "closed.",
+     "t0": 1.548,
+     "t1": 2.045,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 8.25,
+   "dur": 5.605,
+   "say": "This is Gary. Dual carriageway, roadworks ahead, and the left lane is closing.",
+   "words": [
+    {
+     "w": "This",
+     "t0": 0.26,
+     "t1": 0.533,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 0.533,
+     "t1": 0.716,
+     "k": false
+    },
+    {
+     "w": "Gary.",
+     "t0": 0.716,
+     "t1": 1.08,
+     "k": false
+    },
+    {
+     "w": "Dual",
+     "t0": 1.46,
+     "t1": 1.787,
+     "k": false
+    },
+    {
+     "w": "carriageway,",
+     "t0": 1.787,
+     "t1": 2.277,
+     "k": false
+    },
+    {
+     "w": "roadworks",
+     "t0": 2.277,
+     "t1": 3.096,
+     "k": false
+    },
+    {
+     "w": "ahead,",
+     "t0": 3.096,
+     "t1": 3.46,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 3.77,
+     "t1": 3.973,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.973,
+     "t1": 4.107,
+     "k": false
+    },
+    {
+     "w": "left",
+     "t0": 4.107,
+     "t1": 4.378,
+     "k": true
+    },
+    {
+     "w": "lane",
+     "t0": 4.378,
+     "t1": 4.648,
+     "k": true
+    },
+    {
+     "w": "is",
+     "t0": 4.648,
+     "t1": 4.783,
+     "k": false
+    },
+    {
+     "w": "closing.",
+     "t0": 4.783,
+     "t1": 5.255,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 13.855,
+   "dur": 4.895,
+   "say": "The right lane is already a queue. Stop, start, ten miles an hour.",
+   "words": [
+    {
+     "w": "The",
+     "t0": 0.26,
+     "t1": 0.442,
+     "k": false
+    },
+    {
+     "w": "right",
+     "t0": 0.442,
+     "t1": 0.805,
+     "k": false
+    },
+    {
+     "w": "lane",
+     "t0": 0.805,
+     "t1": 1.168,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 1.168,
+     "t1": 1.35,
+     "k": false
+    },
+    {
+     "w": "already",
+     "t0": 1.35,
+     "t1": 1.985,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 1.985,
+     "t1": 2.167,
+     "k": false
+    },
+    {
+     "w": "queue.",
+     "t0": 2.167,
+     "t1": 2.53,
+     "k": true
+    },
+    {
+     "w": "Stop,",
+     "t0": 2.81,
+     "t1": 3.23,
+     "k": false
+    },
+    {
+     "w": "start,",
+     "t0": 3.41,
+     "t1": 3.379,
+     "k": false
+    },
+    {
+     "w": "ten",
+     "t0": 3.379,
+     "t1": 3.648,
+     "k": false
+    },
+    {
+     "w": "miles",
+     "t0": 3.648,
+     "t1": 4.097,
+     "k": false
+    },
+    {
+     "w": "an",
+     "t0": 4.097,
+     "t1": 4.276,
+     "k": false
+    },
+    {
+     "w": "hour.",
+     "t0": 4.276,
+     "t1": 4.545,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 18.75,
+   "dur": 6.815,
+   "say": "But the signs say use both lanes, then merge in turn. So Gary stays left, nice and slow.",
+   "words": [
+    {
+     "w": "But",
+     "t0": 0.26,
+     "t1": 0.478,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 0.478,
+     "t1": 0.623,
+     "k": false
+    },
+    {
+     "w": "signs",
+     "t0": 0.623,
+     "t1": 0.987,
+     "k": false
+    },
+    {
+     "w": "say",
+     "t0": 0.987,
+     "t1": 1.205,
+     "k": false
+    },
+    {
+     "w": "use",
+     "t0": 1.205,
+     "t1": 1.496,
+     "k": true
+    },
+    {
+     "w": "both",
+     "t0": 1.496,
+     "t1": 1.787,
+     "k": true
+    },
+    {
+     "w": "lanes,",
+     "t0": 1.787,
+     "t1": 2.15,
+     "k": true
+    },
+    {
+     "w": "then",
+     "t0": 2.46,
+     "t1": 2.689,
+     "k": false
+    },
+    {
+     "w": "merge",
+     "t0": 2.689,
+     "t1": 3.071,
+     "k": true
+    },
+    {
+     "w": "in",
+     "t0": 3.071,
+     "t1": 3.224,
+     "k": true
+    },
+    {
+     "w": "turn.",
+     "t0": 3.224,
+     "t1": 3.53,
+     "k": true
+    },
+    {
+     "w": "So",
+     "t0": 3.94,
+     "t1": 4.173,
+     "k": false
+    },
+    {
+     "w": "Gary",
+     "t0": 4.173,
+     "t1": 4.482,
+     "k": false
+    },
+    {
+     "w": "stays",
+     "t0": 4.483,
+     "t1": 4.87,
+     "k": false
+    },
+    {
+     "w": "left,",
+     "t0": 4.87,
+     "t1": 5.18,
+     "k": false
+    },
+    {
+     "w": "nice",
+     "t0": 5.4,
+     "t1": 5.787,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 5.787,
+     "t1": 6.078,
+     "k": false
+    },
+    {
+     "w": "slow.",
+     "t0": 6.078,
+     "t1": 6.465,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 25.565,
+   "dur": 4.825,
+   "say": "Meet Darren. White pickup. He queued early, and he is not happy about it.",
+   "words": [
+    {
+     "w": "Meet",
+     "t0": 0.26,
+     "t1": 0.7,
+     "k": false
+    },
+    {
+     "w": "Darren.",
+     "t0": 0.7,
+     "t1": 1.25,
+     "k": false
+    },
+    {
+     "w": "White",
+     "t0": 1.38,
+     "t1": 1.531,
+     "k": false
+    },
+    {
+     "w": "pickup.",
+     "t0": 1.531,
+     "t1": 1.72,
+     "k": false
+    },
+    {
+     "w": "He",
+     "t0": 2.19,
+     "t1": 2.395,
+     "k": false
+    },
+    {
+     "w": "queued",
+     "t0": 2.395,
+     "t1": 2.737,
+     "k": false
+    },
+    {
+     "w": "early,",
+     "t0": 2.737,
+     "t1": 3.01,
+     "k": true
+    },
+    {
+     "w": "and",
+     "t0": 3.14,
+     "t1": 3.322,
+     "k": false
+    },
+    {
+     "w": "he",
+     "t0": 3.322,
+     "t1": 3.504,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 3.504,
+     "t1": 3.625,
+     "k": false
+    },
+    {
+     "w": "not",
+     "t0": 3.625,
+     "t1": 3.808,
+     "k": false
+    },
+    {
+     "w": "happy",
+     "t0": 3.808,
+     "t1": 4.05,
+     "k": false
+    },
+    {
+     "w": "about",
+     "t0": 4.05,
+     "t1": 4.354,
+     "k": false
+    },
+    {
+     "w": "it.",
+     "t0": 4.354,
+     "t1": 4.475,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 30.39,
+   "dur": 5.225,
+   "say": "He sees Gary coming up the empty lane, and swings his pickup right across it.",
+   "words": [
+    {
+     "w": "He",
+     "t0": 0.26,
+     "t1": 0.488,
+     "k": false
+    },
+    {
+     "w": "sees",
+     "t0": 0.488,
+     "t1": 0.791,
+     "k": false
+    },
+    {
+     "w": "Gary",
+     "t0": 0.791,
+     "t1": 1.094,
+     "k": false
+    },
+    {
+     "w": "coming",
+     "t0": 1.094,
+     "t1": 1.474,
+     "k": false
+    },
+    {
+     "w": "up",
+     "t0": 1.474,
+     "t1": 1.626,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.626,
+     "t1": 1.777,
+     "k": false
+    },
+    {
+     "w": "empty",
+     "t0": 1.777,
+     "t1": 2.157,
+     "k": false
+    },
+    {
+     "w": "lane,",
+     "t0": 2.157,
+     "t1": 2.46,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 2.79,
+     "t1": 3.022,
+     "k": false
+    },
+    {
+     "w": "swings",
+     "t0": 3.022,
+     "t1": 3.408,
+     "k": false
+    },
+    {
+     "w": "his",
+     "t0": 3.408,
+     "t1": 3.639,
+     "k": false
+    },
+    {
+     "w": "pickup",
+     "t0": 3.639,
+     "t1": 4.026,
+     "k": false
+    },
+    {
+     "w": "right",
+     "t0": 4.026,
+     "t1": 4.334,
+     "k": false
+    },
+    {
+     "w": "across",
+     "t0": 4.334,
+     "t1": 4.721,
+     "k": true
+    },
+    {
+     "w": "it.",
+     "t0": 4.721,
+     "t1": 4.875,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 35.615,
+   "dur": 3.405,
+   "say": "Window down. Get in the queue, you queue jumper!",
+   "words": [
+    {
+     "w": "Window",
+     "t0": 0.26,
+     "t1": 0.734,
+     "k": false
+    },
+    {
+     "w": "down.",
+     "t0": 0.734,
+     "t1": 1.05,
+     "k": false
+    },
+    {
+     "w": "Get",
+     "t0": 1.32,
+     "t1": 1.487,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 1.487,
+     "t1": 1.598,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.598,
+     "t1": 1.71,
+     "k": false
+    },
+    {
+     "w": "queue,",
+     "t0": 1.71,
+     "t1": 1.932,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 1.933,
+     "t1": 2.168,
+     "k": false
+    },
+    {
+     "w": "queue",
+     "t0": 2.168,
+     "t1": 2.483,
+     "k": true
+    },
+    {
+     "w": "jumper!",
+     "t0": 2.483,
+     "t1": 2.955,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 39.02,
+   "dur": 2.795,
+   "say": "Gary doesn't argue. He just waits.",
+   "words": [
+    {
+     "w": "Gary",
+     "t0": 0.26,
+     "t1": 0.53,
+     "k": false
+    },
+    {
+     "w": "doesn't",
+     "t0": 0.53,
+     "t1": 0.935,
+     "k": false
+    },
+    {
+     "w": "argue.",
+     "t0": 0.935,
+     "t1": 1.34,
+     "k": false
+    },
+    {
+     "w": "He",
+     "t0": 1.59,
+     "t1": 1.787,
+     "k": false
+    },
+    {
+     "w": "just",
+     "t0": 1.787,
+     "t1": 2.116,
+     "k": false
+    },
+    {
+     "w": "waits.",
+     "t0": 2.116,
+     "t1": 2.445,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 41.815,
+   "dur": 4.375,
+   "say": "Darren creeps forward, then stamps on the brakes. For no reason.",
+   "words": [
+    {
+     "w": "Darren",
+     "t0": 0.26,
+     "t1": 0.598,
+     "k": false
+    },
+    {
+     "w": "creeps",
+     "t0": 0.598,
+     "t1": 1.004,
+     "k": false
+    },
+    {
+     "w": "forward,",
+     "t0": 1.004,
+     "t1": 1.41,
+     "k": false
+    },
+    {
+     "w": "then",
+     "t0": 1.6,
+     "t1": 1.808,
+     "k": false
+    },
+    {
+     "w": "stamps",
+     "t0": 1.808,
+     "t1": 2.225,
+     "k": true
+    },
+    {
+     "w": "on",
+     "t0": 2.225,
+     "t1": 2.364,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.364,
+     "t1": 2.503,
+     "k": false
+    },
+    {
+     "w": "brakes.",
+     "t0": 2.503,
+     "t1": 2.92,
+     "k": false
+    },
+    {
+     "w": "For",
+     "t0": 3.26,
+     "t1": 3.451,
+     "k": false
+    },
+    {
+     "w": "no",
+     "t0": 3.451,
+     "t1": 3.643,
+     "k": false
+    },
+    {
+     "w": "reason.",
+     "t0": 3.643,
+     "t1": 4.025,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 46.19,
+   "dur": 4.585,
+   "say": "Gary's left a gap, so he stops in time. Then Darren does it again.",
+   "words": [
+    {
+     "w": "Gary's",
+     "t0": 0.26,
+     "t1": 0.567,
+     "k": false
+    },
+    {
+     "w": "left",
+     "t0": 0.567,
+     "t1": 0.813,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 0.813,
+     "t1": 0.936,
+     "k": false
+    },
+    {
+     "w": "gap,",
+     "t0": 0.936,
+     "t1": 1.12,
+     "k": false
+    },
+    {
+     "w": "so",
+     "t0": 1.35,
+     "t1": 1.558,
+     "k": false
+    },
+    {
+     "w": "he",
+     "t0": 1.558,
+     "t1": 1.766,
+     "k": false
+    },
+    {
+     "w": "stops",
+     "t0": 1.766,
+     "t1": 2.114,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 2.114,
+     "t1": 2.252,
+     "k": false
+    },
+    {
+     "w": "time.",
+     "t0": 2.252,
+     "t1": 2.53,
+     "k": false
+    },
+    {
+     "w": "Then",
+     "t0": 2.9,
+     "t1": 3.136,
+     "k": false
+    },
+    {
+     "w": "Darren",
+     "t0": 3.136,
+     "t1": 3.528,
+     "k": false
+    },
+    {
+     "w": "does",
+     "t0": 3.528,
+     "t1": 3.764,
+     "k": false
+    },
+    {
+     "w": "it",
+     "t0": 3.764,
+     "t1": 3.921,
+     "k": false
+    },
+    {
+     "w": "again.",
+     "t0": 3.921,
+     "t1": 4.235,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 50.775,
+   "dur": 4.065,
+   "say": "What Darren hasn't noticed is the grey car, two cars back.",
+   "words": [
+    {
+     "w": "What",
+     "t0": 0.26,
+     "t1": 0.487,
+     "k": false
+    },
+    {
+     "w": "Darren",
+     "t0": 0.487,
+     "t1": 0.865,
+     "k": false
+    },
+    {
+     "w": "hasn't",
+     "t0": 0.865,
+     "t1": 1.319,
+     "k": false
+    },
+    {
+     "w": "noticed",
+     "t0": 1.319,
+     "t1": 1.848,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 1.848,
+     "t1": 1.999,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.999,
+     "t1": 2.151,
+     "k": false
+    },
+    {
+     "w": "grey",
+     "t0": 2.151,
+     "t1": 2.453,
+     "k": false
+    },
+    {
+     "w": "car,",
+     "t0": 2.453,
+     "t1": 2.68,
+     "k": false
+    },
+    {
+     "w": "two",
+     "t0": 2.91,
+     "t1": 3.152,
+     "k": false
+    },
+    {
+     "w": "cars",
+     "t0": 3.152,
+     "t1": 3.474,
+     "k": false
+    },
+    {
+     "w": "back.",
+     "t0": 3.474,
+     "t1": 3.715,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 54.84,
+   "dur": 4.415,
+   "say": "Blue lights in the grille. Unmarked police. And they've filmed the lot.",
+   "words": [
+    {
+     "w": "Blue",
+     "t0": 0.26,
+     "t1": 0.512,
+     "k": false
+    },
+    {
+     "w": "lights",
+     "t0": 0.512,
+     "t1": 0.826,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 0.826,
+     "t1": 0.952,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 0.952,
+     "t1": 1.078,
+     "k": false
+    },
+    {
+     "w": "grille.",
+     "t0": 1.078,
+     "t1": 1.33,
+     "k": true
+    },
+    {
+     "w": "Unmarked",
+     "t0": 1.53,
+     "t1": 2.133,
+     "k": true
+    },
+    {
+     "w": "police.",
+     "t0": 2.133,
+     "t1": 2.65,
+     "k": true
+    },
+    {
+     "w": "And",
+     "t0": 2.94,
+     "t1": 3.139,
+     "k": false
+    },
+    {
+     "w": "they've",
+     "t0": 3.139,
+     "t1": 3.403,
+     "k": false
+    },
+    {
+     "w": "filmed",
+     "t0": 3.403,
+     "t1": 3.734,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.734,
+     "t1": 3.866,
+     "k": false
+    },
+    {
+     "w": "lot.",
+     "t0": 3.866,
+     "t1": 4.065,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 59.255,
+   "dur": 5.525,
+   "say": "Darren gets pulled over. And Gary merges in turn, exactly like the signs said.",
+   "words": [
+    {
+     "w": "Darren",
+     "t0": 0.26,
+     "t1": 0.628,
+     "k": false
+    },
+    {
+     "w": "gets",
+     "t0": 0.628,
+     "t1": 0.922,
+     "k": false
+    },
+    {
+     "w": "pulled",
+     "t0": 0.922,
+     "t1": 1.216,
+     "k": false
+    },
+    {
+     "w": "over.",
+     "t0": 1.216,
+     "t1": 1.51,
+     "k": false
+    },
+    {
+     "w": "And",
+     "t0": 1.86,
+     "t1": 2.088,
+     "k": false
+    },
+    {
+     "w": "Gary",
+     "t0": 2.088,
+     "t1": 2.392,
+     "k": false
+    },
+    {
+     "w": "merges",
+     "t0": 2.392,
+     "t1": 2.924,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 2.924,
+     "t1": 3.076,
+     "k": false
+    },
+    {
+     "w": "turn,",
+     "t0": 3.076,
+     "t1": 3.38,
+     "k": false
+    },
+    {
+     "w": "exactly",
+     "t0": 3.63,
+     "t1": 4.192,
+     "k": false
+    },
+    {
+     "w": "like",
+     "t0": 4.192,
+     "t1": 4.473,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 4.473,
+     "t1": 4.613,
+     "k": false
+    },
+    {
+     "w": "signs",
+     "t0": 4.613,
+     "t1": 4.964,
+     "k": false
+    },
+    {
+     "w": "said.",
+     "t0": 4.964,
+     "t1": 5.175,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 64.78,
+   "dur": 1.615,
+   "say": "So, who's right?",
+   "words": [
+    {
+     "w": "So,",
+     "t0": 0.26,
+     "t1": 0.504,
+     "k": false
+    },
+    {
+     "w": "who's",
+     "t0": 0.504,
+     "t1": 0.885,
+     "k": false
+    },
+    {
+     "w": "right?",
+     "t0": 0.885,
+     "t1": 1.265,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 66.395,
+   "dur": 5.525,
+   "say": "Rule two eight eight. Where lanes are restricted by roadworks, merge in turn.",
+   "words": [
+    {
+     "w": "Rule",
+     "t0": 0.26,
+     "t1": 0.629,
+     "k": false
+    },
+    {
+     "w": "two",
+     "t0": 0.629,
+     "t1": 0.906,
+     "k": false
+    },
+    {
+     "w": "eight",
+     "t0": 0.906,
+     "t1": 1.183,
+     "k": false
+    },
+    {
+     "w": "eight.",
+     "t0": 1.183,
+     "t1": 1.46,
+     "k": false
+    },
+    {
+     "w": "Where",
+     "t0": 1.86,
+     "t1": 2.053,
+     "k": false
+    },
+    {
+     "w": "lanes",
+     "t0": 2.053,
+     "t1": 2.375,
+     "k": false
+    },
+    {
+     "w": "are",
+     "t0": 2.375,
+     "t1": 2.504,
+     "k": false
+    },
+    {
+     "w": "restricted",
+     "t0": 2.504,
+     "t1": 3.148,
+     "k": false
+    },
+    {
+     "w": "by",
+     "t0": 3.148,
+     "t1": 3.341,
+     "k": false
+    },
+    {
+     "w": "roadworks,",
+     "t0": 3.341,
+     "t1": 3.92,
+     "k": false
+    },
+    {
+     "w": "merge",
+     "t0": 4.12,
+     "t1": 4.6,
+     "k": true
+    },
+    {
+     "w": "in",
+     "t0": 4.6,
+     "t1": 4.791,
+     "k": true
+    },
+    {
+     "w": "turn.",
+     "t0": 4.791,
+     "t1": 5.175,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 71.92,
+   "dur": 9.035,
+   "say": "Rule one three four says that's recommended when traffic is moving at a very low speed, like approaching roadworks. Not at high speed.",
+   "words": [
+    {
+     "w": "Rule",
+     "t0": 0.26,
+     "t1": 0.588,
+     "k": false
+    },
+    {
+     "w": "one",
+     "t0": 0.588,
+     "t1": 0.833,
+     "k": false
+    },
+    {
+     "w": "three",
+     "t0": 0.833,
+     "t1": 1.161,
+     "k": false
+    },
+    {
+     "w": "four",
+     "t0": 1.161,
+     "t1": 1.406,
+     "k": false
+    },
+    {
+     "w": "says",
+     "t0": 1.406,
+     "t1": 1.652,
+     "k": false
+    },
+    {
+     "w": "that's",
+     "t0": 1.652,
+     "t1": 1.979,
+     "k": false
+    },
+    {
+     "w": "recommended",
+     "t0": 1.979,
+     "t1": 2.798,
+     "k": false
+    },
+    {
+     "w": "when",
+     "t0": 2.798,
+     "t1": 3.044,
+     "k": false
+    },
+    {
+     "w": "traffic",
+     "t0": 3.044,
+     "t1": 3.535,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 3.535,
+     "t1": 3.699,
+     "k": false
+    },
+    {
+     "w": "moving",
+     "t0": 3.699,
+     "t1": 4.19,
+     "k": false
+    },
+    {
+     "w": "at",
+     "t0": 4.19,
+     "t1": 4.354,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 4.354,
+     "t1": 4.518,
+     "k": false
+    },
+    {
+     "w": "very",
+     "t0": 4.518,
+     "t1": 4.845,
+     "k": true
+    },
+    {
+     "w": "low",
+     "t0": 4.845,
+     "t1": 5.091,
+     "k": true
+    },
+    {
+     "w": "speed,",
+     "t0": 5.091,
+     "t1": 5.5,
+     "k": false
+    },
+    {
+     "w": "like",
+     "t0": 5.84,
+     "t1": 6.089,
+     "k": false
+    },
+    {
+     "w": "approaching",
+     "t0": 6.089,
+     "t1": 6.65,
+     "k": false
+    },
+    {
+     "w": "roadworks.",
+     "t0": 6.65,
+     "t1": 7.21,
+     "k": false
+    },
+    {
+     "w": "Not",
+     "t0": 7.67,
+     "t1": 7.904,
+     "k": false
+    },
+    {
+     "w": "at",
+     "t0": 7.904,
+     "t1": 8.06,
+     "k": false
+    },
+    {
+     "w": "high",
+     "t0": 8.06,
+     "t1": 8.295,
+     "k": false
+    },
+    {
+     "w": "speed.",
+     "t0": 8.295,
+     "t1": 8.685,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 80.955,
+   "dur": 5.095,
+   "say": "Gary used both lanes, slowly, like the signs said. Gary, not guilty.",
+   "words": [
+    {
+     "w": "Gary",
+     "t0": 0.26,
+     "t1": 0.614,
+     "k": false
+    },
+    {
+     "w": "used",
+     "t0": 0.614,
+     "t1": 1.057,
+     "k": false
+    },
+    {
+     "w": "both",
+     "t0": 1.057,
+     "t1": 1.411,
+     "k": false
+    },
+    {
+     "w": "lanes,",
+     "t0": 1.411,
+     "t1": 1.854,
+     "k": false
+    },
+    {
+     "w": "slowly,",
+     "t0": 1.854,
+     "t1": 2.406,
+     "k": false
+    },
+    {
+     "w": "like",
+     "t0": 2.406,
+     "t1": 2.613,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.613,
+     "t1": 2.716,
+     "k": false
+    },
+    {
+     "w": "signs",
+     "t0": 2.716,
+     "t1": 2.975,
+     "k": false
+    },
+    {
+     "w": "said.",
+     "t0": 2.975,
+     "t1": 3.13,
+     "k": false
+    },
+    {
+     "w": "Gary,",
+     "t0": 3.57,
+     "t1": 4.17,
+     "k": false
+    },
+    {
+     "w": "not",
+     "t0": 4.31,
+     "t1": 4.473,
+     "k": true
+    },
+    {
+     "w": "guilty.",
+     "t0": 4.473,
+     "t1": 4.745,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 86.05,
+   "dur": 8.405,
+   "say": "Darren? Blocking a lane and brake checking can be careless driving. That's a hundred pound fine and three points. In court, up to nine.",
+   "words": [
+    {
+     "w": "Darren?",
+     "t0": 0.26,
+     "t1": 0.595,
+     "k": false
+    },
+    {
+     "w": "Blocking",
+     "t0": 0.595,
+     "t1": 0.975,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 0.975,
+     "t1": 1.101,
+     "k": false
+    },
+    {
+     "w": "lane",
+     "t0": 1.101,
+     "t1": 1.354,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 1.354,
+     "t1": 1.544,
+     "k": false
+    },
+    {
+     "w": "brake",
+     "t0": 1.544,
+     "t1": 1.86,
+     "k": false
+    },
+    {
+     "w": "checking",
+     "t0": 1.86,
+     "t1": 2.239,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 2.239,
+     "t1": 2.429,
+     "k": false
+    },
+    {
+     "w": "be",
+     "t0": 2.429,
+     "t1": 2.618,
+     "k": false
+    },
+    {
+     "w": "careless",
+     "t0": 2.618,
+     "t1": 2.997,
+     "k": true
+    },
+    {
+     "w": "driving.",
+     "t0": 2.997,
+     "t1": 3.44,
+     "k": true
+    },
+    {
+     "w": "That's",
+     "t0": 3.84,
+     "t1": 4.214,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 4.214,
+     "t1": 4.401,
+     "k": false
+    },
+    {
+     "w": "hundred",
+     "t0": 4.401,
+     "t1": 5.055,
+     "k": false
+    },
+    {
+     "w": "pound",
+     "t0": 5.055,
+     "t1": 5.522,
+     "k": false
+    },
+    {
+     "w": "fine",
+     "t0": 5.522,
+     "t1": 5.895,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 5.895,
+     "t1": 6.176,
+     "k": false
+    },
+    {
+     "w": "three",
+     "t0": 6.176,
+     "t1": 6.549,
+     "k": true
+    },
+    {
+     "w": "points.",
+     "t0": 6.549,
+     "t1": 7.11,
+     "k": true
+    },
+    {
+     "w": "In",
+     "t0": 7.36,
+     "t1": 7.371,
+     "k": false
+    },
+    {
+     "w": "court,",
+     "t0": 7.371,
+     "t1": 7.394,
+     "k": false
+    },
+    {
+     "w": "up",
+     "t0": 7.394,
+     "t1": 7.541,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 7.541,
+     "t1": 7.761,
+     "k": false
+    },
+    {
+     "w": "nine.",
+     "t0": 7.761,
+     "t1": 8.055,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 94.455,
+   "dur": 4.455,
+   "say": "Fair, or too soft? Tell me below. Follow for case three.",
+   "words": [
+    {
+     "w": "Fair,",
+     "t0": 0.26,
+     "t1": 0.481,
+     "k": false
+    },
+    {
+     "w": "or",
+     "t0": 0.481,
+     "t1": 0.67,
+     "k": false
+    },
+    {
+     "w": "too",
+     "t0": 0.67,
+     "t1": 0.953,
+     "k": false
+    },
+    {
+     "w": "soft?",
+     "t0": 0.953,
+     "t1": 1.33,
+     "k": false
+    },
+    {
+     "w": "Tell",
+     "t0": 1.56,
+     "t1": 1.773,
+     "k": false
+    },
+    {
+     "w": "me",
+     "t0": 1.773,
+     "t1": 1.985,
+     "k": false
+    },
+    {
+     "w": "below.",
+     "t0": 1.985,
+     "t1": 2.34,
+     "k": false
+    },
+    {
+     "w": "Follow",
+     "t0": 2.63,
+     "t1": 2.997,
+     "k": false
+    },
+    {
+     "w": "for",
+     "t0": 2.997,
+     "t1": 3.218,
+     "k": false
+    },
+    {
+     "w": "case",
+     "t0": 3.218,
+     "t1": 3.511,
+     "k": false
+    },
+    {
+     "w": "three.",
+     "t0": 3.511,
+     "t1": 3.805,
+     "k": false
+    }
+   ]
+  }
+ ]
+}

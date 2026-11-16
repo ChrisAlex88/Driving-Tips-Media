@@ -1,0 +1,102 @@
+[
+ {
+  "say": "This *muppet* is blocking the empty lane on purpose. And he thinks *Gary's* the one in the wrong.",
+  "lead": 0.1,
+  "hold": 0.4
+ },
+ {
+  "say": "Case two. The lane *closed.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "This is Gary. Dual carriageway, roadworks ahead, and the *left* *lane* is closing.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "The right lane is already a *queue.* Stop, start, ten miles an hour.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "But the signs say *use* *both* *lanes,* then *merge* *in* *turn.* So Gary stays left, nice and slow.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Meet Darren. White pickup. He queued *early,* and he is not happy about it.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "He sees Gary coming up the empty lane, and swings his pickup right *across* it.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Window down. Get in the queue, you *queue* *jumper!*",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "Gary doesn't argue. He just *waits.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Darren creeps forward, then *stamps* on the brakes. For no reason.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Gary's left a gap, so he stops in time. Then Darren does it *again.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "What Darren hasn't noticed is the grey car, two cars back.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Blue lights in the *grille.* *Unmarked* *police.* And they've filmed the lot.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Darren gets pulled over. And Gary merges in turn, exactly like the signs said.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "So, who's *right?*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Rule two eight eight. Where lanes are restricted by roadworks, *merge* *in* *turn.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Rule one three four says that's recommended when traffic is moving at a *very* *low* speed, like approaching roadworks. Not at high speed.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Gary used both lanes, slowly, like the signs said. Gary, *not* *guilty.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Darren? Blocking a lane and brake checking can be *careless* *driving.* That's a hundred pound fine and *three* *points.* In court, up to *nine.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Fair, or too soft? Tell me below. Follow for case three.",
+  "lead": 0.2,
+  "hold": 0.6
+ }
+]

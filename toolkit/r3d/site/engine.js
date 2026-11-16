@@ -506,3 +506,107 @@ export function addFace(p) {
   p.expr('neutral'); return p;
 }
 export function hoodie(p, col = '#d62828') { p.torso.children[0].material = mat(col, { r: .85 }); [p.shL, p.shR].forEach(s => s.children[0].material = mat(col, { r: .85 })); const hd = new THREE.Mesh(new THREE.TorusGeometry(0.16, 0.06, 8, 18, Math.PI * 1.2), mat(col, { r: .85 })); hd.position.set(0, 0.64, -0.06); hd.rotation.set(Math.PI / 2 + 0.3, 0, Math.PI * 0.4); p.torso.add(hd); return p; }
+
+// ================================================================ v3: roadworks / dual carriageway kit
+// pickup truck (front at +z), same API as Car: set/place/brake/world, glass, seat for a driver
+export class Pickup {
+  constructor(col = '#eef0f2', o = {}) {
+    const g = this.g = new THREE.Group(); scene.add(g);
+    const body = mat(col, { r: .35, m: .15 }), dark = mat('#15171b', { r: .6 }), trim = mat('#1b1d21', { r: .5 }), chrome = mat('#cfd4da', { m: .8, r: .25 });
+    rbox(1.94, 0.62, 1.55, 0.12, body, V(0, 0.92, 1.85), g);                                  // bonnet
+    for (const sx of [-1, 1]) rbox(0.12, 0.62, 1.6, 0.05, body, V(sx * 0.91, 0.92, 0.45), g);  // cab sides (open cabin)
+    box(1.75, 0.06, 1.6, dark, V(0, 0.66, 0.45), g, { cast: false });
+    rbox(1.94, 0.62, 2.35, 0.1, body, V(0, 0.92, -1.45), g);                                  // bed lower
+    box(1.7, 0.04, 2.15, mat('#2a2c30', { r: .9 }), V(0, 1.24, -1.45), g, { cast: false });   // bed floor
+    for (const sx of [-1, 1]) rbox(0.1, 0.36, 2.35, 0.03, body, V(sx * 0.92, 1.4, -1.45), g);
+    rbox(1.94, 0.36, 0.1, 0.03, body, V(0, 1.4, -2.58), g); rbox(1.94, 0.36, 0.1, 0.03, body, V(0, 1.4, -0.32), g);
+    this.glass = new THREE.MeshStandardMaterial({ color: 0x0b0e14, roughness: 0.12, metalness: 0.3, transparent: true, opacity: 0.85, side: THREE.DoubleSide, depthWrite: false });
+    const gl = mesh(new THREE.BoxGeometry(1.74, 0.6, 1.45), this.glass, V(0, 1.53, 0.45), g, { cast: false, recv: false }); gl.renderOrder = 2;
+    rbox(1.84, 0.1, 1.6, 0.04, body, V(0, 1.86, 0.42), g);
+    for (const sx of [-1, 1]) for (const z of [1.17, -0.26]) box(0.09, 0.62, 0.1, body, V(sx * 0.87, 1.53, z), g);
+    box(1.75, 0.03, 1.45, mat('#a3a7ae', { r: .95 }), V(0, 1.8, 0.45), g, { cast: false });
+    // grille, bumpers, arches
+    box(1.3, 0.34, 0.05, trim, V(0, 0.98, 2.63), g, { cast: false }); for (let i = 0; i < 3; i++) box(1.3, 0.03, 0.06, chrome, V(0, 0.88 + i * 0.1, 2.645), g, { cast: false });
+    rbox(2.0, 0.26, 0.2, 0.05, trim, V(0, 0.55, 2.66), g); rbox(2.0, 0.24, 0.18, 0.05, chrome, V(0, 0.55, -2.68), g);
+    box(1.8, 0.24, 5.0, dark, V(0, 0.45, 0), g);
+    for (const sx of [-1, 1]) for (const z of [1.65, -1.65]) box(0.16, 0.42, 1.1, trim, V(sx * 0.95, 0.75, z), g);
+    // towbar
+    box(0.12, 0.1, 0.35, dark, V(0, 0.45, -2.85), g); sph(0.06, chrome, V(0, 0.55, -3.0), g, { seg: 10, seg2: 8 });
+    this.head = mat('#f4f6ff', { e: 0xffffff, ei: 0.2, r: .2, unique: true });
+    for (const sx of [-1, 1]) box(0.3, 0.16, 0.05, this.head, V(sx * 0.75, 1.0, 2.62), g, { cast: false });
+    this.tail = mat('#c4121f', { e: 0xff1020, ei: 0.25, r: .3, unique: true });
+    for (const sx of [-1, 1]) box(0.08, 0.34, 0.12, this.tail, V(sx * 0.93, 1.25, -2.6), g, { cast: false });
+    const pf = new THREE.Mesh(new THREE.PlaneGeometry(0.52, 0.13), new THREE.MeshStandardMaterial({ map: plateTex(o.plate || 'DR19 PKP', '#f4f4f0') })); pf.position.set(0, 0.56, 2.77); g.add(pf);
+    const pr = new THREE.Mesh(new THREE.PlaneGeometry(0.52, 0.13), new THREE.MeshStandardMaterial({ map: plateTex(o.plate || 'DR19 PKP', '#f5c518') })); pr.position.set(0, 0.56, -2.78); pr.rotation.y = Math.PI; g.add(pr);
+    for (const sx of [-1, 1]) box(0.18, 0.14, 0.1, body, V(sx * 1.04, 1.36, 1.1), g);
+    // interior
+    const seat = mat('#3a3e46', { r: .9 });
+    box(1.7, 0.26, 0.38, mat('#454a52', { r: .8 }), V(0, 1.22, 1.08), g);
+    this.wheelG = new THREE.Group(); this.wheelG.position.set(-0.42, 1.27, 0.82); this.wheelG.rotation.x = -0.5; g.add(this.wheelG);
+    mesh(new THREE.TorusGeometry(0.19, 0.03, 10, 32), mat('#2b2e34', { r: .45 }), V(0, 0, 0), this.wheelG);
+    for (const sx of [-0.42, 0.42]) { rbox(0.56, 0.14, 0.5, 0.05, seat, V(sx, 0.94, 0.3), g); const b = rbox(0.56, 0.74, 0.14, 0.05, seat, V(sx, 1.3, -0.05), g); b.rotation.x = -0.15; }
+    // wheels
+    this.wheels = []; const tyre = mat('#141414', { r: .9 }), rim = mat('#9aa1ab', { r: .3, m: .7 });
+    for (const sx of [-1, 1]) for (const z of [1.65, -1.65]) {
+      const wg = new THREE.Group(); wg.position.set(sx * 0.86, 0.42, z); g.add(wg);
+      cyl(0.42, 0.42, 0.28, tyre, V(0, 0, 0), wg, { rot: [0, 0, Math.PI / 2], seg: 24 });
+      const hub = new THREE.Group(); hub.position.x = sx * 0.145; wg.add(hub);
+      cyl(0.24, 0.24, 0.02, rim, V(0, 0, 0), hub, { rot: [0, 0, Math.PI / 2], seg: 20 });
+      for (let k = 0; k < 6; k++) { const s = box(0.03, 0.44, 0.06, mat('#7d848e', { m: .6, r: .35 }), V(sx * 0.012, 0, 0), hub); s.rotation.x = k * Math.PI / 3; }
+      this.wheels.push(hub);
+    }
+    this.x = 0; this.z = 0; this.h = 0; this.dist = 0;
+  }
+  seat(p, side = -0.42) { this.g.add(p.g); p.g.scale.setScalar(0.74); p.g.position.set(side, 1.02, 0.2); p.sit(0.1); return p; }
+  set(x, z, h) { this.dist += Math.hypot(x - this.x, z - this.z); return this.place(x, z, h); }
+  place(x, z, h, dist) { this.x = x; this.z = z; this.h = h; this.dist = dist ?? this.dist; this.g.position.set(x, 0, z); this.g.rotation.y = h; for (const w of this.wheels) w.rotation.x = this.dist / 0.42; return this; }
+  brake(on) { this.tail.emissiveIntensity = on ? 2.6 : 0.25; }
+  world(lx, ly, lz) { return this.g.localToWorld(V(lx, ly, lz)); }
+}
+// hidden blue lights for an unmarked police car (grille + rear window) and a dashcam
+export function unmarked(car) {
+  const ms = [];
+  for (const [x, y, z] of [[-0.32, 0.62, 2.225], [0.32, 0.62, 2.225], [-0.5, 1.42, -1.22], [0.5, 1.42, -1.22]]) {
+    const m = new THREE.MeshStandardMaterial({ color: 0x1a3cff, emissive: 0x2a5cff, emissiveIntensity: 0.05, roughness: .3 }); box(0.22, 0.07, 0.04, m, V(x, y, z), car.g, { cast: false }); ms.push(m);
+  }
+  const glows = []; for (const sx of [-0.32, 0.32]) { const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowMat().map, color: 0x4a7aff, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending })); s.scale.set(1.1, 1.1, 1); s.position.set(sx, 0.62, 2.32); car.g.add(s); glows.push(s); }
+  box(0.1, 0.07, 0.06, mat('#0d0f12'), V(0.12, 1.42, 0.6), car.g, { cast: false });
+  car.police = (t, on) => { ms.forEach((m, i) => { const ph = (Math.floor(t * 7) + i) % 2; m.emissiveIntensity = on ? (ph ? 4 : 0.1) : 0.05; }); glows.forEach((s, i) => s.visible = on && ((Math.floor(t * 7) + i) % 2 === 0)); };
+  car.police(0, false); return car;
+}
+// police officer in hi-vis with a peaked cap
+export function officer() {
+  const p = addFace(new Person({ shirt: '#d6ef2a', pants: '#1c2230', hair: '#3a2a1e', skin: '#e9b98c' }));
+  const silver = mat('#e8eef2', { m: .6, r: .2 });
+  for (const y of [0.16, 0.42]) box(0.46, 0.04, 0.28, silver, V(0, y, 0), p.torso, { cast: false });
+  const hg = p.headG; cyl(0.19, 0.18, 0.12, mat('#121418', { r: .5 }), V(0, 0.33, 0), hg, { seg: 20 });
+  const band = canvasTex(128, 16, (c, w, h) => { for (let i = 0; i < 16; i++) for (let j = 0; j < 2; j++) { c.fillStyle = (i + j) % 2 ? '#111' : '#f4f4f4'; c.fillRect(i * 8, j * 8, 8, 8); } });
+  mesh(new THREE.CylinderGeometry(0.185, 0.185, 0.05, 20, 1, true), new THREE.MeshStandardMaterial({ map: band }), V(0, 0.3, 0), hg, { cast: false });
+  const brim = box(0.24, 0.02, 0.12, mat('#0c0d10', { r: .3 }), V(0, 0.27, 0.2), hg); brim.rotation.x = 0.2;
+  return p;
+}
+export function cone(x, z, s = 1) {
+  const g = new THREE.Group(); g.position.set(x, 0, z); g.scale.setScalar(s); scene.add(g);
+  box(0.36, 0.04, 0.36, mat('#18191c'), V(0, 0.02, 0), g, { cast: false });
+  cyl(0.025, 0.15, 0.68, mat('#ff6a13', { r: .5 }), V(0, 0.38, 0), g, { seg: 12 });
+  cyl(0.075, 0.108, 0.14, mat('#f2f2f2', { r: .3 }), V(0, 0.45, 0), g, { seg: 12, cast: false });
+  return g;
+}
+// yellow temporary roadworks sign on two posts. draw(c,w,h) paints the face.
+export function yellowSign(x, z, rotY, draw, o = {}) {
+  const w = o.w || 2.2, h = o.h || 1.6, lift = o.lift || 0.9;
+  const g = new THREE.Group(); g.position.set(x, 0, z); g.rotation.y = rotY; scene.add(g);
+  for (const sx of [-0.35, 0.35]) cyl(0.04, 0.04, lift + h, mat('#8a9098', { m: .5, r: .4 }), V(sx * w, (lift + h) / 2, -0.04), g, { seg: 8 });
+  const t = canvasTex(512, Math.round(512 * h / w), (c, cw, ch) => { c.fillStyle = '#ffd31a'; c.fillRect(0, 0, cw, ch); c.strokeStyle = '#111'; c.lineWidth = 14; c.strokeRect(12, 12, cw - 24, ch - 24); c.fillStyle = '#111'; c.textAlign = 'center'; c.textBaseline = 'middle'; draw(c, cw, ch); });
+  const f = new THREE.Mesh(new THREE.BoxGeometry(w, h, 0.05), [mat('#999'), mat('#999'), mat('#999'), mat('#999'), new THREE.MeshStandardMaterial({ map: t, roughness: .6 }), mat('#8a8f96')]);
+  f.position.set(0, lift + h / 2, 0); f.castShadow = true; g.add(f); return g;
+}
+export function textLines(lines, size = 92) { return (c, w, h) => { c.font = `900 ${size}px "Inter Display",sans-serif`; const n = lines.length; lines.forEach((l, i) => c.fillText(l, w / 2, h / 2 + (i - (n - 1) / 2) * size * 1.08 + 4)); }; }
+// steel crash barrier along z at x, from z0 to z1
+export function crashBarrier(x, z0, z1) {
+  const steel = mat('#a9b0b8', { m: .7, r: .35 }), post = mat('#7e858e', { m: .5, r: .5 });
+  const len = Math.abs(z1 - z0), zc = (z0 + z1) / 2;
+  box(0.08, 0.32, len, steel, V(x, 0.62, zc), null, { cast: false });
+  const n = Math.floor(len / 2.4); const geo = new THREE.BoxGeometry(0.12, 0.75, 0.12); const im = new THREE.InstancedMesh(geo, post, n);
+  const m4 = new THREE.Matrix4(); for (let i = 0; i < n; i++) { m4.makeTranslation(x + 0.1, 0.37, Math.min(z0, z1) + i * 2.4); im.setMatrixAt(i, m4); } scene.add(im);
+}
