@@ -43,8 +43,24 @@ const VIDEO = {
     // shops
     let n = 0; const D = 8, F = RD + PV + D / 2;
     const put = (x, z, r, w = 8) => { shop(x, z, r, { w, d: D, floors: 2 + (n % 3 === 0 ? 1 : 0), brick: BRICKS[n % 6], name: NAMES[n % NAMES.length], signBg: SIGNBG[n % 6], awning: n % 4 === 1 ? '#2f6b4f' : (n % 4 === 3 ? '#8a2b2b' : null) }); n++; };
-    for (const sz of [1, -1]) for (let i = 0; i < 6; i++) { const z = sz * (F + i * 8.2); put(-F, z, Math.PI / 2, 8); put(F, z, -Math.PI / 2, 8); }
-    for (const sx of [1, -1]) for (let i = 1; i < 6; i++) { const x = sx * (F + i * 8.2); put(x, F, Math.PI, 8); put(x, -F, 0, 8); }
+    for (const sz of [1, -1]) for (let i = 0; i < 16; i++) { const z = sz * (F + i * 8.2); put(-F, z, Math.PI / 2, 8); put(F, z, -Math.PI / 2, 8); }
+    for (const sx of [1, -1]) for (let i = 1; i < 16; i++) { const x = sx * (F + i * 8.2); put(x, F, Math.PI, 8); put(x, -F, 0, 8); }
+    // the city carries on past the detailed ground: plain road + pavement out to the haze, then simple blocks
+    const FAR = 420;
+    for (const s2 of [-1, 1]) {
+      box(2 * RD, 0.02, FAR - 120, mat('#3b3f46', { r: .95 }), V(0, 0.005, s2 * (120 + (FAR - 120) / 2)), null, { cast: false });
+      box(FAR - 120, 0.02, 2 * RD, mat('#3b3f46', { r: .95 }), V(s2 * (120 + (FAR - 120) / 2), 0.005, 0), null, { cast: false });
+      for (const s3 of [-1, 1]) { kerb(s3 * RD, s2 * 120, s3 * RD, s2 * FAR); kerb(s2 * 120, s3 * RD, s2 * FAR, s3 * RD);
+        slab(s3 > 0 ? RD + 0.1 : -RD - 8, Math.min(s2 * 120, s2 * FAR), s3 > 0 ? RD + 8 : -RD - 0.1, Math.max(s2 * 120, s2 * FAR), 0.12, '#c9c4ba');
+        slab(Math.min(s2 * 120, s2 * FAR), s3 > 0 ? RD + 0.1 : -RD - 8, Math.max(s2 * 120, s2 * FAR), s3 > 0 ? RD + 8 : -RD - 0.1, 0.12, '#c9c4ba'); }
+    }
+    box(2 * FAR, 0.01, 2 * FAR, mat('#b9b4ab', { r: 1 }), V(0, -0.02, 0), null, { cast: false });
+    let m = 0;
+    for (let d = F + 16 * 8.2; d < FAR; d += 9) for (const s2 of [-1, 1]) for (const s3 of [-1, 1]) {
+      const h = 7 + ((m * 37) % 9); const col = BRICKS[m % 6]; m++;
+      box(8.4, h, 9, mat(col, { r: .9 }), V(s3 * F, h / 2, s2 * d), null, { cast: false });
+      box(9, h, 8.4, mat(col, { r: .9 }), V(s2 * d, h / 2, s3 * F), null, { cast: false });
+    }
     // street furniture
     this.cam1 = councilCamera(-RD - 1.4, -RD - 1.4, Math.PI / 4);
     for (const [x, z] of [[-RD - 0.5, RD + 0.6], [RD + 0.5, RD + 0.6], [RD + 0.5, -RD - 0.6], [-RD - 0.6, -RD - 0.5]]) { bollard(x, z); }
@@ -67,7 +83,7 @@ const VIDEO = {
     return { gary, drv, queue, onc, amb, peds, tl: { S: this.tlS, E: this.tlE, N: this.tlN, W: this.tlW } };
   },
   frame(ctx) {
-    const { O, t } = ctx; setMood('day', V(0, 0, 0));
+    const { O, t } = ctx; setMood('day', V(0, 0, 0)); scene.fog.color.set(0xdbe9f3); scene.fog.near = 45; scene.fog.far = 200;
     // default "case" state: Gary stuck in the box, queue standing, ambulance waiting
     state(O, { k: 1, q: 0, amb: 7.6, sirens: true, t });
     O.tl.S.set('red'); O.tl.N.set('red'); O.tl.E.set('green'); O.tl.W.set('green');
