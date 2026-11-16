@@ -1,7 +1,7 @@
 import { THREE, scene, V, Ground, kerb, slab, tree, lamp, Car, Person, HERO, lights, setMood, cam, shots, seg, lerp, easeIO, easeOut, easeIn, clamp, toScreen, trafficLight, mat, box, shop, bin, bollard, councilCamera, Ambulance, addFace, hoodie, makeSeated, mulberry } from '../engine.js';
 
 // Junction: N-S road x -3.5..3.5, E-W road z -3.5..3.5, yellow box over the square.
-// Gary drives north (heading PI) in lane x=-1.75 and turns right (east). East arm eastbound lane z=-1.75 is queued.
+// Gary drives north (heading PI) positioned just left of centre (x=-1.0) to turn right (east). East arm eastbound lane z=-1.75 is queued.
 // Ambulance comes west along the westbound lane z=+1.75 and is blocked by Gary.
 const RD = 3.5, PV = 3.5;
 const HN = Math.PI, HE = Math.PI / 2, HW = -Math.PI / 2;
@@ -11,10 +11,11 @@ const BRICKS = ['#9a4f3a', '#8c4a36', '#a85d44', '#7d4434', '#b0705a', '#8f5a48'
 const SIGNBG = ['#1f2a24', '#2b2140', '#5a1f1f', '#173248', '#2a2a2a', '#3d2a14'];
 
 function bez(p0, p1, p2, k) { const a = (1 - k) * (1 - k), b = 2 * k * (1 - k), c = k * k; return [a * p0[0] + b * p1[0] + c * p2[0], a * p0[1] + b * p1[1] + c * p2[1]]; }
-const G0 = [-1.75, STOP + 2.15], G1 = [-1.75, 1.6], G2 = [0.15, -0.35];
+// Rule 181: when waiting to turn right, wait just left of the middle with the car facing straight ahead (wheels straight)
+const G0 = [-1.0, STOP + 2.15], G1 = [-1.0, 2.6], G2 = [-1.0, 0.3];
 function garyPose(k) { // 0 = at stop line, 1 = stuck in the box
   const p = bez(G0, G1, G2, k), q = bez(G0, G1, G2, Math.min(1, k + 0.02)), q0 = bez(G0, G1, G2, Math.max(0, k - 0.02));
-  const h = Math.atan2(q[0] - q0[0], q[1] - q0[1]); return { x: p[0], z: p[1], h: k <= 0 ? HN : h };
+  return { x: p[0], z: p[1], h: HN };
 }
 const GH = garyPose(1).h;
 
@@ -95,8 +96,8 @@ const VIDEO = {
     O.peds.forEach((p, i) => { const [x0, z0, d, sp] = pp[i]; const s = (t * sp) % 26; if (i < 2) p.at(x0, z0 + d * (-s), d > 0 ? Math.PI : 0).walk(t * 6 + i); else p.at(x0 + s, z0, Math.PI / 2).walk(t * 6); });
   },
   segs: [
-    { update(ctx) { const { ts } = ctx; shots(ts, [{ t: 0, p: V(-9, 22, 18), l: V(2.5, 0, -0.5), f: 42 }, { t: 3.9, blend: 3.9, p: V(-6, 17, 13), l: V(2.5, 0, -0.5), f: 42 }]);
-        ring(ctx, V(0.15, 0.8, -0.35), 0.2, 'BLOCKED');
+    { update(ctx) { const { ts } = ctx; shots(ts, [{ t: 0, p: V(-10.5, 22, 18), l: V(1, 0, -0.5), f: 42 }, { t: 3.9, blend: 3.9, p: V(-7.5, 17, 13), l: V(1, 0, -0.5), f: 42 }]);
+        ring(ctx, V(-1.0, 0.8, 0.3), 0.2, 'BLOCKED');
         ctx.tag('IS HE ALLOWED?', 0.15, 99, { col: 'red' }); } },
     { update(ctx) { const { O, ts } = ctx; state(O, { k: 0, q: 0, amb: null, t: ctx.t }); O.tl.S.set('red'); O.tl.E.set('green');
         O.gary.glass.opacity = 0.18; O.drv.expr('smug');
@@ -136,25 +137,25 @@ const VIDEO = {
         ctx.tag('SHRUGS', tsr, ctx.word('window') - 0.1, { col: 'red' }); ctx.tag('WINDOW DOWN', ctx.word('window') - 0.1, ctx.word('turning') - 0.1, { col: 'red' });
         ctx.tag('"TURNING RIGHT"', ctx.word('turning') - 0.1, ctx.word('allowed') - 0.2, { col: 'red' }); ctx.tag('"I’M ALLOWED"', ctx.word('allowed') - 0.2, 99, { col: 'red' }); } },
     { update(ctx) { const { O, ts } = ctx; const q = easeIn(seg(ts, 1.4, ctx.dur + 1)); state(O, { k: 1, q, amb: 7.6, sirens: true, t: ctx.t });
-        cam(V(-3, 26, 13), V(5, 0, -0.5), 42);
+        cam(V(-4.5, 26, 13), V(3.5, 0, -0.5), 42);
         clock(ctx, 0.2);
         ctx.tag('NEARLY A MINUTE', ctx.word('minute') - 0.2, 99, { col: 'red' }); } },
     { update(ctx) { const { O, ts } = ctx;
         shots(ts, [{ t: 0, p: V(0.5, 2.4, 0.5), l: V(-RD - 1.0, 4.6, -RD - 1.0), f: 36 }, { t: 3.0, blend: 3.0, p: V(-0.6, 2.9, -0.6), l: V(-RD - 1.0, 4.8, -RD - 1.0), f: 32 }]);
         ctx.tag('COUNCIL CAMERA', ctx.word('camera') - 0.2, 99, { col: 'red' }); } },
-    { update(ctx) { const { ts } = ctx; cam(V(-4, 24, 15), V(2, 0, -0.5), 42); ctx.tag('WHO IS RIGHT?', 0.1, 99, { col: 'yellow' }); } },
-    { update(ctx) { const { ts } = ctx; cam(V(-2, 20 - ts * 0.4, 12), V(3, 0, -1), 42);
+    { update(ctx) { const { ts } = ctx; cam(V(-5.5, 24, 15), V(0.5, 0, -0.5), 42); ctx.tag('WHO IS RIGHT?', 0.1, 99, { col: 'yellow' }); } },
+    { update(ctx) { const { ts } = ctx; cam(V(-3.5, 20 - ts * 0.4, 12), V(1.5, 0, -1), 42);
         ctx.tag('RULE 174', 0.2, ctx.word('exit') - 0.2, { col: 'green' }); ctx.tag('UNTIL EXIT CLEAR', ctx.word('exit') - 0.2, 99, { col: 'green' }); } },
     { update(ctx) { const { O, ts, t } = ctx;
         // the exception: exit road clear, waiting in the box only because of oncoming traffic
         O.queue.forEach(c => c.g.visible = false); O.amb.g.visible = false;
-        O.gary.place(-0.75, 0.9, Math.PI - 0.55); O.gary.brake(true);
+        O.gary.place(-1.0, 0.3, HN); O.gary.brake(true);
         O.onc.forEach((c, i) => { c.g.visible = true; const z = -40 + ((ts * 9 + i * 13) % 70); c.set(1.75, z, 0); c.brake(false); });
         O.tl.S.set('green'); O.tl.N.set('green'); O.tl.E.set('red'); O.tl.W.set('red');
-        cam(V(-5, 15, 13), V(1, 0, -1), 44);
+        cam(V(-6.5, 15, 13), V(-0.5, 0, -1), 44);
         ctx.tag('WAIT IN THE BOX', ctx.word('wait') - 0.1, ctx.word('oncoming') - 0.2, { col: 'green' }); ctx.tag('AN EXCEPTION', ctx.word('oncoming') - 0.2, 99, { col: 'green' });
         ctx.label('ONCOMING', V(1.75, 2.4, -10), ctx.word('oncoming') - 0.2, 99, { bg: '#19C15F' }); } },
-    { update(ctx) { const { ts } = ctx; cam(V(-3, 17, 11), V(5, 0, -1), 42);
+    { update(ctx) { const { ts } = ctx; cam(V(-5.5, 18, 12), V(2, 0, -0.6), 42);
         ctx.tag('EXIT ROAD FULL', ctx.word('full') - 0.2, ctx.word('not') - 0.1, { col: 'red' }); ctx.tag('NOT AN EXCEPTION', ctx.word('not') - 0.1, 99, { col: 'red' }); } },
     { update(ctx) { const { ts } = ctx; const tf = ctx.word('penalty') - 0.2;
         cam(V(-1.4, 3.6, -1.4), V(-RD - 1.0, 4.95, -RD - 1.0), 28);
@@ -162,8 +163,8 @@ const VIDEO = {
         ctx.tag('PENALTY CHARGE', tf, 99, { col: 'red' }); } },
     { update(ctx) { const { O, ts } = ctx; const a = O.amb; cam(V(a.g.position.x - 12.0, 2.2, 5.6), V(a.g.position.x, 1.4, 1.75), 50);
         ctx.tag('WAITING FOR HELP', ctx.word('waiting') - 0.15, 99, { col: 'red' }); } },
-    { update(ctx) { const { ts } = ctx; cam(V(-5 + ts * 0.3, 22, 15), V(2, 0, -0.5), 42);
-        ring(ctx, V(0.15, 0.8, -0.35), 0.2, '');
+    { update(ctx) { const { ts } = ctx; cam(V(-6.5 + ts * 0.3, 22, 15), V(0.5, 0, -0.5), 42);
+        ring(ctx, V(-1.0, 0.8, 0.3), 0.2, '');
         ctx.tag('GARY: GUILTY', ctx.word('guilty') - 0.15, 99, { col: 'red', y: 560 });
         ctx.tag('FOLLOW FOR CASE 002', ctx.word('follow') - 0.1, 99, { col: 'yellow', y: 1420 }); } },
   ],
