@@ -650,3 +650,35 @@ export function countryside(o = {}) {
     const s = 4 + R() * 5; ps.set(x, s * 0.9, z); sc.set(s, s * (0.9 + R() * 0.4), s); m4.compose(ps, q, sc); im.setMatrixAt(i, m4); }
   scene.add(im);
 }
+
+// ================================================================ v4: motorway kit
+// marked UK police car: blue/yellow Battenburg sides, roof light bar, POLICE on the bonnet
+export function policeCar(car) {
+  const bat = canvasTex(512, 64, (c, w, h) => { const s = 32; for (let i = 0; i < w / s; i++) for (let j = 0; j < 2; j++) { c.fillStyle = (i + j) % 2 ? '#1546b8' : '#f2d600'; c.fillRect(i * s, j * s, s, s); } });
+  for (const sx of [-1, 1]) { const m = new THREE.Mesh(new THREE.PlaneGeometry(2.9, 0.3), new THREE.MeshStandardMaterial({ map: bat, roughness: .45, polygonOffset: true, polygonOffsetFactor: -2 })); m.position.set(sx * 0.925, 0.7, -0.15); m.rotation.y = sx * Math.PI / 2; car.g.add(m); }
+  const word = canvasTex(256, 64, (c, w, h) => { c.fillStyle = '#1546b8'; c.font = '900 52px "Inter Display",sans-serif'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('POLICE', w / 2, h / 2 + 3); });
+  const bw = new THREE.Mesh(new THREE.PlaneGeometry(1.0, 0.25), new THREE.MeshStandardMaterial({ map: word, transparent: true, polygonOffset: true, polygonOffsetFactor: -2 })); bw.rotation.x = -Math.PI / 2; bw.position.set(0, 0.965, 1.5); car.g.add(bw);
+  sbox(1.15, 0.1, 0.28, 0.04, mat('#1d2025', { r: .4 }), V(0, 1.66, -0.35), car.g);
+  const blues = []; for (const sx of [-0.42, -0.16, 0.16, 0.42]) { const m = new THREE.MeshStandardMaterial({ color: 0x1e44ff, emissive: 0x2a5cff, emissiveIntensity: .1, roughness: .3 }); sbox(0.22, 0.09, 0.22, 0.03, m, V(sx, 1.72, -0.35), car.g, { cast: false }); blues.push(m); }
+  const glows = []; for (const sx of [-0.35, 0.35]) { const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowMat().map, color: 0x4a7aff, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending })); s.scale.set(1.6, 1.6, 1); s.position.set(sx, 1.78, -0.35); car.g.add(s); glows.push(s); }
+  car.police = (t, on) => { blues.forEach((m, i) => { const ph = (Math.floor(t * 7) + (i < 2 ? 0 : 1)) % 2; m.emissiveIntensity = on ? (ph ? 4 : 0.1) : 0.1; }); glows.forEach((s, i) => s.visible = on && ((Math.floor(t * 7) + i) % 2 === 0)); };
+  car.police(0, false); return car;
+}
+export function glasses(p, col = '#1b1b1f') {
+  const m = mat(col, { r: .3, m: .4 }), hg = p.headG;
+  for (const sx of [-1, 1]) { const r = mesh(new THREE.TorusGeometry(0.03, 0.005, 6, 20), m, V(sx * 0.061, 0.185, 0.168), hg, { cast: false }); }
+  box(0.04, 0.006, 0.006, m, V(0, 0.19, 0.172), hg, { cast: false });
+  for (const sx of [-1, 1]) box(0.006, 0.006, 0.15, m, V(sx * 0.1, 0.19, 0.1), hg, { cast: false });
+  return p;
+}
+// instanced roadside trees along z between x0..x1 (x ranges), z0..z1
+export function treeBelt(xr, z0, z1, n, seed = 3) {
+  const R = mulberry(seed), crownG = new THREE.IcosahedronGeometry(1, 1), trunkG = new THREE.CylinderGeometry(0.12, 0.18, 1, 6);
+  const cols = ['#5d8b4c', '#6b9655', '#557f45', '#79a061'];
+  const crowns = cols.map(c => new THREE.InstancedMesh(crownG, mat(c, { flat: true, r: 1 }), n)), trunks = new THREE.InstancedMesh(trunkG, mat('#6b4f36', { r: 1 }), n);
+  const m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), s = V(1, 1, 1), p = V(0, 0, 0); const cnt = [0, 0, 0, 0];
+  for (let i = 0; i < n; i++) { const x = lerp(xr[0], xr[1], R()), z = lerp(z0, z1, R()), k = 1.8 + R() * 2.6, ci = Math.floor(R() * 4);
+    p.set(x, k * 0.9, z); s.set(0.4 * k, 1.8 * k * 0.5, 0.4 * k); m4.compose(p, q, s); trunks.setMatrixAt(i, m4);
+    p.set(x, k * 1.9, z); s.set(k, k * (0.9 + R() * 0.3), k); m4.compose(p, q, s); crowns[ci].setMatrixAt(cnt[ci]++, m4); }
+  crowns.forEach((c, i) => { c.count = cnt[i]; c.castShadow = true; scene.add(c); }); trunks.castShadow = true; scene.add(trunks);
+}

@@ -1,0 +1,82 @@
+[
+ {
+  "say": "This man has sat in the middle lane for *ten* *miles.* And Gary's about to do something about it.",
+  "lead": 0.1,
+  "hold": 0.4
+ },
+ {
+  "say": "Case three. The middle *lane.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Empty motorway. Seventy limit. Gary's in the *left* *lane,* like you're supposed to be.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Up ahead is Nigel. Middle lane. Sixty miles an hour. And the left lane is completely *empty.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Gary catches him up. To get past, he should move out two lanes, and overtake on the *right.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "But Gary's had enough. He stays left, and *undertakes* him.",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "Nigel doesn't even notice. Cruise control on, *singing* to the radio.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "What neither of them has noticed is the *police* car behind them.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Blue lights. And they pull over *both* of them.",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "So, who's *right?*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Rule two six four. Keep in the *left* lane unless you're overtaking, then move back when it's safe.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Middle lane hogging can be *careless* *driving.* That's a hundred pound fine and three points. Nigel, *guilty.*",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "But rule two six eight says, do *not* overtake on the left. The main exception is *queuing* traffic, where your lane is moving faster.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "On an empty motorway, undertaking can be careless driving *too.* Same fine. Same three points.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Gary should have moved out, and passed on the right. Gary, *half* *right.*",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "Fair, or should Gary get off? Tell me below. Follow for case four.",
+  "lead": 0.2,
+  "hold": 0.6
+ }
+]

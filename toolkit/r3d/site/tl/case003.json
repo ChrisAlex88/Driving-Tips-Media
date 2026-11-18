@@ -1,0 +1,1425 @@
+{
+ "total": 83.32,
+ "segments": [
+  {
+   "start": 0.0,
+   "dur": 5.985,
+   "say": "This man has sat in the middle lane for ten miles. And Gary's about to do something about it.",
+   "words": [
+    {
+     "w": "This",
+     "t0": 0.16,
+     "t1": 0.403,
+     "k": false
+    },
+    {
+     "w": "man",
+     "t0": 0.402,
+     "t1": 0.645,
+     "k": false
+    },
+    {
+     "w": "has",
+     "t0": 0.645,
+     "t1": 0.888,
+     "k": false
+    },
+    {
+     "w": "sat",
+     "t0": 0.888,
+     "t1": 1.13,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 1.13,
+     "t1": 1.292,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.292,
+     "t1": 1.453,
+     "k": false
+    },
+    {
+     "w": "middle",
+     "t0": 1.453,
+     "t1": 1.857,
+     "k": false
+    },
+    {
+     "w": "lane",
+     "t0": 1.857,
+     "t1": 2.181,
+     "k": false
+    },
+    {
+     "w": "for",
+     "t0": 2.181,
+     "t1": 2.423,
+     "k": false
+    },
+    {
+     "w": "ten",
+     "t0": 2.423,
+     "t1": 2.666,
+     "k": true
+    },
+    {
+     "w": "miles.",
+     "t0": 2.666,
+     "t1": 3.07,
+     "k": true
+    },
+    {
+     "w": "And",
+     "t0": 3.47,
+     "t1": 3.664,
+     "k": false
+    },
+    {
+     "w": "Gary's",
+     "t0": 3.664,
+     "t1": 3.986,
+     "k": false
+    },
+    {
+     "w": "about",
+     "t0": 3.986,
+     "t1": 4.309,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 4.309,
+     "t1": 4.502,
+     "k": false
+    },
+    {
+     "w": "do",
+     "t0": 4.502,
+     "t1": 4.696,
+     "k": false
+    },
+    {
+     "w": "something",
+     "t0": 4.696,
+     "t1": 5.083,
+     "k": false
+    },
+    {
+     "w": "about",
+     "t0": 5.083,
+     "t1": 5.406,
+     "k": false
+    },
+    {
+     "w": "it.",
+     "t0": 5.406,
+     "t1": 5.535,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 5.985,
+   "dur": 2.315,
+   "say": "Case three. The middle lane.",
+   "words": [
+    {
+     "w": "Case",
+     "t0": 0.26,
+     "t1": 0.61,
+     "k": false
+    },
+    {
+     "w": "three.",
+     "t0": 0.61,
+     "t1": 0.96,
+     "k": false
+    },
+    {
+     "w": "The",
+     "t0": 1.13,
+     "t1": 1.282,
+     "k": false
+    },
+    {
+     "w": "middle",
+     "t0": 1.282,
+     "t1": 1.661,
+     "k": false
+    },
+    {
+     "w": "lane.",
+     "t0": 1.661,
+     "t1": 1.965,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 8.3,
+   "dur": 5.655,
+   "say": "Empty motorway. Seventy limit. Gary's in the left lane, like you're supposed to be.",
+   "words": [
+    {
+     "w": "Empty",
+     "t0": 0.26,
+     "t1": 0.61,
+     "k": false
+    },
+    {
+     "w": "motorway.",
+     "t0": 0.61,
+     "t1": 1.17,
+     "k": false
+    },
+    {
+     "w": "Seventy",
+     "t0": 1.43,
+     "t1": 1.943,
+     "k": false
+    },
+    {
+     "w": "limit.",
+     "t0": 1.943,
+     "t1": 2.31,
+     "k": false
+    },
+    {
+     "w": "Gary's",
+     "t0": 2.66,
+     "t1": 2.964,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 2.964,
+     "t1": 3.085,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.085,
+     "t1": 3.206,
+     "k": false
+    },
+    {
+     "w": "left",
+     "t0": 3.206,
+     "t1": 3.449,
+     "k": true
+    },
+    {
+     "w": "lane,",
+     "t0": 3.449,
+     "t1": 3.692,
+     "k": true
+    },
+    {
+     "w": "like",
+     "t0": 3.692,
+     "t1": 4.015,
+     "k": false
+    },
+    {
+     "w": "you're",
+     "t0": 4.015,
+     "t1": 4.257,
+     "k": false
+    },
+    {
+     "w": "supposed",
+     "t0": 4.257,
+     "t1": 4.821,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 4.821,
+     "t1": 5.063,
+     "k": false
+    },
+    {
+     "w": "be.",
+     "t0": 5.063,
+     "t1": 5.305,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 13.955,
+   "dur": 6.865,
+   "say": "Up ahead is Nigel. Middle lane. Sixty miles an hour. And the left lane is completely empty.",
+   "words": [
+    {
+     "w": "Up",
+     "t0": 0.26,
+     "t1": 0.425,
+     "k": false
+    },
+    {
+     "w": "ahead",
+     "t0": 0.425,
+     "t1": 0.756,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 0.756,
+     "t1": 0.921,
+     "k": false
+    },
+    {
+     "w": "Nigel.",
+     "t0": 0.921,
+     "t1": 1.5,
+     "k": false
+    },
+    {
+     "w": "Middle",
+     "t0": 1.78,
+     "t1": 2.18,
+     "k": false
+    },
+    {
+     "w": "lane.",
+     "t0": 2.18,
+     "t1": 2.5,
+     "k": false
+    },
+    {
+     "w": "Sixty",
+     "t0": 2.81,
+     "t1": 3.294,
+     "k": false
+    },
+    {
+     "w": "miles",
+     "t0": 3.294,
+     "t1": 3.697,
+     "k": false
+    },
+    {
+     "w": "an",
+     "t0": 3.697,
+     "t1": 3.858,
+     "k": false
+    },
+    {
+     "w": "hour.",
+     "t0": 3.858,
+     "t1": 4.1,
+     "k": false
+    },
+    {
+     "w": "And",
+     "t0": 4.43,
+     "t1": 4.639,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 4.639,
+     "t1": 4.778,
+     "k": false
+    },
+    {
+     "w": "left",
+     "t0": 4.778,
+     "t1": 5.056,
+     "k": false
+    },
+    {
+     "w": "lane",
+     "t0": 5.056,
+     "t1": 5.333,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 5.333,
+     "t1": 5.473,
+     "k": false
+    },
+    {
+     "w": "completely",
+     "t0": 5.473,
+     "t1": 6.168,
+     "k": false
+    },
+    {
+     "w": "empty.",
+     "t0": 6.168,
+     "t1": 6.515,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 20.82,
+   "dur": 6.115,
+   "say": "Gary catches him up. To get past, he should move out two lanes, and overtake on the right.",
+   "words": [
+    {
+     "w": "Gary",
+     "t0": 0.26,
+     "t1": 0.529,
+     "k": false
+    },
+    {
+     "w": "catches",
+     "t0": 0.529,
+     "t1": 0.933,
+     "k": false
+    },
+    {
+     "w": "him",
+     "t0": 0.933,
+     "t1": 1.135,
+     "k": false
+    },
+    {
+     "w": "up.",
+     "t0": 1.135,
+     "t1": 1.27,
+     "k": false
+    },
+    {
+     "w": "To",
+     "t0": 1.73,
+     "t1": 1.952,
+     "k": false
+    },
+    {
+     "w": "get",
+     "t0": 1.952,
+     "t1": 2.174,
+     "k": false
+    },
+    {
+     "w": "past,",
+     "t0": 2.174,
+     "t1": 2.47,
+     "k": false
+    },
+    {
+     "w": "he",
+     "t0": 2.78,
+     "t1": 2.993,
+     "k": false
+    },
+    {
+     "w": "should",
+     "t0": 2.993,
+     "t1": 3.206,
+     "k": false
+    },
+    {
+     "w": "move",
+     "t0": 3.206,
+     "t1": 3.49,
+     "k": false
+    },
+    {
+     "w": "out",
+     "t0": 3.49,
+     "t1": 3.702,
+     "k": false
+    },
+    {
+     "w": "two",
+     "t0": 3.702,
+     "t1": 3.915,
+     "k": false
+    },
+    {
+     "w": "lanes,",
+     "t0": 3.915,
+     "t1": 4.27,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 4.42,
+     "t1": 4.632,
+     "k": false
+    },
+    {
+     "w": "overtake",
+     "t0": 4.632,
+     "t1": 5.199,
+     "k": false
+    },
+    {
+     "w": "on",
+     "t0": 5.199,
+     "t1": 5.34,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 5.34,
+     "t1": 5.482,
+     "k": false
+    },
+    {
+     "w": "right.",
+     "t0": 5.482,
+     "t1": 5.765,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 26.935,
+   "dur": 4.115,
+   "say": "But Gary's had enough. He stays left, and undertakes him.",
+   "words": [
+    {
+     "w": "But",
+     "t0": 0.26,
+     "t1": 0.468,
+     "k": false
+    },
+    {
+     "w": "Gary's",
+     "t0": 0.468,
+     "t1": 0.815,
+     "k": false
+    },
+    {
+     "w": "had",
+     "t0": 0.815,
+     "t1": 1.023,
+     "k": false
+    },
+    {
+     "w": "enough.",
+     "t0": 1.023,
+     "t1": 1.3,
+     "k": false
+    },
+    {
+     "w": "He",
+     "t0": 1.7,
+     "t1": 1.922,
+     "k": false
+    },
+    {
+     "w": "stays",
+     "t0": 1.923,
+     "t1": 2.293,
+     "k": false
+    },
+    {
+     "w": "left,",
+     "t0": 2.293,
+     "t1": 2.59,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 2.75,
+     "t1": 2.933,
+     "k": false
+    },
+    {
+     "w": "undertakes",
+     "t0": 2.933,
+     "t1": 3.482,
+     "k": true
+    },
+    {
+     "w": "him.",
+     "t0": 3.482,
+     "t1": 3.665,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 31.05,
+   "dur": 5.105,
+   "say": "Nigel doesn't even notice. Cruise control on, singing to the radio.",
+   "words": [
+    {
+     "w": "Nigel",
+     "t0": 0.26,
+     "t1": 0.721,
+     "k": false
+    },
+    {
+     "w": "doesn't",
+     "t0": 0.721,
+     "t1": 1.116,
+     "k": false
+    },
+    {
+     "w": "even",
+     "t0": 1.116,
+     "t1": 1.445,
+     "k": false
+    },
+    {
+     "w": "notice.",
+     "t0": 1.445,
+     "t1": 1.84,
+     "k": false
+    },
+    {
+     "w": "Cruise",
+     "t0": 2.22,
+     "t1": 2.607,
+     "k": false
+    },
+    {
+     "w": "control",
+     "t0": 2.607,
+     "t1": 3.225,
+     "k": false
+    },
+    {
+     "w": "on,",
+     "t0": 3.225,
+     "t1": 3.38,
+     "k": false
+    },
+    {
+     "w": "singing",
+     "t0": 3.59,
+     "t1": 3.933,
+     "k": true
+    },
+    {
+     "w": "to",
+     "t0": 3.933,
+     "t1": 4.138,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 4.138,
+     "t1": 4.275,
+     "k": false
+    },
+    {
+     "w": "radio.",
+     "t0": 4.275,
+     "t1": 4.755,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 36.155,
+   "dur": 4.245,
+   "say": "What neither of them has noticed is the police car behind them.",
+   "words": [
+    {
+     "w": "What",
+     "t0": 0.26,
+     "t1": 0.497,
+     "k": false
+    },
+    {
+     "w": "neither",
+     "t0": 0.497,
+     "t1": 0.892,
+     "k": false
+    },
+    {
+     "w": "of",
+     "t0": 0.892,
+     "t1": 1.05,
+     "k": false
+    },
+    {
+     "w": "them",
+     "t0": 1.05,
+     "t1": 1.287,
+     "k": false
+    },
+    {
+     "w": "has",
+     "t0": 1.287,
+     "t1": 1.524,
+     "k": false
+    },
+    {
+     "w": "noticed",
+     "t0": 1.524,
+     "t1": 2.078,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 2.078,
+     "t1": 2.236,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.236,
+     "t1": 2.394,
+     "k": false
+    },
+    {
+     "w": "police",
+     "t0": 2.394,
+     "t1": 2.868,
+     "k": true
+    },
+    {
+     "w": "car",
+     "t0": 2.868,
+     "t1": 3.105,
+     "k": false
+    },
+    {
+     "w": "behind",
+     "t0": 3.105,
+     "t1": 3.658,
+     "k": false
+    },
+    {
+     "w": "them.",
+     "t0": 3.658,
+     "t1": 3.895,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 40.4,
+   "dur": 3.185,
+   "say": "Blue lights. And they pull over both of them.",
+   "words": [
+    {
+     "w": "Blue",
+     "t0": 0.26,
+     "t1": 0.558,
+     "k": false
+    },
+    {
+     "w": "lights.",
+     "t0": 0.558,
+     "t1": 0.93,
+     "k": false
+    },
+    {
+     "w": "And",
+     "t0": 1.18,
+     "t1": 1.392,
+     "k": false
+    },
+    {
+     "w": "they",
+     "t0": 1.392,
+     "t1": 1.604,
+     "k": false
+    },
+    {
+     "w": "pull",
+     "t0": 1.604,
+     "t1": 1.816,
+     "k": false
+    },
+    {
+     "w": "over",
+     "t0": 1.816,
+     "t1": 2.099,
+     "k": false
+    },
+    {
+     "w": "both",
+     "t0": 2.099,
+     "t1": 2.382,
+     "k": true
+    },
+    {
+     "w": "of",
+     "t0": 2.382,
+     "t1": 2.523,
+     "k": false
+    },
+    {
+     "w": "them.",
+     "t0": 2.523,
+     "t1": 2.735,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 43.585,
+   "dur": 1.615,
+   "say": "So, who's right?",
+   "words": [
+    {
+     "w": "So,",
+     "t0": 0.26,
+     "t1": 0.504,
+     "k": false
+    },
+    {
+     "w": "who's",
+     "t0": 0.504,
+     "t1": 0.885,
+     "k": false
+    },
+    {
+     "w": "right?",
+     "t0": 0.885,
+     "t1": 1.265,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 45.2,
+   "dur": 6.305,
+   "say": "Rule two six four. Keep in the left lane unless you're overtaking, then move back when it's safe.",
+   "words": [
+    {
+     "w": "Rule",
+     "t0": 0.26,
+     "t1": 0.62,
+     "k": false
+    },
+    {
+     "w": "two",
+     "t0": 0.62,
+     "t1": 0.89,
+     "k": false
+    },
+    {
+     "w": "six",
+     "t0": 0.89,
+     "t1": 1.25,
+     "k": false
+    },
+    {
+     "w": "four.",
+     "t0": 1.25,
+     "t1": 1.52,
+     "k": false
+    },
+    {
+     "w": "Keep",
+     "t0": 1.91,
+     "t1": 2.181,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 2.181,
+     "t1": 2.316,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.316,
+     "t1": 2.451,
+     "k": false
+    },
+    {
+     "w": "left",
+     "t0": 2.451,
+     "t1": 2.722,
+     "k": true
+    },
+    {
+     "w": "lane",
+     "t0": 2.722,
+     "t1": 2.992,
+     "k": false
+    },
+    {
+     "w": "unless",
+     "t0": 2.992,
+     "t1": 3.331,
+     "k": false
+    },
+    {
+     "w": "you're",
+     "t0": 3.331,
+     "t1": 3.534,
+     "k": false
+    },
+    {
+     "w": "overtaking,",
+     "t0": 3.534,
+     "t1": 4.21,
+     "k": false
+    },
+    {
+     "w": "then",
+     "t0": 4.54,
+     "t1": 4.752,
+     "k": false
+    },
+    {
+     "w": "move",
+     "t0": 4.752,
+     "t1": 5.035,
+     "k": false
+    },
+    {
+     "w": "back",
+     "t0": 5.035,
+     "t1": 5.248,
+     "k": false
+    },
+    {
+     "w": "when",
+     "t0": 5.248,
+     "t1": 5.46,
+     "k": false
+    },
+    {
+     "w": "it's",
+     "t0": 5.46,
+     "t1": 5.672,
+     "k": false
+    },
+    {
+     "w": "safe.",
+     "t0": 5.672,
+     "t1": 5.955,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 51.505,
+   "dur": 7.195,
+   "say": "Middle lane hogging can be careless driving. That's a hundred pound fine and three points. Nigel, guilty.",
+   "words": [
+    {
+     "w": "Middle",
+     "t0": 0.26,
+     "t1": 0.589,
+     "k": false
+    },
+    {
+     "w": "lane",
+     "t0": 0.589,
+     "t1": 0.852,
+     "k": false
+    },
+    {
+     "w": "hogging",
+     "t0": 0.852,
+     "t1": 1.181,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 1.181,
+     "t1": 1.378,
+     "k": false
+    },
+    {
+     "w": "be",
+     "t0": 1.378,
+     "t1": 1.575,
+     "k": false
+    },
+    {
+     "w": "careless",
+     "t0": 1.575,
+     "t1": 1.97,
+     "k": true
+    },
+    {
+     "w": "driving.",
+     "t0": 1.97,
+     "t1": 2.43,
+     "k": true
+    },
+    {
+     "w": "That's",
+     "t0": 2.77,
+     "t1": 3.151,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 3.151,
+     "t1": 3.341,
+     "k": false
+    },
+    {
+     "w": "hundred",
+     "t0": 3.341,
+     "t1": 4.007,
+     "k": false
+    },
+    {
+     "w": "pound",
+     "t0": 4.007,
+     "t1": 4.483,
+     "k": false
+    },
+    {
+     "w": "fine",
+     "t0": 4.483,
+     "t1": 4.863,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 4.863,
+     "t1": 5.149,
+     "k": false
+    },
+    {
+     "w": "three",
+     "t0": 5.149,
+     "t1": 5.529,
+     "k": false
+    },
+    {
+     "w": "points.",
+     "t0": 5.529,
+     "t1": 6.1,
+     "k": false
+    },
+    {
+     "w": "Nigel,",
+     "t0": 6.32,
+     "t1": 6.383,
+     "k": false
+    },
+    {
+     "w": "guilty.",
+     "t0": 6.383,
+     "t1": 6.745,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 58.7,
+   "dur": 8.595,
+   "say": "But rule two six eight says, do not overtake on the left. The main exception is queuing traffic, where your lane is moving faster.",
+   "words": [
+    {
+     "w": "But",
+     "t0": 0.26,
+     "t1": 0.503,
+     "k": false
+    },
+    {
+     "w": "rule",
+     "t0": 0.503,
+     "t1": 0.827,
+     "k": false
+    },
+    {
+     "w": "two",
+     "t0": 0.827,
+     "t1": 1.07,
+     "k": false
+    },
+    {
+     "w": "six",
+     "t0": 1.07,
+     "t1": 1.394,
+     "k": false
+    },
+    {
+     "w": "eight",
+     "t0": 1.394,
+     "t1": 1.637,
+     "k": false
+    },
+    {
+     "w": "says,",
+     "t0": 1.637,
+     "t1": 1.88,
+     "k": false
+    },
+    {
+     "w": "do",
+     "t0": 2.16,
+     "t1": 2.358,
+     "k": false
+    },
+    {
+     "w": "not",
+     "t0": 2.358,
+     "t1": 2.555,
+     "k": true
+    },
+    {
+     "w": "overtake",
+     "t0": 2.555,
+     "t1": 3.083,
+     "k": false
+    },
+    {
+     "w": "on",
+     "t0": 3.083,
+     "t1": 3.215,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.215,
+     "t1": 3.346,
+     "k": false
+    },
+    {
+     "w": "left.",
+     "t0": 3.346,
+     "t1": 3.61,
+     "k": false
+    },
+    {
+     "w": "The",
+     "t0": 4.08,
+     "t1": 4.218,
+     "k": false
+    },
+    {
+     "w": "main",
+     "t0": 4.218,
+     "t1": 4.494,
+     "k": false
+    },
+    {
+     "w": "exception",
+     "t0": 4.494,
+     "t1": 5.045,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 5.045,
+     "t1": 5.183,
+     "k": false
+    },
+    {
+     "w": "queuing",
+     "t0": 5.183,
+     "t1": 5.596,
+     "k": true
+    },
+    {
+     "w": "traffic,",
+     "t0": 5.596,
+     "t1": 6.01,
+     "k": false
+    },
+    {
+     "w": "where",
+     "t0": 6.43,
+     "t1": 6.667,
+     "k": false
+    },
+    {
+     "w": "your",
+     "t0": 6.667,
+     "t1": 6.903,
+     "k": false
+    },
+    {
+     "w": "lane",
+     "t0": 6.903,
+     "t1": 7.219,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 7.219,
+     "t1": 7.377,
+     "k": false
+    },
+    {
+     "w": "moving",
+     "t0": 7.377,
+     "t1": 7.85,
+     "k": false
+    },
+    {
+     "w": "faster.",
+     "t0": 7.85,
+     "t1": 8.245,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 67.295,
+   "dur": 6.705,
+   "say": "On an empty motorway, undertaking can be careless driving too. Same fine. Same three points.",
+   "words": [
+    {
+     "w": "On",
+     "t0": 0.26,
+     "t1": 0.374,
+     "k": false
+    },
+    {
+     "w": "an",
+     "t0": 0.374,
+     "t1": 0.488,
+     "k": false
+    },
+    {
+     "w": "empty",
+     "t0": 0.488,
+     "t1": 0.774,
+     "k": false
+    },
+    {
+     "w": "motorway,",
+     "t0": 0.774,
+     "t1": 1.23,
+     "k": false
+    },
+    {
+     "w": "undertaking",
+     "t0": 1.5,
+     "t1": 2.197,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 2.197,
+     "t1": 2.406,
+     "k": false
+    },
+    {
+     "w": "be",
+     "t0": 2.406,
+     "t1": 2.615,
+     "k": false
+    },
+    {
+     "w": "careless",
+     "t0": 2.615,
+     "t1": 3.033,
+     "k": false
+    },
+    {
+     "w": "driving",
+     "t0": 3.033,
+     "t1": 3.521,
+     "k": false
+    },
+    {
+     "w": "too.",
+     "t0": 3.521,
+     "t1": 3.73,
+     "k": true
+    },
+    {
+     "w": "Same",
+     "t0": 4.11,
+     "t1": 4.53,
+     "k": false
+    },
+    {
+     "w": "fine.",
+     "t0": 4.53,
+     "t1": 4.95,
+     "k": false
+    },
+    {
+     "w": "Same",
+     "t0": 5.18,
+     "t1": 5.516,
+     "k": false
+    },
+    {
+     "w": "three",
+     "t0": 5.516,
+     "t1": 5.851,
+     "k": false
+    },
+    {
+     "w": "points.",
+     "t0": 5.851,
+     "t1": 6.355,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 74.0,
+   "dur": 4.615,
+   "say": "Gary should have moved out, and passed on the right. Gary, half right.",
+   "words": [
+    {
+     "w": "Gary",
+     "t0": 0.26,
+     "t1": 0.493,
+     "k": false
+    },
+    {
+     "w": "should",
+     "t0": 0.493,
+     "t1": 0.668,
+     "k": false
+    },
+    {
+     "w": "have",
+     "t0": 0.668,
+     "t1": 0.843,
+     "k": false
+    },
+    {
+     "w": "moved",
+     "t0": 0.843,
+     "t1": 1.135,
+     "k": false
+    },
+    {
+     "w": "out,",
+     "t0": 1.135,
+     "t1": 1.31,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 1.48,
+     "t1": 1.714,
+     "k": false
+    },
+    {
+     "w": "passed",
+     "t0": 1.714,
+     "t1": 2.026,
+     "k": false
+    },
+    {
+     "w": "on",
+     "t0": 2.026,
+     "t1": 2.182,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.182,
+     "t1": 2.338,
+     "k": false
+    },
+    {
+     "w": "right.",
+     "t0": 2.338,
+     "t1": 2.65,
+     "k": false
+    },
+    {
+     "w": "Gary,",
+     "t0": 3.02,
+     "t1": 3.501,
+     "k": false
+    },
+    {
+     "w": "half",
+     "t0": 3.501,
+     "t1": 3.833,
+     "k": true
+    },
+    {
+     "w": "right.",
+     "t0": 3.833,
+     "t1": 4.165,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 78.615,
+   "dur": 4.705,
+   "say": "Fair, or should Gary get off? Tell me below. Follow for case four.",
+   "words": [
+    {
+     "w": "Fair,",
+     "t0": 0.26,
+     "t1": 0.472,
+     "k": false
+    },
+    {
+     "w": "or",
+     "t0": 0.472,
+     "t1": 0.634,
+     "k": false
+    },
+    {
+     "w": "should",
+     "t0": 0.634,
+     "t1": 0.875,
+     "k": false
+    },
+    {
+     "w": "Gary",
+     "t0": 0.875,
+     "t1": 1.197,
+     "k": false
+    },
+    {
+     "w": "get",
+     "t0": 1.197,
+     "t1": 1.439,
+     "k": false
+    },
+    {
+     "w": "off?",
+     "t0": 1.439,
+     "t1": 1.6,
+     "k": false
+    },
+    {
+     "w": "Tell",
+     "t0": 1.86,
+     "t1": 2.067,
+     "k": false
+    },
+    {
+     "w": "me",
+     "t0": 2.067,
+     "t1": 2.275,
+     "k": false
+    },
+    {
+     "w": "below.",
+     "t0": 2.275,
+     "t1": 2.62,
+     "k": false
+    },
+    {
+     "w": "Follow",
+     "t0": 2.91,
+     "t1": 3.292,
+     "k": false
+    },
+    {
+     "w": "for",
+     "t0": 3.292,
+     "t1": 3.521,
+     "k": false
+    },
+    {
+     "w": "case",
+     "t0": 3.521,
+     "t1": 3.826,
+     "k": false
+    },
+    {
+     "w": "four.",
+     "t0": 3.826,
+     "t1": 4.055,
+     "k": false
+    }
+   ]
+  }
+ ]
+}
