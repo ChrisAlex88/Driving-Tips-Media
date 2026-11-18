@@ -22,7 +22,7 @@ renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.0;
 document.body.prepend(renderer.domElement);
 export const scene = new THREE.Scene();
-export const camera = new THREE.PerspectiveCamera(40, W / H, 0.05, 900);
+export const camera = new THREE.PerspectiveCamera(40, W / H, 0.05, 3000);
 scene.fog = new THREE.Fog(0x9fb6cc, 60, 260);
 
 const matCache = {};
@@ -40,6 +40,8 @@ export function mesh(geo, m, p, parent, o = {}) {
 }
 export const box = (w, h, d, m, p, parent, o) => mesh(new THREE.BoxGeometry(w, h, d), m, p, parent, o);
 export const rbox = (w, h, d, r, m, p, parent, o) => mesh(new RoundedBoxGeometry(w, h, d, 3, r), m, p, parent, o);
+export const sbox = (w, h, d, r, m, p, parent, o) => mesh(new RoundedBoxGeometry(w, h, d, 6, r), m, p, parent, o);   // smoother, for vehicle bodies
+export function paint(col) { const k = 'paint' + col; if (matCache[k]) return matCache[k]; const m = new THREE.MeshPhysicalMaterial({ color: col, roughness: 0.32, metalness: 0.15, clearcoat: 0.7, clearcoatRoughness: 0.18 }); matCache[k] = m; return m; }
 export const cyl = (rt, rb, h, m, p, parent, o = {}) => mesh(new THREE.CylinderGeometry(rt, rb, h, o.seg || 20), m, p, parent, o);
 export const sph = (r, m, p, parent, o = {}) => mesh(new THREE.SphereGeometry(r, o.seg || 20, o.seg2 || 14), m, p, parent, o);
 
@@ -62,25 +64,34 @@ export function lights(mode = 'day') {
   setMood(mode);
 }
 let skyTex = {};
+let dome = null;
+// sky as a dome around the camera: blue overhead fading to the haze colour at the horizon (same colour as the fog)
+export function skyDome(top, hor) {
+  if (!dome) {
+    const t = canvasTex(8, 512, (g, w, h) => { const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, top); gr.addColorStop(0.32, top); gr.addColorStop(0.47, hor); gr.addColorStop(1, hor); g.fillStyle = gr; g.fillRect(0, 0, w, h); });
+    dome = new THREE.Mesh(new THREE.SphereGeometry(2400, 32, 24), new THREE.MeshBasicMaterial({ map: t, side: THREE.BackSide, fog: false, depthWrite: false }));
+    dome.renderOrder = -10; dome.onBeforeRender = (r, sc, cam) => dome.position.copy(cam.position); scene.add(dome);
+  }
+  dome.visible = true; scene.background = new THREE.Color(hor);
+}
 function skyGrad(top, bot, stars) {
   return canvasTex(64, 512, (g, w, h) => { const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, top); gr.addColorStop(1, bot); g.fillStyle = gr; g.fillRect(0, 0, w, h); });
 }
 export function setMood(mode, focus = V(0, 0, 0)) {
   if (mode === 'night') {
     skyTex.n = skyTex.n || skyGrad('#060a1c', '#1b2550');
-    scene.background = skyTex.n; scene.fog.color.set(0x141c38); scene.fog.near = 40; scene.fog.far = 170;
+    if (dome) dome.visible = false; scene.background = skyTex.n; scene.fog.color.set(0x141c38); scene.fog.near = 40; scene.fog.far = 170;
     L.hemi.color.set(0x7d8fd0); L.hemi.groundColor.set(0x2a2a36); L.hemi.intensity = 1.05; if (L.fill) L.fill.intensity = 0.9;
     L.sun.color.set(0x9fb2ff); L.sun.intensity = 0.55; L.sun.position.copy(focus).add(V(-30, 50, 20));
     renderer.toneMappingExposure = 1.3;
   } else if (mode === 'dawn') {
     skyTex.d = skyTex.d || skyGrad('#6f8fc2', '#f6c58e');
-    scene.background = skyTex.d; scene.fog.color.set(0xe8c7a6); scene.fog.near = 50; scene.fog.far = 230;
+    if (dome) dome.visible = false; scene.background = skyTex.d; scene.fog.color.set(0xe8c7a6); scene.fog.near = 50; scene.fog.far = 230;
     L.hemi.color.set(0xffe2c4); L.hemi.groundColor.set(0x6a5a4a); L.hemi.intensity = 0.95;
     L.sun.color.set(0xffc78a); L.sun.intensity = 2.4; L.sun.position.copy(focus).add(V(30, 25, -40)); if (L.fill) L.fill.intensity = 0.25;
     renderer.toneMappingExposure = 1.0;
   } else {
-    skyTex.day = skyTex.day || skyGrad('#6fa6dc', '#dbe9f3');
-    scene.background = skyTex.day; scene.fog.color.set(0xc9dbe8); scene.fog.near = 70; scene.fog.far = 260;
+    skyDome('#7aaad6', '#d3e2ec'); scene.fog.color.set(0xd3e2ec); scene.fog.near = 70; scene.fog.far = 260;
     L.hemi.color.set(0xd8e8ff); L.hemi.groundColor.set(0x6b6150); L.hemi.intensity = 1.05;
     L.sun.color.set(0xfff1dc); L.sun.intensity = 2.6; L.sun.position.copy(focus).add(V(-25, 45, 18)); if (L.fill) L.fill.intensity = 0.2;
     renderer.toneMappingExposure = 1.0;
@@ -206,33 +217,34 @@ let _lTex; function lTex() { return _lTex || (_lTex = canvasTex(128, 128, (g, w,
 export class Car {
   constructor(col = HERO, o = {}) {
     this.g = new THREE.Group(); scene.add(this.g); this.col = col; const g = this.g;
-    const body = mat(col, { r: .38, m: .15 }); const dark = mat('#15171b', { r: .6 }); const trim = mat('#0e1013', { r: .5 });
-    // lower body as a shell (bonnet, boot, sides) so the cabin is open inside
-    rbox(1.82, 0.6, 1.5, 0.14, body, V(0, 0.66, 1.45), g);
-    rbox(1.82, 0.6, 0.9, 0.14, body, V(0, 0.66, -1.7), g);
-    for (const sx of [-1, 1]) rbox(0.14, 0.6, 2.4, 0.06, body, V(sx * 0.84, 0.66, -0.3), g);
+    const body = paint(col); const dark = mat('#15171b', { r: .6 }); const trim = mat('#1a1c20', { r: .45 });
+    // lower body as a smooth shell (bonnet, boot, sides) so the cabin is open inside
+    sbox(1.82, 0.6, 1.5, 0.26, body, V(0, 0.66, 1.45), g);
+    sbox(1.82, 0.6, 0.9, 0.26, body, V(0, 0.66, -1.7), g);
+    for (const sx of [-1, 1]) sbox(0.16, 0.6, 2.4, 0.075, body, V(sx * 0.83, 0.66, -0.3), g);
     box(1.6, 0.06, 2.3, dark, V(0, 0.42, -0.3), g, { cast: false });
-    // cabin: pillars + roof + glass
-    this.glass = new THREE.MeshStandardMaterial({ color: 0x0b0e14, roughness: 0.12, metalness: 0.3, transparent: true, opacity: 0.92, side: THREE.DoubleSide, depthWrite: false });
-    const gl = mesh(new THREE.BoxGeometry(1.6, 0.56, 2.04), this.glass, V(0, 1.24, -0.3), g, { cast: false, recv: false }); gl.renderOrder = 2;
-    rbox(1.7, 0.1, 2.14, 0.04, body, V(0, 1.55, -0.3), g);               // roof
-    for (const sx of [-1, 1]) for (const z of [0.72, -1.33]) box(0.09, 0.58, 0.1, body, V(sx * 0.8, 1.24, z), g);
-    for (const sx of [-1, 1]) box(0.06, 0.58, 0.07, body, V(sx * 0.81, 1.24, -0.3), g);  // B pillar
-    box(1.6, 0.06, 0.06, body, V(0, 0.98, 0.73), g, { cast: false }); box(1.6, 0.06, 0.06, body, V(0, 0.98, -1.33), g, { cast: false });
-    // bumpers, arches
-    rbox(1.88, 0.22, 0.18, 0.05, trim, V(0, 0.43, 2.12), g); rbox(1.88, 0.22, 0.18, 0.05, trim, V(0, 0.43, -2.12), g);
+    // cabin: rounded glasshouse + roof + slim pillars
+    this.glass = new THREE.MeshStandardMaterial({ color: 0x0b0e14, roughness: 0.08, metalness: 0.4, transparent: true, opacity: 0.92, side: THREE.DoubleSide, depthWrite: false });
+    const gl = mesh(new RoundedBoxGeometry(1.62, 0.6, 2.06, 5, 0.17), this.glass, V(0, 1.23, -0.3), g, { cast: false, recv: false }); gl.renderOrder = 2;
+    sbox(1.66, 0.12, 2.06, 0.06, body, V(0, 1.55, -0.32), g);               // roof
+    for (const sx of [-1, 1]) for (const z of [0.68, -1.3]) sbox(0.08, 0.56, 0.12, 0.035, body, V(sx * 0.79, 1.24, z), g);
+    for (const sx of [-1, 1]) sbox(0.06, 0.56, 0.08, 0.025, body, V(sx * 0.8, 1.24, -0.3), g);  // B pillar
+    sbox(1.6, 0.07, 0.08, 0.03, body, V(0, 0.98, 0.72), g, { cast: false }); sbox(1.6, 0.07, 0.08, 0.03, body, V(0, 0.98, -1.31), g, { cast: false });
+    // bumpers, wheel-arch flares, sill
+    sbox(1.88, 0.24, 0.22, 0.1, trim, V(0, 0.43, 2.11), g); sbox(1.88, 0.24, 0.22, 0.1, trim, V(0, 0.43, -2.11), g);
     box(1.7, 0.18, 3.6, dark, V(0, 0.32, 0), g);
+    for (const sx of [-1, 1]) for (const z of [1.33, -1.33]) { const a = mesh(new THREE.TorusGeometry(0.4, 0.055, 10, 28, Math.PI), trim, V(sx * 0.9, 0.36, z), g, { cast: false }); a.rotation.y = Math.PI / 2; }
     // lights
     this.head = mat('#f4f6ff', { e: 0xffffff, ei: 0.2, r: .2, unique: true });
     for (const sx of [-1, 1]) {
-      box(0.36, 0.14, 0.06, this.head, V(sx * 0.6, 0.78, 2.09), g, { cast: false });
-      box(0.12, 0.1, 0.06, mat('#ff9a1f', { e: 0xff8a00, ei: 0.2 }), V(sx * 0.86, 0.78, 2.06), g, { cast: false });
+      sbox(0.38, 0.15, 0.08, 0.05, this.head, V(sx * 0.58, 0.78, 2.17), g, { cast: false });
+      sbox(0.12, 0.1, 0.08, 0.035, mat('#ff9a1f', { e: 0xff8a00, ei: 0.2 }), V(sx * 0.84, 0.78, 2.13), g, { cast: false });
     }
     this.tail = mat('#c4121f', { e: 0xff1020, ei: 0.25, r: .3, unique: true });
-    for (const sx of [-1, 1]) box(0.38, 0.16, 0.06, this.tail, V(sx * 0.58, 0.8, -2.09), g, { cast: false });
+    for (const sx of [-1, 1]) sbox(0.4, 0.17, 0.08, 0.05, this.tail, V(sx * 0.58, 0.8, -2.17), g, { cast: false });
     // plates
-    const pf = new THREE.Mesh(new THREE.PlaneGeometry(0.52, 0.13), new THREE.MeshStandardMaterial({ map: plateTex(o.plate || 'LR26 TIP', '#f4f4f0') })); pf.position.set(0, 0.45, 2.215); g.add(pf);
-    const pr = new THREE.Mesh(new THREE.PlaneGeometry(0.52, 0.13), new THREE.MeshStandardMaterial({ map: plateTex(o.plate || 'LR26 TIP', '#f5c518') })); pr.position.set(0, 0.45, -2.215); pr.rotation.y = Math.PI; g.add(pr);
+    const pf = new THREE.Mesh(new THREE.PlaneGeometry(0.52, 0.13), new THREE.MeshStandardMaterial({ map: plateTex(o.plate || 'LR26 TIP', '#f4f4f0') })); pf.position.set(0, 0.45, 2.225); g.add(pf);
+    const pr = new THREE.Mesh(new THREE.PlaneGeometry(0.52, 0.13), new THREE.MeshStandardMaterial({ map: plateTex(o.plate || 'LR26 TIP', '#f5c518') })); pr.position.set(0, 0.45, -2.225); pr.rotation.y = Math.PI; g.add(pr);
     // L plates
     if (o.lplate !== false && col === HERO) {
       const lm = new THREE.MeshStandardMaterial({ map: lTex(), roughness: .5 });
@@ -241,13 +253,13 @@ export class Car {
       const c = new THREE.Mesh(new THREE.PlaneGeometry(0.34, 0.34), lm); c.position.set(0, 1.61, -0.2); c.rotation.x = -Math.PI / 2; g.add(c);
     }
     // mirrors
-    for (const sx of [-1, 1]) box(0.16, 0.12, 0.1, body, V(sx * 0.98, 1.02, 0.62), g);
+    for (const sx of [-1, 1]) sbox(0.18, 0.13, 0.12, 0.05, body, V(sx * 0.98, 1.02, 0.62), g);
     // wheels
     this.wheels = [];
     const tyre = mat('#141414', { r: .9 }); const rim = mat('#c9ced6', { r: .3, m: .7 });
     for (const sx of [-1, 1]) for (const z of [1.33, -1.33]) {
       const wg = new THREE.Group(); wg.position.set(sx * 0.82, 0.34, z); g.add(wg);
-      cyl(0.34, 0.34, 0.24, tyre, V(0, 0, 0), wg, { rot: [0, 0, Math.PI / 2], seg: 24 });
+      cyl(0.3, 0.3, 0.2, tyre, V(0, 0, 0), wg, { rot: [0, 0, Math.PI / 2], seg: 36 }); const ty = mesh(new THREE.TorusGeometry(0.25, 0.095, 12, 40), tyre, V(0, 0, 0), wg); ty.rotation.y = Math.PI / 2;
       const hub = new THREE.Group(); hub.position.x = sx * 0.125; wg.add(hub);
       cyl(0.2, 0.2, 0.02, rim, V(0, 0, 0), hub, { rot: [0, 0, Math.PI / 2], seg: 20 });
       for (let k = 0; k < 5; k++) { const s = box(0.03, 0.36, 0.06, mat('#9aa1ab', { m: .6, r: .35 }), V(sx * 0.012, 0, 0), hub); s.rotation.x = k * Math.PI * 2 / 5; }
@@ -485,23 +497,36 @@ export class Ambulance {
   world(lx, ly, lz) { return this.g.localToWorld(V(lx, ly, lz)); }
 }
 // expressive face for Person (call after construction)
-export function addFace(p) {
+export function addFace(p, o = {}) {
   const hg = p.headG; p.eyes.forEach(e => e.visible = false);
-  const white = mat('#ffffff', { r: .3 }), pup = mat('#1a1a1a', { r: .2 }), brow = mat('#3a2a1e');
-  p.face = { eyes: [], pupils: [], brows: [] };
+  // warm the skin a touch so faces never go dark inside cabins
+  const head = hg.children[0]; const sk = head.material.clone(); sk.emissive = sk.color.clone().multiplyScalar(0.18); sk.roughness = 0.6; head.material = sk;
+  head.geometry = new THREE.SphereGeometry(0.17, 32, 24); head.scale.set(0.96, 1.06, 1);
+  const skinD = sk.clone(); skinD.color = sk.color.clone().multiplyScalar(0.9);
+  const white = mat('#f7f5f2', { r: .25 }), iris = mat(o.eyes || '#5a3b22', { r: .25 }), pup = mat('#0d0d0f', { r: .1 }), hl = mat('#ffffff', { e: 0xffffff, ei: 0.8 });
+  const browM = mat(o.brow || '#33241a', { r: .8 });
+  p.face = { eyes: [], pupils: [], brows: [], lids: [] };
   for (const sx of [-1, 1]) {
-    const e = sph(0.038, white, V(sx * 0.062, 0.185, 0.148), hg, { seg: 12, seg2: 10 }); e.scale.z = 0.6; p.face.eyes.push(e);
-    const q = sph(0.02, pup, V(sx * 0.062, 0.185, 0.17), hg, { seg: 10, seg2: 8 }); p.face.pupils.push(q);
-    const b = box(0.07, 0.016, 0.02, brow, V(sx * 0.064, 0.245, 0.158), hg, { cast: false }); p.face.brows.push(b);
+    const eg = new THREE.Group(); eg.position.set(sx * 0.061, 0.185, 0.138); hg.add(eg);
+    const e = sph(0.036, white, V(0, 0, 0), eg, { seg: 18, seg2: 14, cast: false }); e.scale.set(1.1, 0.95, 0.75); p.face.eyes.push(eg);
+    const ir = new THREE.Group(); ir.position.set(0, -0.002, 0.024); eg.add(ir);
+    sph(0.019, iris, V(0, 0, 0), ir, { seg: 14, seg2: 10 }).scale.z = 0.5; sph(0.01, pup, V(0, 0, 0.007), ir, { seg: 10, seg2: 8 }).scale.z = 0.5;
+    sph(0.0045, hl, V(0.006, 0.007, 0.012), ir, { seg: 6, seg2: 6 }); p.face.pupils.push(ir);
+    const lid = new THREE.Mesh(new THREE.SphereGeometry(0.039, 18, 10, 0, Math.PI * 2, 0, Math.PI * 0.5), sk); lid.scale.set(1.1, 0.95, 0.8); lid.rotation.x = -0.25; lid.castShadow = false; eg.add(lid); p.face.lids.push(lid);
+    const b = sbox(0.058, 0.016, 0.022, 0.007, browM, V(sx * 0.07, 0.238, 0.153), hg, { cast: false }); p.face.brows.push(b);
+    const ear = sph(0.04, skinD, V(sx * 0.163, 0.165, -0.005), hg, { seg: 12, seg2: 10, cast: false }); ear.scale.set(0.35, 0.95, 0.65);
   }
-  sph(0.03, mat('#e7a878'), V(0, 0.15, 0.172), hg, { seg: 10, seg2: 8 });
-  p.face.mouth = mesh(new THREE.TorusGeometry(0.045, 0.011, 6, 16, Math.PI), mat('#7a2a2a'), V(0, 0.095, 0.155), hg, { cast: false });
+  const nose = sph(0.022, skinD, V(0, 0.15, 0.162), hg, { seg: 14, seg2: 12, cast: false }); nose.scale.set(0.8, 1.15, 0.75);
+  const lips = mat(o.lips || '#a65a52', { r: .5 });
+  p.face.mouth = mesh(new THREE.TorusGeometry(0.04, 0.012, 10, 24, Math.PI), lips, V(0, 0.098, 0.152), hg, { cast: false });
+  p.face.open = sph(1, mat('#4a1c1c', { r: .6 }), V(0, 0.092, 0.158), hg, { seg: 16, seg2: 12, cast: false }); p.face.open.scale.set(0.03, 0.024, 0.012);
   p.expr = (name) => {
-    const f = p.face; f.mouth.rotation.set(0, 0, Math.PI); f.mouth.scale.set(1, 1, 1); f.brows.forEach((b, i) => { b.rotation.z = 0; b.position.y = 0.245; }); f.eyes.forEach(e => e.scale.y = 1); f.pupils.forEach(q => q.visible = true);
-    if (name === 'smug') { f.mouth.rotation.z = Math.PI + 0.25; f.mouth.scale.set(1.1, 0.6, 1); f.brows.forEach((b, i) => { b.rotation.z = (i ? -0.25 : 0.25); }); f.eyes.forEach(e => e.scale.y = 0.6); }
-    if (name === 'shock') { f.mouth.rotation.z = 0; f.mouth.scale.set(0.7, 1.4, 1); f.brows.forEach(b => b.position.y = 0.27); }
-    if (name === 'annoyed') { f.mouth.rotation.z = 0; f.mouth.scale.set(1, 0.5, 1); f.brows.forEach((b, i) => { b.rotation.z = (i ? 0.35 : -0.35); b.position.y = 0.235; }); }
-    if (name === 'closed') { f.eyes.forEach(e => e.scale.y = 0.15); f.pupils.forEach(q => q.visible = false); }
+    const f = p.face; f.mouth.rotation.set(0, 0, Math.PI); f.mouth.scale.set(1, 0.8, 1); f.brows.forEach(b => { b.rotation.z = 0; b.position.y = 0.238; });
+    f.lids.forEach(l => { l.rotation.x = -0.25; }); f.pupils.forEach(q => q.visible = true); f.mouth.visible = true; f.open.visible = false;
+    if (name === 'smug') { f.mouth.rotation.z = Math.PI + 0.2; f.mouth.scale.set(1.15, 0.65, 1); f.brows.forEach((b, i) => { b.rotation.z = (i ? -0.2 : 0.2); }); f.lids.forEach(l => l.rotation.x = 0.35); }
+    if (name === 'shock') { f.mouth.visible = false; f.open.visible = true; f.brows.forEach(b => b.position.y = 0.262); f.lids.forEach(l => l.rotation.x = -0.6); }
+    if (name === 'annoyed') { f.mouth.rotation.z = 0; f.mouth.scale.set(0.9, 0.35, 1); f.brows.forEach((b, i) => { b.rotation.z = (i ? 0.22 : -0.22); b.position.y = 0.234; }); f.lids.forEach(l => l.rotation.x = 0.25); }
+    if (name === 'closed') { f.lids.forEach(l => l.rotation.x = 1.5); f.pupils.forEach(q => q.visible = false); }
   };
   p.expr('neutral'); return p;
 }
@@ -512,22 +537,22 @@ export function hoodie(p, col = '#d62828') { p.torso.children[0].material = mat(
 export class Pickup {
   constructor(col = '#eef0f2', o = {}) {
     const g = this.g = new THREE.Group(); scene.add(g);
-    const body = mat(col, { r: .35, m: .15 }), dark = mat('#15171b', { r: .6 }), trim = mat('#1b1d21', { r: .5 }), chrome = mat('#cfd4da', { m: .8, r: .25 });
-    rbox(1.94, 0.62, 1.55, 0.12, body, V(0, 0.92, 1.85), g);                                  // bonnet
+    const body = paint(col), dark = mat('#15171b', { r: .6 }), trim = mat('#1b1d21', { r: .5 }), chrome = mat('#cfd4da', { m: .8, r: .25 });
+    sbox(1.94, 0.62, 1.55, 0.24, body, V(0, 0.92, 1.85), g);                                  // bonnet
     for (const sx of [-1, 1]) rbox(0.12, 0.62, 1.6, 0.05, body, V(sx * 0.91, 0.92, 0.45), g);  // cab sides (open cabin)
     box(1.75, 0.06, 1.6, dark, V(0, 0.66, 0.45), g, { cast: false });
-    rbox(1.94, 0.62, 2.35, 0.1, body, V(0, 0.92, -1.45), g);                                  // bed lower
+    sbox(1.94, 0.62, 2.35, 0.2, body, V(0, 0.92, -1.45), g);                                  // bed lower
     box(1.7, 0.04, 2.15, mat('#2a2c30', { r: .9 }), V(0, 1.24, -1.45), g, { cast: false });   // bed floor
     for (const sx of [-1, 1]) rbox(0.1, 0.36, 2.35, 0.03, body, V(sx * 0.92, 1.4, -1.45), g);
     rbox(1.94, 0.36, 0.1, 0.03, body, V(0, 1.4, -2.58), g); rbox(1.94, 0.36, 0.1, 0.03, body, V(0, 1.4, -0.32), g);
     this.glass = new THREE.MeshStandardMaterial({ color: 0x0b0e14, roughness: 0.12, metalness: 0.3, transparent: true, opacity: 0.85, side: THREE.DoubleSide, depthWrite: false });
-    const gl = mesh(new THREE.BoxGeometry(1.74, 0.6, 1.45), this.glass, V(0, 1.53, 0.45), g, { cast: false, recv: false }); gl.renderOrder = 2;
-    rbox(1.84, 0.1, 1.6, 0.04, body, V(0, 1.86, 0.42), g);
+    const gl = mesh(new RoundedBoxGeometry(1.76, 0.62, 1.47, 5, 0.16), this.glass, V(0, 1.53, 0.45), g, { cast: false, recv: false }); gl.renderOrder = 2;
+    sbox(1.8, 0.12, 1.56, 0.06, body, V(0, 1.86, 0.42), g);
     for (const sx of [-1, 1]) for (const z of [1.17, -0.26]) box(0.09, 0.62, 0.1, body, V(sx * 0.87, 1.53, z), g);
     box(1.75, 0.03, 1.45, mat('#a3a7ae', { r: .95 }), V(0, 1.8, 0.45), g, { cast: false });
     // grille, bumpers, arches
     box(1.3, 0.34, 0.05, trim, V(0, 0.98, 2.63), g, { cast: false }); for (let i = 0; i < 3; i++) box(1.3, 0.03, 0.06, chrome, V(0, 0.88 + i * 0.1, 2.645), g, { cast: false });
-    rbox(2.0, 0.26, 0.2, 0.05, trim, V(0, 0.55, 2.66), g); rbox(2.0, 0.24, 0.18, 0.05, chrome, V(0, 0.55, -2.68), g);
+    sbox(2.0, 0.26, 0.22, 0.1, trim, V(0, 0.55, 2.66), g); sbox(2.0, 0.24, 0.2, 0.09, chrome, V(0, 0.55, -2.68), g);
     box(1.8, 0.24, 5.0, dark, V(0, 0.45, 0), g);
     for (const sx of [-1, 1]) for (const z of [1.65, -1.65]) box(0.16, 0.42, 1.1, trim, V(sx * 0.95, 0.75, z), g);
     // towbar
@@ -609,4 +634,19 @@ export function crashBarrier(x, z0, z1) {
   box(0.08, 0.32, len, steel, V(x, 0.62, zc), null, { cast: false });
   const n = Math.floor(len / 2.4); const geo = new THREE.BoxGeometry(0.12, 0.75, 0.12); const im = new THREE.InstancedMesh(geo, post, n);
   const m4 = new THREE.Matrix4(); for (let i = 0; i < n; i++) { m4.makeTranslation(x + 0.1, 0.37, Math.min(z0, z1) + i * 2.4); im.setMatrixAt(i, m4); } scene.add(im);
+}
+
+export function countryside(o = {}) {
+  const R = mulberry(o.seed || 11), cx = o.cx || 0, cz = o.cz || 0;
+  box(6000, 0.01, 6000, mat(o.grass || '#7fa36a', { r: 1 }), V(cx, -0.03, cz), null, { cast: false });
+  // hills: a ring of low smooth mounds far away
+  const hm = mat(o.hill || '#7f9f72', { r: 1 });
+  for (let i = 0; i < 70; i++) { const a = i / 70 * Math.PI * 2 + R() * 0.05, r = 1100 + R() * 500, s = 120 + R() * 200;
+    const m = sph(1, hm, V(cx + Math.cos(a) * r, -s * 0.72, cz + Math.sin(a) * r), null, { seg: 18, seg2: 10, cast: false }); m.scale.set(s * 1.8, s, s * 1.4); }
+  // tree belts between the near scenery and the hills
+  const tg = new THREE.SphereGeometry(1, 8, 6), tm = mat('#5f8550', { r: 1 }); const n = 900; const im = new THREE.InstancedMesh(tg, tm, n); const m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), sc = V(1, 1, 1), ps = V(0, 0, 0);
+  for (let i = 0; i < n; i++) { let x, z; do { x = cx + (R() - 0.5) * 2000; z = cz + (R() - 0.5) * 2000; } while (Math.abs(x - cx) < (o.clearX || 60) && Math.abs(z - cz) < (o.clearZ || 450));
+    if (o.avoid && o.avoid(x, z)) { i--; continue; }
+    const s = 4 + R() * 5; ps.set(x, s * 0.9, z); sc.set(s, s * (0.9 + R() * 0.4), s); m4.compose(ps, q, sc); im.setMatrixAt(i, m4); }
+  scene.add(im);
 }

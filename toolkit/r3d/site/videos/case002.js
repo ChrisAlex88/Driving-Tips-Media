@@ -1,7 +1,7 @@
 // Road Court — Case 002: the lane closed (merge in turn). Gary is in the right; Darren (white pickup) blocks him.
 // Traffic heads north (-z, heading PI). Lane 1 (left, closing) x=-1.75, lane 2 x=+1.75. Taper cones z -54 -> -68.
 import { THREE, V, lerp, seg, easeIO, easeOut, smooth, mat, box, Ground, tree, bush, house, Car, HERO, Person, addFace, hoodie, makeSeated, povHands,
-  cam, shots, toScreen, lights, setMood, scene, Pickup, unmarked, officer, cone, yellowSign, textLines, crashBarrier, mulberry } from '../engine.js';
+  cam, shots, toScreen, lights, setMood, scene, Pickup, unmarked, officer, cone, yellowSign, textLines, crashBarrier, mulberry, countryside } from '../engine.js';
 
 const HN = Math.PI, L1 = -1.75, L2 = 1.75, TS = -54, TE = -68, VX = -5.0; // VX: verge stopping line
 const T0 = 8.25;              // start of the approach (segment 2)
@@ -21,16 +21,16 @@ const VIDEO = {
   build() {
     lights('day');
     const G = new Ground(260, 4096, 0, -50); const R = mulberry(5);
-    G.grass('#6ea455');
+    G.grass('#7fa36a');
     for (let i = 0; i < 26000; i++) { const x = lerp(-130, 130, R()), z = lerp(-180, 80, R()); G.g.fillStyle = R() < .5 ? 'rgba(40,80,20,0.18)' : 'rgba(170,210,110,0.16)'; G.g.fillRect(G.X(x), G.Z(z), 4, 4); }
     G.asphalt(-4.0, -180, 3.6, 80, '#3d4148'); G.asphalt(6.4, -180, 14.0, 80, '#3d4148');
-    G.rect(3.6, -180, 6.4, 80, '#5f9a48');
+    G.rect(3.6, -180, 6.4, 80, '#759a63');
     for (const [a, b] of [[-3.5, 3.4], [6.9, 13.6]]) { G.line(a, -180, a, 80, 0.15); G.line(b, -180, b, 80, 0.15); }
     G.line(0, TE, 0, 80, 0.13, '#f2f2ee', 3, 6); G.line(10.25, -180, 10.25, 80, 0.13, '#f2f2ee', 3, 6);
     G.line(0, -180, 0, TE, 0.13, '#f2f2ee', 3, 6);
     G.build();
     // beyond the detailed ground: plain road and grass into the haze
-    const FAR = 520, asph = mat('#3d4148', { r: .95 }), white = mat('#ecece6', { r: .6 });
+    const FAR = 1500, asph = mat('#3d4148', { r: .95 }), white = mat('#ecece6', { r: .6 });
     for (const [z0, z1] of [[80, FAR], [-180, -FAR]]) {
       const zc = (z0 + z1) / 2, L = Math.abs(z1 - z0);
       box(7.6, 0.02, L, asph, V(-0.2, 0.004, zc), null, { cast: false }); box(7.6, 0.02, L, asph, V(10.2, 0.004, zc), null, { cast: false });
@@ -38,7 +38,7 @@ const VIDEO = {
       const n = Math.floor(L / 9), geo = new THREE.BoxGeometry(0.13, 0.025, 3); const m4 = new THREE.Matrix4();
       for (const x of [0, 10.25]) { const im = new THREE.InstancedMesh(geo, white, n); for (let i = 0; i < n; i++) { m4.makeTranslation(x, 0.007, Math.min(z0, z1) + i * 9 + 1.5); im.setMatrixAt(i, m4); } scene.add(im); }
     }
-    box(2 * FAR, 0.01, 2 * FAR, mat('#6ea455', { r: 1 }), V(0, -0.02, -100), null, { cast: false });
+    countryside({ cx: 5, cz: -60, grass: '#7fa36a', clearX: 70, clearZ: 430, avoid: (x, z) => x > -14 && x < 24 });
     crashBarrier(5.0, -FAR, FAR);
     // trees, hedges and houses either side
     for (let i = 0; i < 150; i++) { const s = R() < .5 ? -1 : 1; const x = s < 0 ? -10 - R() * 45 : 19 + R() * 45; const z = lerp(-420, 120, R()); tree(x, z, 1.1 + R() * 1.1); }
@@ -81,7 +81,7 @@ const VIDEO = {
     return { gary, drv, hands, pick, darren, pol, cop, queue, demo, opp };
   },
   frame(ctx) {
-    const { O, t } = ctx; setMood('day', V(0, 0, -30)); scene.fog.color.set(0xdbe9f3); scene.fog.near = 60; scene.fog.far = 330;
+    const { O, t } = ctx; setMood('day', V(0, 0, -30)); scene.fog.color.set(0xd3e2ec); scene.fog.near = 90; scene.fog.far = 1100;
     O.opp.forEach((c, i) => { const z = -300 + ((t * 22 + i * 97) % 520); c.set(i % 2 ? 8.25 : 11.75, z, 0); });
     O.demo.forEach(c => c.g.visible = false); O.cop.g.visible = false; O.hands.visible = false; O.drv.g.visible = true;
     O.drv.expr('neutral'); O.darren.expr('annoyed'); O.darren.torso.rotation.y = 0; O.darren.headG.rotation.set(0, 0, 0);
