@@ -218,8 +218,7 @@ function pulled(O, kp, km, t) {
   const pz = lerp(qz(PO_, 6.2), -44.5, e), px = e < 0.35 ? lerp(L2, -0.5, e / 0.35) : lerp(-0.5, VX, Math.min(1, (e - 0.35) / 0.4));
   const ph = e < 0.75 ? HN + 0.35 * Math.sin(Math.min(1, e / 0.75) * Math.PI) : HN; O.pol.set(px, pz, ph); O.pol.police(t, true); O.pol.brake(e >= 1);
   const D = 30 * clamp01(km), gz = -43.2 - D;
-  const gx = gz > -56 ? L1 : gz < -68 ? L2 : lerp(L1, L2, smooth((-56 - gz) / 12));
-  O.gary.set(gx, gz, HN + (gz < -56 && gz > -68 ? -0.25 * Math.sin(Math.PI * (-56 - gz) / 12) : 0)); O.gary.brake(km >= 1);
+  O.gary.set(mergeX(gz), gz, mergeH(gz)); O.gary.brake(km >= 1);
   const da = 1.25 * D, db = Math.max(0, D - 2);
   O.queue.forEach((c, i) => { if (i === PI_ || i === PO_) return; c.g.visible = true; c.set(L2, qz(i, 6.2) - (i < PI_ ? da : db), HN); c.brake(km >= 1 || km <= 0); });
 }
@@ -229,12 +228,15 @@ function zip(O, u, t) {
   const cars = [O.gary, ...O.demo, ...O.queue.filter((c, i) => i !== PI_ && i !== PO_)];
   const v = 2.2; cars.forEach((c, j) => {
     const lane1 = j % 2 === 0 && j < 12; const s = -86 + j * 5.8 - v * u; const z = s;
-    let x = L2; if (lane1) x = z > -56 ? L1 : z < -68 ? L2 : lerp(L1, L2, smooth((-56 - z) / 12));
-    const h = lane1 && z < -56 && z > -68 ? HN - 0.25 * Math.sin(Math.PI * (-56 - z) / 12) : HN;
+    const x = lane1 ? mergeX(z) : L2; const h = lane1 ? mergeH(z) : HN;
     c.g.visible = true; c.set(x, z, h); c.brake(false);
   });
 }
 const clamp01 = k => Math.min(1, Math.max(0, k));
+// x of the taper cone line at z, and the lane-1 merge path that keeps the car's left side 0.35 m clear of it
+const coneX = z => z > TS ? -3.3 : z < TE ? -0.2 : lerp(-3.3, -0.2, (TS - z) / (TS - TE));
+const mergeX = z => { const zf = z - 2.3; return Math.min(L2, Math.max(L1, coneX(zf) + 1.27 + Math.max(0, TE - zf) * 0.45)); };
+const mergeH = z => Math.PI - Math.atan(mergeX(z - 0.5) - mergeX(z + 0.5));
 function ring(ctx, p, from, text) {
   if (ctx.ts < from) return; const s = toScreen(p); const k = easeOut(seg(ctx.ts, from, from + 0.3));
   ctx.html(`<div style="position:absolute;left:${s.x}px;top:${s.y}px;width:260px;height:190px;margin:-95px 0 0 -130px;border:8px solid #ff4a4a;border-radius:50%;transform:scale(${1.5 - 0.5 * k}) rotate(-12deg);opacity:${k}"></div>` + (text ? `<div class="tag red" style="left:${s.x}px;top:${s.y + 150}px;opacity:${k};font-size:40px">${text}</div>` : ''));

@@ -22,7 +22,7 @@ renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.0;
 document.body.prepend(renderer.domElement);
 export const scene = new THREE.Scene();
-export const camera = new THREE.PerspectiveCamera(40, W / H, 0.05, 3000);
+export const camera = new THREE.PerspectiveCamera(40, W / H, 0.1, 3000);
 scene.fog = new THREE.Fog(0x9fb6cc, 60, 260);
 
 const matCache = {};
@@ -638,7 +638,7 @@ export function crashBarrier(x, z0, z1) {
 
 export function countryside(o = {}) {
   const R = mulberry(o.seed || 11), cx = o.cx || 0, cz = o.cz || 0;
-  box(6000, 0.01, 6000, mat(o.grass || '#7fa36a', { r: 1 }), V(cx, -0.03, cz), null, { cast: false });
+  box(6000, 0.01, 6000, mat(o.grass || '#7fa36a', { r: 1 }), V(cx, -0.6, cz), null, { cast: false });   // well below the road so it can never flicker through
   // hills: a ring of low smooth mounds far away
   const hm = mat(o.hill || '#7f9f72', { r: 1 });
   for (let i = 0; i < 70; i++) { const a = i / 70 * Math.PI * 2 + R() * 0.05, r = 1100 + R() * 500, s = 120 + R() * 200;
