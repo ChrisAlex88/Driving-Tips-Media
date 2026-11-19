@@ -1,0 +1,1697 @@
+{
+ "total": 94.71,
+ "segments": [
+  {
+   "start": 0.0,
+   "dur": 6.485,
+   "say": "This guy thinks he's beaten the speed cameras. Slam the brakes at the camera, then floor it. Let's see.",
+   "words": [
+    {
+     "w": "This",
+     "t0": 0.16,
+     "t1": 0.361,
+     "k": false
+    },
+    {
+     "w": "guy",
+     "t0": 0.361,
+     "t1": 0.562,
+     "k": false
+    },
+    {
+     "w": "thinks",
+     "t0": 0.562,
+     "t1": 0.898,
+     "k": false
+    },
+    {
+     "w": "he's",
+     "t0": 0.898,
+     "t1": 1.166,
+     "k": false
+    },
+    {
+     "w": "beaten",
+     "t0": 1.166,
+     "t1": 1.568,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.568,
+     "t1": 1.702,
+     "k": false
+    },
+    {
+     "w": "speed",
+     "t0": 1.702,
+     "t1": 2.038,
+     "k": false
+    },
+    {
+     "w": "cameras.",
+     "t0": 2.038,
+     "t1": 2.44,
+     "k": false
+    },
+    {
+     "w": "Slam",
+     "t0": 2.78,
+     "t1": 3.047,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.047,
+     "t1": 3.18,
+     "k": false
+    },
+    {
+     "w": "brakes",
+     "t0": 3.18,
+     "t1": 3.58,
+     "k": false
+    },
+    {
+     "w": "at",
+     "t0": 3.58,
+     "t1": 3.713,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.713,
+     "t1": 3.847,
+     "k": false
+    },
+    {
+     "w": "camera,",
+     "t0": 3.847,
+     "t1": 4.18,
+     "k": false
+    },
+    {
+     "w": "then",
+     "t0": 4.33,
+     "t1": 4.587,
+     "k": false
+    },
+    {
+     "w": "floor",
+     "t0": 4.587,
+     "t1": 4.929,
+     "k": false
+    },
+    {
+     "w": "it.",
+     "t0": 4.929,
+     "t1": 5.1,
+     "k": false
+    },
+    {
+     "w": "Let's",
+     "t0": 5.47,
+     "t1": 5.793,
+     "k": false
+    },
+    {
+     "w": "see.",
+     "t0": 5.793,
+     "t1": 6.035,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 6.485,
+   "dur": 2.385,
+   "say": "Case four. The speed camera.",
+   "words": [
+    {
+     "w": "Case",
+     "t0": 0.26,
+     "t1": 0.649,
+     "k": false
+    },
+    {
+     "w": "four.",
+     "t0": 0.649,
+     "t1": 0.94,
+     "k": false
+    },
+    {
+     "w": "The",
+     "t0": 1.07,
+     "t1": 1.231,
+     "k": false
+    },
+    {
+     "w": "speed",
+     "t0": 1.231,
+     "t1": 1.633,
+     "k": false
+    },
+    {
+     "w": "camera.",
+     "t0": 1.633,
+     "t1": 2.035,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 8.87,
+   "dur": 8.585,
+   "say": "Motorway. The gantries say fifty, in a red ring. And the signs say average speed check. Gary sets his cruise control at fifty.",
+   "words": [
+    {
+     "w": "Motorway.",
+     "t0": 0.26,
+     "t1": 0.74,
+     "k": false
+    },
+    {
+     "w": "The",
+     "t0": 0.93,
+     "t1": 1.079,
+     "k": false
+    },
+    {
+     "w": "gantries",
+     "t0": 1.079,
+     "t1": 1.602,
+     "k": false
+    },
+    {
+     "w": "say",
+     "t0": 1.602,
+     "t1": 1.826,
+     "k": false
+    },
+    {
+     "w": "fifty,",
+     "t0": 1.826,
+     "t1": 2.2,
+     "k": true
+    },
+    {
+     "w": "in",
+     "t0": 2.4,
+     "t1": 2.566,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 2.566,
+     "t1": 2.732,
+     "k": false
+    },
+    {
+     "w": "red",
+     "t0": 2.732,
+     "t1": 2.981,
+     "k": false
+    },
+    {
+     "w": "ring.",
+     "t0": 2.981,
+     "t1": 3.23,
+     "k": false
+    },
+    {
+     "w": "And",
+     "t0": 3.55,
+     "t1": 3.765,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.765,
+     "t1": 3.909,
+     "k": false
+    },
+    {
+     "w": "signs",
+     "t0": 3.909,
+     "t1": 4.268,
+     "k": false
+    },
+    {
+     "w": "say",
+     "t0": 4.268,
+     "t1": 4.483,
+     "k": false
+    },
+    {
+     "w": "average",
+     "t0": 4.483,
+     "t1": 4.914,
+     "k": true
+    },
+    {
+     "w": "speed",
+     "t0": 4.914,
+     "t1": 5.273,
+     "k": false
+    },
+    {
+     "w": "check.",
+     "t0": 5.273,
+     "t1": 5.56,
+     "k": false
+    },
+    {
+     "w": "Gary",
+     "t0": 6.11,
+     "t1": 6.384,
+     "k": false
+    },
+    {
+     "w": "sets",
+     "t0": 6.384,
+     "t1": 6.658,
+     "k": false
+    },
+    {
+     "w": "his",
+     "t0": 6.658,
+     "t1": 6.864,
+     "k": false
+    },
+    {
+     "w": "cruise",
+     "t0": 6.864,
+     "t1": 7.207,
+     "k": false
+    },
+    {
+     "w": "control",
+     "t0": 7.207,
+     "t1": 7.755,
+     "k": false
+    },
+    {
+     "w": "at",
+     "t0": 7.755,
+     "t1": 7.892,
+     "k": false
+    },
+    {
+     "w": "fifty.",
+     "t0": 7.892,
+     "t1": 8.235,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 17.455,
+   "dur": 5.045,
+   "say": "Behind him, Kev. Brand new sports car. Doing seventy, and in a hurry.",
+   "words": [
+    {
+     "w": "Behind",
+     "t0": 0.26,
+     "t1": 0.911,
+     "k": false
+    },
+    {
+     "w": "him,",
+     "t0": 0.911,
+     "t1": 1.19,
+     "k": false
+    },
+    {
+     "w": "Kev.",
+     "t0": 1.5,
+     "t1": 1.294,
+     "k": false
+    },
+    {
+     "w": "Brand",
+     "t0": 1.294,
+     "t1": 1.696,
+     "k": false
+    },
+    {
+     "w": "new",
+     "t0": 1.696,
+     "t1": 2.017,
+     "k": false
+    },
+    {
+     "w": "sports",
+     "t0": 2.017,
+     "t1": 2.499,
+     "k": false
+    },
+    {
+     "w": "car.",
+     "t0": 2.499,
+     "t1": 2.74,
+     "k": false
+    },
+    {
+     "w": "Doing",
+     "t0": 3.07,
+     "t1": 3.382,
+     "k": false
+    },
+    {
+     "w": "seventy,",
+     "t0": 3.382,
+     "t1": 3.819,
+     "k": true
+    },
+    {
+     "w": "and",
+     "t0": 3.819,
+     "t1": 4.058,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 4.058,
+     "t1": 4.217,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 4.217,
+     "t1": 4.377,
+     "k": false
+    },
+    {
+     "w": "hurry.",
+     "t0": 4.377,
+     "t1": 4.695,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 22.5,
+   "dur": 6.105,
+   "say": "Kev flies past, cuts in front of Gary. Then he sees the camera, and slams on the brakes.",
+   "words": [
+    {
+     "w": "Kev",
+     "t0": 0.26,
+     "t1": 0.52,
+     "k": false
+    },
+    {
+     "w": "flies",
+     "t0": 0.52,
+     "t1": 0.953,
+     "k": false
+    },
+    {
+     "w": "past,",
+     "t0": 0.953,
+     "t1": 1.3,
+     "k": false
+    },
+    {
+     "w": "cuts",
+     "t0": 1.61,
+     "t1": 1.874,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 1.874,
+     "t1": 2.005,
+     "k": false
+    },
+    {
+     "w": "front",
+     "t0": 2.005,
+     "t1": 2.335,
+     "k": false
+    },
+    {
+     "w": "of",
+     "t0": 2.335,
+     "t1": 2.466,
+     "k": false
+    },
+    {
+     "w": "Gary.",
+     "t0": 2.466,
+     "t1": 2.73,
+     "k": false
+    },
+    {
+     "w": "Then",
+     "t0": 3.15,
+     "t1": 3.34,
+     "k": false
+    },
+    {
+     "w": "he",
+     "t0": 3.34,
+     "t1": 3.531,
+     "k": false
+    },
+    {
+     "w": "sees",
+     "t0": 3.531,
+     "t1": 3.784,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.784,
+     "t1": 3.911,
+     "k": false
+    },
+    {
+     "w": "camera,",
+     "t0": 3.911,
+     "t1": 4.229,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 4.229,
+     "t1": 4.483,
+     "k": false
+    },
+    {
+     "w": "slams",
+     "t0": 4.483,
+     "t1": 4.907,
+     "k": true
+    },
+    {
+     "w": "on",
+     "t0": 4.907,
+     "t1": 5.077,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 5.077,
+     "t1": 5.246,
+     "k": false
+    },
+    {
+     "w": "brakes.",
+     "t0": 5.246,
+     "t1": 5.755,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 28.605,
+   "dur": 4.075,
+   "say": "Gary's left a two second gap, so he slows down in time.",
+   "words": [
+    {
+     "w": "Gary's",
+     "t0": 0.26,
+     "t1": 0.584,
+     "k": false
+    },
+    {
+     "w": "left",
+     "t0": 0.584,
+     "t1": 0.843,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 0.843,
+     "t1": 0.973,
+     "k": false
+    },
+    {
+     "w": "two",
+     "t0": 0.973,
+     "t1": 1.167,
+     "k": true
+    },
+    {
+     "w": "second",
+     "t0": 1.167,
+     "t1": 1.556,
+     "k": true
+    },
+    {
+     "w": "gap,",
+     "t0": 1.556,
+     "t1": 1.75,
+     "k": false
+    },
+    {
+     "w": "so",
+     "t0": 2.1,
+     "t1": 2.332,
+     "k": false
+    },
+    {
+     "w": "he",
+     "t0": 2.332,
+     "t1": 2.564,
+     "k": false
+    },
+    {
+     "w": "slows",
+     "t0": 2.564,
+     "t1": 2.951,
+     "k": false
+    },
+    {
+     "w": "down",
+     "t0": 2.951,
+     "t1": 3.261,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 3.261,
+     "t1": 3.415,
+     "k": false
+    },
+    {
+     "w": "time.",
+     "t0": 3.415,
+     "t1": 3.725,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 32.68,
+   "dur": 4.515,
+   "say": "Kev crawls past the camera at fifty. No flash. He's laughing.",
+   "words": [
+    {
+     "w": "Kev",
+     "t0": 0.26,
+     "t1": 0.483,
+     "k": false
+    },
+    {
+     "w": "crawls",
+     "t0": 0.483,
+     "t1": 0.93,
+     "k": false
+    },
+    {
+     "w": "past",
+     "t0": 0.93,
+     "t1": 1.228,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.228,
+     "t1": 1.377,
+     "k": false
+    },
+    {
+     "w": "camera",
+     "t0": 1.377,
+     "t1": 1.749,
+     "k": false
+    },
+    {
+     "w": "at",
+     "t0": 1.749,
+     "t1": 1.898,
+     "k": false
+    },
+    {
+     "w": "fifty.",
+     "t0": 1.898,
+     "t1": 2.27,
+     "k": false
+    },
+    {
+     "w": "No",
+     "t0": 2.57,
+     "t1": 2.883,
+     "k": true
+    },
+    {
+     "w": "flash.",
+     "t0": 2.883,
+     "t1": 3.3,
+     "k": true
+    },
+    {
+     "w": "He's",
+     "t0": 3.52,
+     "t1": 3.807,
+     "k": false
+    },
+    {
+     "w": "laughing.",
+     "t0": 3.807,
+     "t1": 4.165,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 37.195,
+   "dur": 4.315,
+   "say": "Then he floors it again. Seventy. Until the next camera. Brakes.",
+   "words": [
+    {
+     "w": "Then",
+     "t0": 0.26,
+     "t1": 0.431,
+     "k": false
+    },
+    {
+     "w": "he",
+     "t0": 0.431,
+     "t1": 0.602,
+     "k": false
+    },
+    {
+     "w": "floors",
+     "t0": 0.602,
+     "t1": 0.888,
+     "k": false
+    },
+    {
+     "w": "it",
+     "t0": 0.888,
+     "t1": 1.002,
+     "k": false
+    },
+    {
+     "w": "again.",
+     "t0": 1.002,
+     "t1": 1.23,
+     "k": false
+    },
+    {
+     "w": "Seventy.",
+     "t0": 1.49,
+     "t1": 2.09,
+     "k": true
+    },
+    {
+     "w": "Until",
+     "t0": 2.32,
+     "t1": 2.638,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.638,
+     "t1": 2.765,
+     "k": false
+    },
+    {
+     "w": "next",
+     "t0": 2.765,
+     "t1": 3.082,
+     "k": false
+    },
+    {
+     "w": "camera.",
+     "t0": 3.082,
+     "t1": 3.4,
+     "k": false
+    },
+    {
+     "w": "Brakes.",
+     "t0": 3.52,
+     "t1": 3.965,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 41.51,
+   "dur": 6.325,
+   "say": "He even changes lanes, because everyone knows they can't catch you if you switch lanes. Right?",
+   "words": [
+    {
+     "w": "He",
+     "t0": 0.26,
+     "t1": 0.444,
+     "k": false
+    },
+    {
+     "w": "even",
+     "t0": 0.444,
+     "t1": 0.751,
+     "k": false
+    },
+    {
+     "w": "changes",
+     "t0": 0.751,
+     "t1": 1.303,
+     "k": false
+    },
+    {
+     "w": "lanes,",
+     "t0": 1.303,
+     "t1": 1.61,
+     "k": false
+    },
+    {
+     "w": "because",
+     "t0": 1.9,
+     "t1": 2.239,
+     "k": false
+    },
+    {
+     "w": "everyone",
+     "t0": 2.239,
+     "t1": 2.714,
+     "k": false
+    },
+    {
+     "w": "knows",
+     "t0": 2.714,
+     "t1": 2.985,
+     "k": false
+    },
+    {
+     "w": "they",
+     "t0": 2.985,
+     "t1": 3.189,
+     "k": false
+    },
+    {
+     "w": "can't",
+     "t0": 3.189,
+     "t1": 3.528,
+     "k": false
+    },
+    {
+     "w": "catch",
+     "t0": 3.528,
+     "t1": 3.799,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 3.799,
+     "t1": 4.003,
+     "k": false
+    },
+    {
+     "w": "if",
+     "t0": 4.003,
+     "t1": 4.138,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 4.138,
+     "t1": 4.342,
+     "k": false
+    },
+    {
+     "w": "switch",
+     "t0": 4.342,
+     "t1": 4.681,
+     "k": false
+    },
+    {
+     "w": "lanes.",
+     "t0": 4.681,
+     "t1": 5.02,
+     "k": false
+    },
+    {
+     "w": "Right?",
+     "t0": 5.5,
+     "t1": 5.875,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 47.835,
+   "dur": 3.775,
+   "say": "Two weeks later, a letter lands on Kev's doormat.",
+   "words": [
+    {
+     "w": "Two",
+     "t0": 0.26,
+     "t1": 0.452,
+     "k": false
+    },
+    {
+     "w": "weeks",
+     "t0": 0.452,
+     "t1": 0.771,
+     "k": false
+    },
+    {
+     "w": "later,",
+     "t0": 0.771,
+     "t1": 1.09,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 1.38,
+     "t1": 1.549,
+     "k": false
+    },
+    {
+     "w": "letter",
+     "t0": 1.549,
+     "t1": 1.887,
+     "k": false
+    },
+    {
+     "w": "lands",
+     "t0": 1.887,
+     "t1": 2.31,
+     "k": false
+    },
+    {
+     "w": "on",
+     "t0": 2.31,
+     "t1": 2.479,
+     "k": false
+    },
+    {
+     "w": "Kev's",
+     "t0": 2.479,
+     "t1": 2.818,
+     "k": false
+    },
+    {
+     "w": "doormat.",
+     "t0": 2.818,
+     "t1": 3.325,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 51.61,
+   "dur": 1.615,
+   "say": "So, who's right?",
+   "words": [
+    {
+     "w": "So,",
+     "t0": 0.26,
+     "t1": 0.504,
+     "k": false
+    },
+    {
+     "w": "who's",
+     "t0": 0.504,
+     "t1": 0.885,
+     "k": false
+    },
+    {
+     "w": "right?",
+     "t0": 0.885,
+     "t1": 1.265,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 53.225,
+   "dur": 7.455,
+   "say": "Rule two six one. A speed limit in a red ring on a motorway is the legal limit. You must not go over it.",
+   "words": [
+    {
+     "w": "Rule",
+     "t0": 0.26,
+     "t1": 0.623,
+     "k": false
+    },
+    {
+     "w": "two",
+     "t0": 0.623,
+     "t1": 0.895,
+     "k": false
+    },
+    {
+     "w": "six",
+     "t0": 0.895,
+     "t1": 1.258,
+     "k": false
+    },
+    {
+     "w": "one.",
+     "t0": 1.258,
+     "t1": 1.53,
+     "k": false
+    },
+    {
+     "w": "A",
+     "t0": 1.93,
+     "t1": 2.075,
+     "k": false
+    },
+    {
+     "w": "speed",
+     "t0": 2.075,
+     "t1": 2.439,
+     "k": false
+    },
+    {
+     "w": "limit",
+     "t0": 2.439,
+     "t1": 2.802,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 2.802,
+     "t1": 2.947,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 2.947,
+     "t1": 3.092,
+     "k": false
+    },
+    {
+     "w": "red",
+     "t0": 3.092,
+     "t1": 3.31,
+     "k": true
+    },
+    {
+     "w": "ring",
+     "t0": 3.31,
+     "t1": 3.528,
+     "k": true
+    },
+    {
+     "w": "on",
+     "t0": 3.528,
+     "t1": 3.674,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 3.674,
+     "t1": 3.819,
+     "k": false
+    },
+    {
+     "w": "motorway",
+     "t0": 3.819,
+     "t1": 4.4,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 4.4,
+     "t1": 4.546,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 4.546,
+     "t1": 4.691,
+     "k": false
+    },
+    {
+     "w": "legal",
+     "t0": 4.691,
+     "t1": 5.127,
+     "k": false
+    },
+    {
+     "w": "limit.",
+     "t0": 5.127,
+     "t1": 5.49,
+     "k": false
+    },
+    {
+     "w": "You",
+     "t0": 5.86,
+     "t1": 6.057,
+     "k": false
+    },
+    {
+     "w": "must",
+     "t0": 6.057,
+     "t1": 6.319,
+     "k": false
+    },
+    {
+     "w": "not",
+     "t0": 6.319,
+     "t1": 6.515,
+     "k": false
+    },
+    {
+     "w": "go",
+     "t0": 6.515,
+     "t1": 6.712,
+     "k": false
+    },
+    {
+     "w": "over",
+     "t0": 6.712,
+     "t1": 6.974,
+     "k": false
+    },
+    {
+     "w": "it.",
+     "t0": 6.974,
+     "t1": 7.105,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 60.68,
+   "dur": 7.725,
+   "say": "These are average speed cameras. They time you from one camera to the next. Braking at the camera doesn't change your average.",
+   "words": [
+    {
+     "w": "These",
+     "t0": 0.26,
+     "t1": 0.556,
+     "k": false
+    },
+    {
+     "w": "are",
+     "t0": 0.556,
+     "t1": 0.703,
+     "k": false
+    },
+    {
+     "w": "average",
+     "t0": 0.703,
+     "t1": 1.147,
+     "k": true
+    },
+    {
+     "w": "speed",
+     "t0": 1.147,
+     "t1": 1.517,
+     "k": false
+    },
+    {
+     "w": "cameras.",
+     "t0": 1.517,
+     "t1": 1.96,
+     "k": false
+    },
+    {
+     "w": "They",
+     "t0": 2.31,
+     "t1": 2.519,
+     "k": false
+    },
+    {
+     "w": "time",
+     "t0": 2.519,
+     "t1": 2.798,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 2.798,
+     "t1": 3.007,
+     "k": false
+    },
+    {
+     "w": "from",
+     "t0": 3.007,
+     "t1": 3.286,
+     "k": false
+    },
+    {
+     "w": "one",
+     "t0": 3.286,
+     "t1": 3.495,
+     "k": false
+    },
+    {
+     "w": "camera",
+     "t0": 3.495,
+     "t1": 3.843,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 3.843,
+     "t1": 4.052,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 4.052,
+     "t1": 4.192,
+     "k": false
+    },
+    {
+     "w": "next.",
+     "t0": 4.192,
+     "t1": 4.54,
+     "k": false
+    },
+    {
+     "w": "Braking",
+     "t0": 5.02,
+     "t1": 5.454,
+     "k": false
+    },
+    {
+     "w": "at",
+     "t0": 5.454,
+     "t1": 5.578,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 5.578,
+     "t1": 5.702,
+     "k": false
+    },
+    {
+     "w": "camera",
+     "t0": 5.702,
+     "t1": 6.012,
+     "k": false
+    },
+    {
+     "w": "doesn't",
+     "t0": 6.012,
+     "t1": 6.383,
+     "k": false
+    },
+    {
+     "w": "change",
+     "t0": 6.383,
+     "t1": 6.817,
+     "k": false
+    },
+    {
+     "w": "your",
+     "t0": 6.817,
+     "t1": 7.003,
+     "k": false
+    },
+    {
+     "w": "average.",
+     "t0": 7.003,
+     "t1": 7.375,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 68.405,
+   "dur": 5.525,
+   "say": "They watch every lane. And they don't flash. No flash doesn't mean you got away with it.",
+   "words": [
+    {
+     "w": "They",
+     "t0": 0.26,
+     "t1": 0.512,
+     "k": false
+    },
+    {
+     "w": "watch",
+     "t0": 0.512,
+     "t1": 0.848,
+     "k": false
+    },
+    {
+     "w": "every",
+     "t0": 0.848,
+     "t1": 1.184,
+     "k": true
+    },
+    {
+     "w": "lane.",
+     "t0": 1.184,
+     "t1": 1.52,
+     "k": true
+    },
+    {
+     "w": "And",
+     "t0": 1.81,
+     "t1": 2.004,
+     "k": false
+    },
+    {
+     "w": "they",
+     "t0": 2.004,
+     "t1": 2.198,
+     "k": false
+    },
+    {
+     "w": "don't",
+     "t0": 2.198,
+     "t1": 2.521,
+     "k": false
+    },
+    {
+     "w": "flash.",
+     "t0": 2.521,
+     "t1": 2.78,
+     "k": false
+    },
+    {
+     "w": "No",
+     "t0": 3.1,
+     "t1": 3.295,
+     "k": false
+    },
+    {
+     "w": "flash",
+     "t0": 3.295,
+     "t1": 3.554,
+     "k": false
+    },
+    {
+     "w": "doesn't",
+     "t0": 3.554,
+     "t1": 3.943,
+     "k": false
+    },
+    {
+     "w": "mean",
+     "t0": 3.943,
+     "t1": 4.202,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 4.202,
+     "t1": 4.397,
+     "k": false
+    },
+    {
+     "w": "got",
+     "t0": 4.397,
+     "t1": 4.591,
+     "k": false
+    },
+    {
+     "w": "away",
+     "t0": 4.591,
+     "t1": 4.851,
+     "k": false
+    },
+    {
+     "w": "with",
+     "t0": 4.851,
+     "t1": 5.045,
+     "k": false
+    },
+    {
+     "w": "it.",
+     "t0": 5.045,
+     "t1": 5.175,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 73.93,
+   "dur": 8.565,
+   "say": "Kev averaged sixty eight in a fifty. That's not just a hundred pound fine. That can mean court. Four to six points, or a ban.",
+   "words": [
+    {
+     "w": "Kev",
+     "t0": 0.26,
+     "t1": 0.475,
+     "k": false
+    },
+    {
+     "w": "averaged",
+     "t0": 0.475,
+     "t1": 0.978,
+     "k": false
+    },
+    {
+     "w": "sixty",
+     "t0": 0.978,
+     "t1": 1.409,
+     "k": false
+    },
+    {
+     "w": "eight",
+     "t0": 1.409,
+     "t1": 1.624,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 1.624,
+     "t1": 1.767,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 1.767,
+     "t1": 1.911,
+     "k": false
+    },
+    {
+     "w": "fifty.",
+     "t0": 1.911,
+     "t1": 2.27,
+     "k": false
+    },
+    {
+     "w": "That's",
+     "t0": 2.62,
+     "t1": 2.891,
+     "k": false
+    },
+    {
+     "w": "not",
+     "t0": 2.891,
+     "t1": 3.094,
+     "k": false
+    },
+    {
+     "w": "just",
+     "t0": 3.094,
+     "t1": 3.432,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 3.432,
+     "t1": 3.567,
+     "k": false
+    },
+    {
+     "w": "hundred",
+     "t0": 3.567,
+     "t1": 4.041,
+     "k": false
+    },
+    {
+     "w": "pound",
+     "t0": 4.041,
+     "t1": 4.379,
+     "k": false
+    },
+    {
+     "w": "fine.",
+     "t0": 4.379,
+     "t1": 4.65,
+     "k": false
+    },
+    {
+     "w": "That",
+     "t0": 4.97,
+     "t1": 5.167,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 5.167,
+     "t1": 5.364,
+     "k": false
+    },
+    {
+     "w": "mean",
+     "t0": 5.364,
+     "t1": 5.627,
+     "k": false
+    },
+    {
+     "w": "court.",
+     "t0": 5.627,
+     "t1": 5.89,
+     "k": true
+    },
+    {
+     "w": "Four",
+     "t0": 6.28,
+     "t1": 6.482,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 6.482,
+     "t1": 6.685,
+     "k": false
+    },
+    {
+     "w": "six",
+     "t0": 6.685,
+     "t1": 6.955,
+     "k": false
+    },
+    {
+     "w": "points,",
+     "t0": 6.955,
+     "t1": 7.36,
+     "k": false
+    },
+    {
+     "w": "or",
+     "t0": 7.53,
+     "t1": 7.726,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 7.726,
+     "t1": 7.921,
+     "k": false
+    },
+    {
+     "w": "ban.",
+     "t0": 7.921,
+     "t1": 8.215,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 82.495,
+   "dur": 4.515,
+   "say": "And slamming on the brakes for no reason can be careless driving too.",
+   "words": [
+    {
+     "w": "And",
+     "t0": 0.26,
+     "t1": 0.481,
+     "k": false
+    },
+    {
+     "w": "slamming",
+     "t0": 0.481,
+     "t1": 0.923,
+     "k": false
+    },
+    {
+     "w": "on",
+     "t0": 0.923,
+     "t1": 1.07,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.07,
+     "t1": 1.218,
+     "k": false
+    },
+    {
+     "w": "brakes",
+     "t0": 1.218,
+     "t1": 1.66,
+     "k": false
+    },
+    {
+     "w": "for",
+     "t0": 1.66,
+     "t1": 1.881,
+     "k": false
+    },
+    {
+     "w": "no",
+     "t0": 1.881,
+     "t1": 2.102,
+     "k": false
+    },
+    {
+     "w": "reason",
+     "t0": 2.102,
+     "t1": 2.544,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 2.544,
+     "t1": 2.765,
+     "k": false
+    },
+    {
+     "w": "be",
+     "t0": 2.765,
+     "t1": 2.986,
+     "k": false
+    },
+    {
+     "w": "careless",
+     "t0": 2.986,
+     "t1": 3.428,
+     "k": true
+    },
+    {
+     "w": "driving",
+     "t0": 3.428,
+     "t1": 3.944,
+     "k": true
+    },
+    {
+     "w": "too.",
+     "t0": 3.944,
+     "t1": 4.165,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 87.01,
+   "dur": 2.925,
+   "say": "Gary? Fifty, all the way. Not guilty.",
+   "words": [
+    {
+     "w": "Gary?",
+     "t0": 0.26,
+     "t1": 1.02,
+     "k": false
+    },
+    {
+     "w": "Fifty,",
+     "t0": 1.14,
+     "t1": 1.71,
+     "k": false
+    },
+    {
+     "w": "all",
+     "t0": 1.84,
+     "t1": 1.843,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.843,
+     "t1": 1.846,
+     "k": false
+    },
+    {
+     "w": "way.",
+     "t0": 1.846,
+     "t1": 1.849,
+     "k": false
+    },
+    {
+     "w": "Not",
+     "t0": 1.849,
+     "t1": 2.121,
+     "k": true
+    },
+    {
+     "w": "guilty.",
+     "t0": 2.121,
+     "t1": 2.575,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 89.935,
+   "dur": 4.775,
+   "say": "Kev, guilty. Would you have braked at the camera? Follow for case five.",
+   "words": [
+    {
+     "w": "Kev,",
+     "t0": 0.26,
+     "t1": 1.04,
+     "k": false
+    },
+    {
+     "w": "guilty.",
+     "t0": 1.3,
+     "t1": 0.862,
+     "k": true
+    },
+    {
+     "w": "Would",
+     "t0": 0.863,
+     "t1": 1.071,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 1.071,
+     "t1": 1.279,
+     "k": false
+    },
+    {
+     "w": "have",
+     "t0": 1.279,
+     "t1": 1.488,
+     "k": false
+    },
+    {
+     "w": "braked",
+     "t0": 1.488,
+     "t1": 1.905,
+     "k": false
+    },
+    {
+     "w": "at",
+     "t0": 1.905,
+     "t1": 2.044,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.044,
+     "t1": 2.183,
+     "k": false
+    },
+    {
+     "w": "camera?",
+     "t0": 2.183,
+     "t1": 2.53,
+     "k": false
+    },
+    {
+     "w": "Follow",
+     "t0": 2.83,
+     "t1": 3.235,
+     "k": false
+    },
+    {
+     "w": "for",
+     "t0": 3.235,
+     "t1": 3.478,
+     "k": false
+    },
+    {
+     "w": "case",
+     "t0": 3.478,
+     "t1": 3.801,
+     "k": false
+    },
+    {
+     "w": "five.",
+     "t0": 3.801,
+     "t1": 4.125,
+     "k": false
+    }
+   ]
+  }
+ ]
+}

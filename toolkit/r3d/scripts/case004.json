@@ -1,0 +1,92 @@
+[
+ {
+  "say": "This guy thinks he's beaten the speed cameras. Slam the brakes at the camera, then floor it. Let's *see.*",
+  "lead": 0.1,
+  "hold": 0.4
+ },
+ {
+  "say": "Case four. The speed *camera.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Motorway. The gantries say *fifty,* in a red ring. And the signs say *average* speed check. Gary sets his cruise control at fifty.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Behind him, Kev. Brand new sports car. Doing *seventy,* and in a hurry.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Kev flies past, cuts in front of Gary. Then he sees the camera, and *slams* on the brakes.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Gary's left a *two* *second* gap, so he slows down in time.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Kev crawls past the camera at fifty. *No* *flash.* He's laughing.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Then he floors it again. *Seventy.* Until the next camera. *Brakes.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "He even changes lanes, because everyone knows they can't catch you if you switch lanes. *Right?*",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "Two weeks later, a letter lands on Kev's *doormat.*",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "So, who's *right?*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Rule two six one. A speed limit in a *red* *ring* on a motorway is the legal limit. You must not go over it.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "These are *average* speed cameras. They time you from one camera to the next. Braking at the camera doesn't change your *average.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "They watch *every* *lane.* And they don't flash. No flash doesn't mean you got away with it.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Kev averaged sixty eight in a fifty. That's not just a hundred pound fine. That can mean *court.* Four to six points, or a *ban.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "And slamming on the brakes for no reason can be *careless* *driving* too.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Gary? Fifty, all the way. *Not* *guilty.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Kev, *guilty.* Would you have braked at the camera? Follow for case five.",
+  "lead": 0.2,
+  "hold": 0.6
+ }
+]

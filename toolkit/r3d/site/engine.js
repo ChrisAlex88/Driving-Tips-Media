@@ -664,8 +664,9 @@ export function policeCar(car) {
   car.police = (t, on) => { blues.forEach((m, i) => { const ph = (Math.floor(t * 7) + (i < 2 ? 0 : 1)) % 2; m.emissiveIntensity = on ? (ph ? 4 : 0.1) : 0.1; }); glows.forEach((s, i) => s.visible = on && ((Math.floor(t * 7) + i) % 2 === 0)); };
   car.police(0, false); return car;
 }
-export function glasses(p, col = '#1b1b1f') {
+export function glasses(p, col = '#1b1b1f', lens) {
   const m = mat(col, { r: .3, m: .4 }), hg = p.headG;
+  if (lens) for (const sx of [-1, 1]) { const l = new THREE.Mesh(new THREE.CircleGeometry(0.03, 20), new THREE.MeshStandardMaterial({ color: lens, roughness: .1, metalness: .5 })); l.position.set(sx * 0.061, 0.185, 0.171); hg.add(l); }
   for (const sx of [-1, 1]) { const r = mesh(new THREE.TorusGeometry(0.03, 0.005, 6, 20), m, V(sx * 0.061, 0.185, 0.168), hg, { cast: false }); }
   box(0.04, 0.006, 0.006, m, V(0, 0.19, 0.172), hg, { cast: false });
   for (const sx of [-1, 1]) box(0.006, 0.006, 0.15, m, V(sx * 0.1, 0.19, 0.1), hg, { cast: false });
@@ -681,4 +682,28 @@ export function treeBelt(xr, z0, z1, n, seed = 3) {
     p.set(x, k * 0.9, z); s.set(0.4 * k, 1.8 * k * 0.5, 0.4 * k); m4.compose(p, q, s); trunks.setMatrixAt(i, m4);
     p.set(x, k * 1.9, z); s.set(k, k * (0.9 + R() * 0.3), k); m4.compose(p, q, s); crowns[ci].setMatrixAt(cnt[ci]++, m4); }
   crowns.forEach((c, i) => { c.count = cnt[i]; c.castShadow = true; scene.add(c); }); trunks.castShadow = true; scene.add(trunks);
+}
+
+// overhead motorway gantry across lanes at z: red-ring speed signs over each lane, optional yellow average-speed cameras
+export function gantry(z, o = {}) {
+  const lanes = o.lanes || [-3.5, 0, 3.5], x0 = o.x0 ?? -9.6, x1 = o.x1 ?? 6.3, y = 7.0, steel = mat('#9aa1a9', { m: .6, r: .4 });
+  const g = new THREE.Group(); g.position.set(0, 0, z); scene.add(g);
+  for (const x of [x0, x1]) { box(0.45, y + 0.6, 0.45, steel, V(x, (y + 0.6) / 2, 0), g); box(1.0, 0.3, 1.0, mat('#a9a9a3'), V(x, 0.15, 0), g); }
+  box(x1 - x0, 0.3, 0.3, steel, V((x0 + x1) / 2, y + 0.45, 0), g); box(x1 - x0, 0.3, 0.3, steel, V((x0 + x1) / 2, y - 0.45, 0.6), g); box(x1 - x0, 0.3, 0.3, steel, V((x0 + x1) / 2, y + 0.45, 0.6), g);
+  const lim = o.limit || 50;
+  const t = canvasTex(256, 256, (c, w, h) => { c.fillStyle = '#0b0c0e'; c.fillRect(0, 0, w, h); c.strokeStyle = '#ff2a2a'; c.lineWidth = 22; c.beginPath(); c.arc(w / 2, h / 2, 96, 0, Math.PI * 2); c.stroke(); c.fillStyle = '#ffffff'; c.font = '900 108px "Inter Display",sans-serif'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(String(lim), w / 2, h / 2 + 6); });
+  const signM = new THREE.MeshStandardMaterial({ map: t, emissiveMap: t, emissive: 0xffffff, emissiveIntensity: 0.9, roughness: .5 });
+  for (const x of lanes) { const b = box(1.7, 1.7, 0.25, mat('#16181b'), V(x, y - 1.2, 0.35), g); const f = new THREE.Mesh(new THREE.PlaneGeometry(1.55, 1.55), signM); f.position.set(x, y - 1.2, 0.48); g.add(f); }
+  if (o.cams) { const ym = mat('#f2c200', { r: .45 }), lensM = mat('#0c0d10', { r: .1, m: .5 });
+    for (const x of lanes) { const cg = new THREE.Group(); cg.position.set(x + 0.95, y + 0.2, 0.5); cg.rotation.x = 0.35; g.add(cg); sbox(0.34, 0.3, 0.62, 0.05, ym, V(0, 0, 0), cg); box(0.38, 0.05, 0.7, ym, V(0, 0.18, 0.04), cg); const l = mesh(new THREE.CircleGeometry(0.09, 20), lensM, V(0, 0, 0.315), cg); } }
+  return g;
+}
+// UK "Average speed check" sign on two posts at the verge
+export function avgSpeedSign(x, z) {
+  const t = canvasTex(512, 384, (c, w, h) => { c.fillStyle = '#fafafa'; c.fillRect(0, 0, w, h); c.strokeStyle = '#111'; c.lineWidth = 10; c.strokeRect(14, 14, w - 28, h - 28);
+    c.fillStyle = '#111'; c.fillRect(170, 60, 150, 92); c.beginPath(); c.arc(245, 106, 30, 0, Math.PI * 2); c.fillStyle = '#fafafa'; c.fill(); c.fillStyle = '#111'; c.beginPath(); c.arc(245, 106, 18, 0, Math.PI * 2); c.fill(); c.fillRect(320, 90, 30, 24);
+    c.font = '700 54px "Inter Display",sans-serif'; c.textAlign = 'center'; c.fillText('Average', w / 2, 230); c.fillText('speed check', w / 2, 300); });
+  const g = new THREE.Group(); g.position.set(x, 0, z); scene.add(g);
+  for (const sx of [-0.8, 0.8]) box(0.1, 3.3, 0.1, mat('#8a9098', { m: .5 }), V(sx, 1.65, -0.06), g);
+  const f = new THREE.Mesh(new THREE.BoxGeometry(2.2, 1.65, 0.06), [mat('#999'), mat('#999'), mat('#999'), mat('#999'), new THREE.MeshStandardMaterial({ map: t }), mat('#8a8f96')]); f.position.set(0, 2.5, 0); g.add(f); return g;
 }
