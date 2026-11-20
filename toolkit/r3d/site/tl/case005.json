@@ -1,0 +1,1541 @@
+{
+ "total": 91.8,
+ "segments": [
+  {
+   "start": 0.0,
+   "dur": 6.235,
+   "say": "This van driver just beeped Gary for stopping. Ten seconds later, he nearly ran someone over.",
+   "words": [
+    {
+     "w": "This",
+     "t0": 0.16,
+     "t1": 0.37,
+     "k": false
+    },
+    {
+     "w": "van",
+     "t0": 0.37,
+     "t1": 0.58,
+     "k": false
+    },
+    {
+     "w": "driver",
+     "t0": 0.58,
+     "t1": 1.0,
+     "k": false
+    },
+    {
+     "w": "just",
+     "t0": 1.0,
+     "t1": 1.35,
+     "k": false
+    },
+    {
+     "w": "beeped",
+     "t0": 1.35,
+     "t1": 1.7,
+     "k": false
+    },
+    {
+     "w": "Gary",
+     "t0": 1.7,
+     "t1": 1.98,
+     "k": false
+    },
+    {
+     "w": "for",
+     "t0": 1.98,
+     "t1": 2.19,
+     "k": false
+    },
+    {
+     "w": "stopping.",
+     "t0": 2.19,
+     "t1": 2.61,
+     "k": false
+    },
+    {
+     "w": "Ten",
+     "t0": 3.03,
+     "t1": 3.234,
+     "k": false
+    },
+    {
+     "w": "seconds",
+     "t0": 3.234,
+     "t1": 3.71,
+     "k": false
+    },
+    {
+     "w": "later,",
+     "t0": 3.71,
+     "t1": 4.05,
+     "k": false
+    },
+    {
+     "w": "he",
+     "t0": 4.34,
+     "t1": 4.546,
+     "k": false
+    },
+    {
+     "w": "nearly",
+     "t0": 4.546,
+     "t1": 4.89,
+     "k": false
+    },
+    {
+     "w": "ran",
+     "t0": 4.89,
+     "t1": 5.097,
+     "k": false
+    },
+    {
+     "w": "someone",
+     "t0": 5.097,
+     "t1": 5.51,
+     "k": false
+    },
+    {
+     "w": "over.",
+     "t0": 5.51,
+     "t1": 5.785,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 6.235,
+   "dur": 2.285,
+   "say": "Case five. The junction.",
+   "words": [
+    {
+     "w": "Case",
+     "t0": 0.26,
+     "t1": 0.63,
+     "k": false
+    },
+    {
+     "w": "five.",
+     "t0": 0.63,
+     "t1": 1.0,
+     "k": false
+    },
+    {
+     "w": "The",
+     "t0": 1.19,
+     "t1": 1.339,
+     "k": false
+    },
+    {
+     "w": "junction.",
+     "t0": 1.339,
+     "t1": 1.935,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 8.52,
+   "dur": 4.865,
+   "say": "High street. Gary's turning left into a side road. Indicator on.",
+   "words": [
+    {
+     "w": "High",
+     "t0": 0.26,
+     "t1": 0.473,
+     "k": false
+    },
+    {
+     "w": "street.",
+     "t0": 0.473,
+     "t1": 0.9,
+     "k": false
+    },
+    {
+     "w": "Gary's",
+     "t0": 1.19,
+     "t1": 1.561,
+     "k": false
+    },
+    {
+     "w": "turning",
+     "t0": 1.561,
+     "t1": 2.006,
+     "k": false
+    },
+    {
+     "w": "left",
+     "t0": 2.006,
+     "t1": 2.302,
+     "k": true
+    },
+    {
+     "w": "into",
+     "t0": 2.302,
+     "t1": 2.599,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 2.599,
+     "t1": 2.747,
+     "k": false
+    },
+    {
+     "w": "side",
+     "t0": 2.747,
+     "t1": 3.043,
+     "k": false
+    },
+    {
+     "w": "road.",
+     "t0": 3.043,
+     "t1": 3.34,
+     "k": false
+    },
+    {
+     "w": "Indicator",
+     "t0": 3.64,
+     "t1": 4.356,
+     "k": false
+    },
+    {
+     "w": "on.",
+     "t0": 4.356,
+     "t1": 4.515,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 13.385,
+   "dur": 6.155,
+   "say": "At the corner, Margaret's waiting to cross the side road. So Gary stops, and lets her go.",
+   "words": [
+    {
+     "w": "At",
+     "t0": 0.26,
+     "t1": 0.402,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 0.402,
+     "t1": 0.544,
+     "k": false
+    },
+    {
+     "w": "corner,",
+     "t0": 0.544,
+     "t1": 0.9,
+     "k": false
+    },
+    {
+     "w": "Margaret's",
+     "t0": 1.02,
+     "t1": 1.603,
+     "k": false
+    },
+    {
+     "w": "waiting",
+     "t0": 1.603,
+     "t1": 2.041,
+     "k": true
+    },
+    {
+     "w": "to",
+     "t0": 2.041,
+     "t1": 2.259,
+     "k": false
+    },
+    {
+     "w": "cross",
+     "t0": 2.259,
+     "t1": 2.551,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.551,
+     "t1": 2.697,
+     "k": false
+    },
+    {
+     "w": "side",
+     "t0": 2.697,
+     "t1": 2.988,
+     "k": false
+    },
+    {
+     "w": "road.",
+     "t0": 2.988,
+     "t1": 3.28,
+     "k": false
+    },
+    {
+     "w": "So",
+     "t0": 3.68,
+     "t1": 3.935,
+     "k": false
+    },
+    {
+     "w": "Gary",
+     "t0": 3.935,
+     "t1": 4.275,
+     "k": false
+    },
+    {
+     "w": "stops,",
+     "t0": 4.275,
+     "t1": 4.7,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 4.94,
+     "t1": 5.14,
+     "k": false
+    },
+    {
+     "w": "lets",
+     "t0": 5.14,
+     "t1": 5.406,
+     "k": false
+    },
+    {
+     "w": "her",
+     "t0": 5.406,
+     "t1": 5.605,
+     "k": false
+    },
+    {
+     "w": "go.",
+     "t0": 5.605,
+     "t1": 5.805,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 19.54,
+   "dur": 5.165,
+   "say": "Behind him, Wayne. White van. Late for a job. And he leans on the horn.",
+   "words": [
+    {
+     "w": "Behind",
+     "t0": 0.26,
+     "t1": 0.953,
+     "k": false
+    },
+    {
+     "w": "him,",
+     "t0": 0.953,
+     "t1": 1.25,
+     "k": false
+    },
+    {
+     "w": "Wayne.",
+     "t0": 1.5,
+     "t1": 2.19,
+     "k": false
+    },
+    {
+     "w": "White",
+     "t0": 2.41,
+     "t1": 2.203,
+     "k": false
+    },
+    {
+     "w": "van.",
+     "t0": 2.203,
+     "t1": 2.048,
+     "k": false
+    },
+    {
+     "w": "Late",
+     "t0": 2.048,
+     "t1": 2.434,
+     "k": false
+    },
+    {
+     "w": "for",
+     "t0": 2.434,
+     "t1": 2.722,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 2.722,
+     "t1": 2.915,
+     "k": false
+    },
+    {
+     "w": "job.",
+     "t0": 2.915,
+     "t1": 3.3,
+     "k": false
+    },
+    {
+     "w": "And",
+     "t0": 3.65,
+     "t1": 3.834,
+     "k": false
+    },
+    {
+     "w": "he",
+     "t0": 3.834,
+     "t1": 4.018,
+     "k": false
+    },
+    {
+     "w": "leans",
+     "t0": 4.018,
+     "t1": 4.324,
+     "k": false
+    },
+    {
+     "w": "on",
+     "t0": 4.324,
+     "t1": 4.447,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 4.447,
+     "t1": 4.57,
+     "k": false
+    },
+    {
+     "w": "horn.",
+     "t0": 4.57,
+     "t1": 4.815,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 24.705,
+   "dur": 5.125,
+   "say": "Window down. Move! She hasn't even started crossing! You've got priority!",
+   "words": [
+    {
+     "w": "Window",
+     "t0": 0.26,
+     "t1": 0.728,
+     "k": false
+    },
+    {
+     "w": "down.",
+     "t0": 0.728,
+     "t1": 1.04,
+     "k": false
+    },
+    {
+     "w": "Move!",
+     "t0": 1.21,
+     "t1": 1.62,
+     "k": false
+    },
+    {
+     "w": "She",
+     "t0": 1.77,
+     "t1": 1.941,
+     "k": false
+    },
+    {
+     "w": "hasn't",
+     "t0": 1.941,
+     "t1": 2.283,
+     "k": false
+    },
+    {
+     "w": "even",
+     "t0": 2.283,
+     "t1": 2.569,
+     "k": false
+    },
+    {
+     "w": "started",
+     "t0": 2.569,
+     "t1": 2.968,
+     "k": false
+    },
+    {
+     "w": "crossing!",
+     "t0": 2.968,
+     "t1": 3.31,
+     "k": false
+    },
+    {
+     "w": "You've",
+     "t0": 3.62,
+     "t1": 3.884,
+     "k": true
+    },
+    {
+     "w": "got",
+     "t0": 3.884,
+     "t1": 4.082,
+     "k": false
+    },
+    {
+     "w": "priority!",
+     "t0": 4.082,
+     "t1": 4.675,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 29.83,
+   "dur": 3.035,
+   "say": "Gary doesn't move. Margaret steps out.",
+   "words": [
+    {
+     "w": "Gary",
+     "t0": 0.26,
+     "t1": 0.551,
+     "k": false
+    },
+    {
+     "w": "doesn't",
+     "t0": 0.551,
+     "t1": 0.989,
+     "k": false
+    },
+    {
+     "w": "move.",
+     "t0": 0.989,
+     "t1": 1.28,
+     "k": false
+    },
+    {
+     "w": "Margaret",
+     "t0": 1.54,
+     "t1": 2.074,
+     "k": false
+    },
+    {
+     "w": "steps",
+     "t0": 2.074,
+     "t1": 2.456,
+     "k": true
+    },
+    {
+     "w": "out.",
+     "t0": 2.456,
+     "t1": 2.685,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 32.865,
+   "dur": 4.525,
+   "say": "So Wayne swings out, round Gary, and turns into the side road.",
+   "words": [
+    {
+     "w": "So",
+     "t0": 0.26,
+     "t1": 0.484,
+     "k": false
+    },
+    {
+     "w": "Wayne",
+     "t0": 0.484,
+     "t1": 0.783,
+     "k": false
+    },
+    {
+     "w": "swings",
+     "t0": 0.783,
+     "t1": 1.156,
+     "k": false
+    },
+    {
+     "w": "out,",
+     "t0": 1.156,
+     "t1": 1.38,
+     "k": false
+    },
+    {
+     "w": "round",
+     "t0": 1.62,
+     "t1": 2.02,
+     "k": true
+    },
+    {
+     "w": "Gary,",
+     "t0": 2.02,
+     "t1": 2.34,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 2.63,
+     "t1": 2.841,
+     "k": false
+    },
+    {
+     "w": "turns",
+     "t0": 2.841,
+     "t1": 3.192,
+     "k": false
+    },
+    {
+     "w": "into",
+     "t0": 3.192,
+     "t1": 3.473,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.473,
+     "t1": 3.613,
+     "k": false
+    },
+    {
+     "w": "side",
+     "t0": 3.613,
+     "t1": 3.894,
+     "k": false
+    },
+    {
+     "w": "road.",
+     "t0": 3.894,
+     "t1": 4.175,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 37.39,
+   "dur": 4.275,
+   "say": "Straight at Margaret. He slams on the brakes, inches from her.",
+   "words": [
+    {
+     "w": "Straight",
+     "t0": 0.26,
+     "t1": 0.636,
+     "k": false
+    },
+    {
+     "w": "at",
+     "t0": 0.636,
+     "t1": 0.761,
+     "k": false
+    },
+    {
+     "w": "Margaret.",
+     "t0": 0.761,
+     "t1": 1.2,
+     "k": false
+    },
+    {
+     "w": "He",
+     "t0": 1.56,
+     "t1": 1.772,
+     "k": false
+    },
+    {
+     "w": "slams",
+     "t0": 1.772,
+     "t1": 2.124,
+     "k": false
+    },
+    {
+     "w": "on",
+     "t0": 2.124,
+     "t1": 2.266,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.266,
+     "t1": 2.407,
+     "k": false
+    },
+    {
+     "w": "brakes,",
+     "t0": 2.407,
+     "t1": 2.83,
+     "k": false
+    },
+    {
+     "w": "inches",
+     "t0": 2.95,
+     "t1": 3.354,
+     "k": true
+    },
+    {
+     "w": "from",
+     "t0": 3.354,
+     "t1": 3.623,
+     "k": false
+    },
+    {
+     "w": "her.",
+     "t0": 3.623,
+     "t1": 3.825,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 41.665,
+   "dur": 2.985,
+   "say": "And all of it is on Gary's dashcam.",
+   "words": [
+    {
+     "w": "And",
+     "t0": 0.26,
+     "t1": 0.533,
+     "k": false
+    },
+    {
+     "w": "all",
+     "t0": 0.533,
+     "t1": 0.806,
+     "k": false
+    },
+    {
+     "w": "of",
+     "t0": 0.806,
+     "t1": 0.988,
+     "k": false
+    },
+    {
+     "w": "it",
+     "t0": 0.988,
+     "t1": 1.17,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 1.17,
+     "t1": 1.352,
+     "k": false
+    },
+    {
+     "w": "on",
+     "t0": 1.352,
+     "t1": 1.534,
+     "k": false
+    },
+    {
+     "w": "Gary's",
+     "t0": 1.534,
+     "t1": 1.989,
+     "k": false
+    },
+    {
+     "w": "dashcam.",
+     "t0": 1.989,
+     "t1": 2.535,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 44.65,
+   "dur": 1.615,
+   "say": "So, who's right?",
+   "words": [
+    {
+     "w": "So,",
+     "t0": 0.26,
+     "t1": 0.504,
+     "k": false
+    },
+    {
+     "w": "who's",
+     "t0": 0.504,
+     "t1": 0.885,
+     "k": false
+    },
+    {
+     "w": "right?",
+     "t0": 0.885,
+     "t1": 1.265,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 46.265,
+   "dur": 9.775,
+   "say": "Since twenty twenty two, rule H two says, at a junction, you should give way to pedestrians crossing, or waiting to cross, the road you're turning into.",
+   "words": [
+    {
+     "w": "Since",
+     "t0": 0.26,
+     "t1": 0.519,
+     "k": false
+    },
+    {
+     "w": "twenty",
+     "t0": 0.519,
+     "t1": 0.907,
+     "k": false
+    },
+    {
+     "w": "twenty",
+     "t0": 0.907,
+     "t1": 1.296,
+     "k": false
+    },
+    {
+     "w": "two,",
+     "t0": 1.296,
+     "t1": 1.49,
+     "k": false
+    },
+    {
+     "w": "rule",
+     "t0": 1.72,
+     "t1": 2.057,
+     "k": false
+    },
+    {
+     "w": "H",
+     "t0": 2.057,
+     "t1": 2.394,
+     "k": false
+    },
+    {
+     "w": "two",
+     "t0": 2.394,
+     "t1": 2.647,
+     "k": false
+    },
+    {
+     "w": "says,",
+     "t0": 2.647,
+     "t1": 2.9,
+     "k": false
+    },
+    {
+     "w": "at",
+     "t0": 3.14,
+     "t1": 3.263,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 3.263,
+     "t1": 3.387,
+     "k": false
+    },
+    {
+     "w": "junction,",
+     "t0": 3.387,
+     "t1": 3.88,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 4.23,
+     "t1": 4.426,
+     "k": false
+    },
+    {
+     "w": "should",
+     "t0": 4.426,
+     "t1": 4.622,
+     "k": false
+    },
+    {
+     "w": "give",
+     "t0": 4.622,
+     "t1": 4.818,
+     "k": false
+    },
+    {
+     "w": "way",
+     "t0": 4.818,
+     "t1": 5.014,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 5.014,
+     "t1": 5.21,
+     "k": false
+    },
+    {
+     "w": "pedestrians",
+     "t0": 5.21,
+     "t1": 5.928,
+     "k": false
+    },
+    {
+     "w": "crossing,",
+     "t0": 5.928,
+     "t1": 6.32,
+     "k": true
+    },
+    {
+     "w": "or",
+     "t0": 6.6,
+     "t1": 6.752,
+     "k": false
+    },
+    {
+     "w": "waiting",
+     "t0": 6.752,
+     "t1": 7.208,
+     "k": true
+    },
+    {
+     "w": "to",
+     "t0": 7.208,
+     "t1": 7.436,
+     "k": false
+    },
+    {
+     "w": "cross,",
+     "t0": 7.436,
+     "t1": 7.74,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 8.09,
+     "t1": 8.231,
+     "k": false
+    },
+    {
+     "w": "road",
+     "t0": 8.231,
+     "t1": 8.512,
+     "k": false
+    },
+    {
+     "w": "you're",
+     "t0": 8.512,
+     "t1": 8.722,
+     "k": false
+    },
+    {
+     "w": "turning",
+     "t0": 8.722,
+     "t1": 9.144,
+     "k": false
+    },
+    {
+     "w": "into.",
+     "t0": 9.144,
+     "t1": 9.425,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 56.04,
+   "dur": 5.345,
+   "say": "Waiting counts. Margaret didn't have to be in the road yet. Gary was right to stop.",
+   "words": [
+    {
+     "w": "Waiting",
+     "t0": 0.26,
+     "t1": 0.7,
+     "k": false
+    },
+    {
+     "w": "counts.",
+     "t0": 0.7,
+     "t1": 1.14,
+     "k": true
+    },
+    {
+     "w": "Margaret",
+     "t0": 1.38,
+     "t1": 1.817,
+     "k": false
+    },
+    {
+     "w": "didn't",
+     "t0": 1.817,
+     "t1": 2.13,
+     "k": false
+    },
+    {
+     "w": "have",
+     "t0": 2.13,
+     "t1": 2.317,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 2.317,
+     "t1": 2.505,
+     "k": false
+    },
+    {
+     "w": "be",
+     "t0": 2.505,
+     "t1": 2.692,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 2.692,
+     "t1": 2.817,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.817,
+     "t1": 2.942,
+     "k": false
+    },
+    {
+     "w": "road",
+     "t0": 2.942,
+     "t1": 3.192,
+     "k": false
+    },
+    {
+     "w": "yet.",
+     "t0": 3.192,
+     "t1": 3.38,
+     "k": false
+    },
+    {
+     "w": "Gary",
+     "t0": 3.77,
+     "t1": 4.042,
+     "k": false
+    },
+    {
+     "w": "was",
+     "t0": 4.042,
+     "t1": 4.246,
+     "k": false
+    },
+    {
+     "w": "right",
+     "t0": 4.246,
+     "t1": 4.519,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 4.519,
+     "t1": 4.723,
+     "k": false
+    },
+    {
+     "w": "stop.",
+     "t0": 4.723,
+     "t1": 4.995,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 61.385,
+   "dur": 9.325,
+   "say": "Wayne? Rule one six seven. Don't overtake at a junction. Rule one one two. You must not use your horn while stationary, and never aggressively.",
+   "words": [
+    {
+     "w": "Wayne?",
+     "t0": 0.26,
+     "t1": 0.524,
+     "k": false
+    },
+    {
+     "w": "Rule",
+     "t0": 0.524,
+     "t1": 0.863,
+     "k": false
+    },
+    {
+     "w": "one",
+     "t0": 0.863,
+     "t1": 1.117,
+     "k": false
+    },
+    {
+     "w": "six",
+     "t0": 1.117,
+     "t1": 1.456,
+     "k": false
+    },
+    {
+     "w": "seven.",
+     "t0": 1.456,
+     "t1": 1.88,
+     "k": false
+    },
+    {
+     "w": "Don't",
+     "t0": 2.21,
+     "t1": 2.5,
+     "k": false
+    },
+    {
+     "w": "overtake",
+     "t0": 2.5,
+     "t1": 2.964,
+     "k": true
+    },
+    {
+     "w": "at",
+     "t0": 2.964,
+     "t1": 3.08,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 3.08,
+     "t1": 3.196,
+     "k": false
+    },
+    {
+     "w": "junction.",
+     "t0": 3.196,
+     "t1": 3.66,
+     "k": false
+    },
+    {
+     "w": "Rule",
+     "t0": 4.09,
+     "t1": 4.422,
+     "k": false
+    },
+    {
+     "w": "one",
+     "t0": 4.422,
+     "t1": 4.672,
+     "k": false
+    },
+    {
+     "w": "one",
+     "t0": 4.672,
+     "t1": 4.921,
+     "k": false
+    },
+    {
+     "w": "two.",
+     "t0": 4.921,
+     "t1": 5.17,
+     "k": false
+    },
+    {
+     "w": "You",
+     "t0": 5.52,
+     "t1": 5.705,
+     "k": false
+    },
+    {
+     "w": "must",
+     "t0": 5.705,
+     "t1": 5.952,
+     "k": false
+    },
+    {
+     "w": "not",
+     "t0": 5.952,
+     "t1": 6.137,
+     "k": false
+    },
+    {
+     "w": "use",
+     "t0": 6.137,
+     "t1": 6.384,
+     "k": false
+    },
+    {
+     "w": "your",
+     "t0": 6.384,
+     "t1": 6.569,
+     "k": false
+    },
+    {
+     "w": "horn",
+     "t0": 6.569,
+     "t1": 6.816,
+     "k": false
+    },
+    {
+     "w": "while",
+     "t0": 6.816,
+     "t1": 7.063,
+     "k": false
+    },
+    {
+     "w": "stationary,",
+     "t0": 7.063,
+     "t1": 7.68,
+     "k": true
+    },
+    {
+     "w": "and",
+     "t0": 7.95,
+     "t1": 8.142,
+     "k": false
+    },
+    {
+     "w": "never",
+     "t0": 8.142,
+     "t1": 8.398,
+     "k": false
+    },
+    {
+     "w": "aggressively.",
+     "t0": 8.398,
+     "t1": 8.975,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 70.71,
+   "dur": 5.445,
+   "say": "Gary sends the clip to the police. Dashcam footage can be used as evidence.",
+   "words": [
+    {
+     "w": "Gary",
+     "t0": 0.26,
+     "t1": 0.548,
+     "k": false
+    },
+    {
+     "w": "sends",
+     "t0": 0.548,
+     "t1": 0.907,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 0.907,
+     "t1": 1.051,
+     "k": false
+    },
+    {
+     "w": "clip",
+     "t0": 1.051,
+     "t1": 1.339,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 1.339,
+     "t1": 1.555,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 1.555,
+     "t1": 1.698,
+     "k": false
+    },
+    {
+     "w": "police.",
+     "t0": 1.698,
+     "t1": 2.13,
+     "k": false
+    },
+    {
+     "w": "Dashcam",
+     "t0": 2.52,
+     "t1": 3.003,
+     "k": false
+    },
+    {
+     "w": "footage",
+     "t0": 3.003,
+     "t1": 3.486,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 3.486,
+     "t1": 3.727,
+     "k": false
+    },
+    {
+     "w": "be",
+     "t0": 3.727,
+     "t1": 3.968,
+     "k": false
+    },
+    {
+     "w": "used",
+     "t0": 3.968,
+     "t1": 4.371,
+     "k": false
+    },
+    {
+     "w": "as",
+     "t0": 4.371,
+     "t1": 4.532,
+     "k": false
+    },
+    {
+     "w": "evidence.",
+     "t0": 4.532,
+     "t1": 5.095,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 76.155,
+   "dur": 8.215,
+   "say": "Nearly hitting a pedestrian like that can be careless driving. A hundred pound fine and three points, or up to nine in court.",
+   "words": [
+    {
+     "w": "Nearly",
+     "t0": 0.26,
+     "t1": 0.591,
+     "k": false
+    },
+    {
+     "w": "hitting",
+     "t0": 0.591,
+     "t1": 0.923,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 0.922,
+     "t1": 1.055,
+     "k": false
+    },
+    {
+     "w": "pedestrian",
+     "t0": 1.055,
+     "t1": 1.717,
+     "k": false
+    },
+    {
+     "w": "like",
+     "t0": 1.718,
+     "t1": 1.982,
+     "k": false
+    },
+    {
+     "w": "that",
+     "t0": 1.983,
+     "t1": 2.181,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 2.181,
+     "t1": 2.38,
+     "k": false
+    },
+    {
+     "w": "be",
+     "t0": 2.38,
+     "t1": 2.579,
+     "k": false
+    },
+    {
+     "w": "careless",
+     "t0": 2.579,
+     "t1": 2.976,
+     "k": true
+    },
+    {
+     "w": "driving.",
+     "t0": 2.976,
+     "t1": 3.44,
+     "k": true
+    },
+    {
+     "w": "A",
+     "t0": 3.9,
+     "t1": 4.048,
+     "k": false
+    },
+    {
+     "w": "hundred",
+     "t0": 4.048,
+     "t1": 4.568,
+     "k": false
+    },
+    {
+     "w": "pound",
+     "t0": 4.568,
+     "t1": 4.939,
+     "k": false
+    },
+    {
+     "w": "fine",
+     "t0": 4.939,
+     "t1": 5.235,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 5.235,
+     "t1": 5.458,
+     "k": false
+    },
+    {
+     "w": "three",
+     "t0": 5.458,
+     "t1": 5.755,
+     "k": false
+    },
+    {
+     "w": "points,",
+     "t0": 5.755,
+     "t1": 6.2,
+     "k": false
+    },
+    {
+     "w": "or",
+     "t0": 6.5,
+     "t1": 6.661,
+     "k": false
+    },
+    {
+     "w": "up",
+     "t0": 6.661,
+     "t1": 6.821,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 6.821,
+     "t1": 7.062,
+     "k": false
+    },
+    {
+     "w": "nine",
+     "t0": 7.062,
+     "t1": 7.383,
+     "k": true
+    },
+    {
+     "w": "in",
+     "t0": 7.383,
+     "t1": 7.544,
+     "k": false
+    },
+    {
+     "w": "court.",
+     "t0": 7.544,
+     "t1": 7.865,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 84.37,
+   "dur": 2.845,
+   "say": "Gary, not guilty. Margaret, safe.",
+   "words": [
+    {
+     "w": "Gary,",
+     "t0": 0.26,
+     "t1": 1.35,
+     "k": false
+    },
+    {
+     "w": "not",
+     "t0": 1.56,
+     "t1": 1.509,
+     "k": true
+    },
+    {
+     "w": "guilty.",
+     "t0": 1.509,
+     "t1": 1.423,
+     "k": true
+    },
+    {
+     "w": "Margaret,",
+     "t0": 1.423,
+     "t1": 2.137,
+     "k": false
+    },
+    {
+     "w": "safe.",
+     "t0": 2.137,
+     "t1": 2.495,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 87.215,
+   "dur": 4.585,
+   "say": "Wayne, guilty. Did you know waiting counts? Follow for case six.",
+   "words": [
+    {
+     "w": "Wayne,",
+     "t0": 0.26,
+     "t1": 1.06,
+     "k": false
+    },
+    {
+     "w": "guilty.",
+     "t0": 1.28,
+     "t1": 0.941,
+     "k": true
+    },
+    {
+     "w": "Did",
+     "t0": 0.941,
+     "t1": 1.16,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 1.16,
+     "t1": 1.38,
+     "k": false
+    },
+    {
+     "w": "know",
+     "t0": 1.38,
+     "t1": 1.6,
+     "k": false
+    },
+    {
+     "w": "waiting",
+     "t0": 1.6,
+     "t1": 2.04,
+     "k": false
+    },
+    {
+     "w": "counts?",
+     "t0": 2.04,
+     "t1": 2.48,
+     "k": false
+    },
+    {
+     "w": "Follow",
+     "t0": 2.78,
+     "t1": 3.141,
+     "k": false
+    },
+    {
+     "w": "for",
+     "t0": 3.141,
+     "t1": 3.358,
+     "k": false
+    },
+    {
+     "w": "case",
+     "t0": 3.358,
+     "t1": 3.646,
+     "k": false
+    },
+    {
+     "w": "six.",
+     "t0": 3.646,
+     "t1": 3.935,
+     "k": false
+    }
+   ]
+  }
+ ]
+}

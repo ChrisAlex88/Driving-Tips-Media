@@ -1,0 +1,92 @@
+[
+ {
+  "say": "This van driver just beeped Gary for stopping. Ten seconds later, he nearly ran someone *over.*",
+  "lead": 0.1,
+  "hold": 0.4
+ },
+ {
+  "say": "Case five. The *junction.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "High street. Gary's turning *left* into a side road. Indicator on.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "At the corner, Margaret's *waiting* to cross the side road. So Gary stops, and lets her go.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Behind him, Wayne. White van. Late for a job. And he leans on the *horn.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Window down. Move! She hasn't even started crossing! *You've* got priority!",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "Gary doesn't move. Margaret *steps* out.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "So Wayne swings out, *round* Gary, and turns into the side road.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Straight at Margaret. He slams on the brakes, *inches* from her.",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "And all of it is on Gary's *dashcam.*",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "So, who's *right?*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Since twenty twenty two, rule H two says, at a junction, you should give way to pedestrians *crossing,* or *waiting* to cross, the road you're turning into.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Waiting *counts.* Margaret didn't have to be in the road yet. Gary was right to stop.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Wayne? Rule one six seven. Don't *overtake* at a junction. Rule one one two. You must not use your horn while *stationary,* and never aggressively.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Gary sends the clip to the police. Dashcam footage can be used as *evidence.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Nearly hitting a pedestrian like that can be *careless* *driving.* A hundred pound fine and three points, or up to *nine* in court.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Gary, *not* *guilty.* Margaret, safe.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Wayne, *guilty.* Did you know waiting counts? Follow for case six.",
+  "lead": 0.2,
+  "hold": 0.6
+ }
+]

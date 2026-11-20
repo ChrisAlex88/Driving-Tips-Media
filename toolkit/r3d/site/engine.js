@@ -707,3 +707,58 @@ export function avgSpeedSign(x, z) {
   for (const sx of [-0.8, 0.8]) box(0.1, 3.3, 0.1, mat('#8a9098', { m: .5 }), V(sx, 1.65, -0.06), g);
   const f = new THREE.Mesh(new THREE.BoxGeometry(2.2, 1.65, 0.06), [mat('#999'), mat('#999'), mat('#999'), mat('#999'), new THREE.MeshStandardMaterial({ map: t }), mat('#8a8f96')]); f.position.set(0, 2.5, 0); g.add(f); return g;
 }
+
+// ================================================================ v5: van + indicators
+// white panel van (front at +z), same API as Car/Pickup: set/place/brake/world, glass, seat
+export class Van {
+  constructor(col = '#f1f2f3', o = {}) {
+    const g = this.g = new THREE.Group(); scene.add(g);
+    const body = paint(col), dark = mat('#15171b', { r: .6 }), trim = mat('#2a2d32', { r: .5 });
+    sbox(2.02, 2.05, 3.05, 0.16, body, V(0, 1.42, -1.08), g);                 // load area (z -2.6..0.44)
+    sbox(2.02, 0.85, 1.45, 0.24, body, V(0, 0.86, 1.95), g);                  // nose / bonnet
+    for (const sx of [-1, 1]) sbox(0.12, 0.8, 1.5, 0.04, body, V(sx * 0.95, 0.9, 1.2), g);  // cab doors (lower)
+    box(1.8, 0.06, 1.2, dark, V(0, 0.5, 1.2), g, { cast: false });
+    this.glass = new THREE.MeshStandardMaterial({ color: 0x0b0e14, roughness: 0.08, metalness: 0.4, transparent: true, opacity: 0.9, side: THREE.DoubleSide, depthWrite: false });
+    const gl = mesh(new RoundedBoxGeometry(1.92, 0.95, 1.5, 4, 0.12), this.glass, V(0, 1.78, 1.2), g, { cast: false, recv: false }); gl.renderOrder = 2;
+    sbox(2.0, 0.14, 1.55, 0.05, body, V(0, 2.32, 1.18), g);
+    for (const sx of [-1, 1]) sbox(0.08, 0.95, 0.1, 0.03, body, V(sx * 0.96, 1.78, 1.86), g);
+    sbox(2.06, 0.26, 0.24, 0.1, trim, V(0, 0.48, 2.67), g); sbox(2.06, 0.26, 0.24, 0.1, trim, V(0, 0.48, -2.62), g);
+    box(1.9, 0.2, 5.0, dark, V(0, 0.36, 0), g);
+    box(1.3, 0.3, 0.04, trim, V(0, 0.95, 2.68), g, { cast: false });
+    this.head = mat('#f4f6ff', { e: 0xffffff, ei: 0.2, r: .2, unique: true }); for (const sx of [-1, 1]) sbox(0.32, 0.18, 0.06, 0.04, this.head, V(sx * 0.72, 1.0, 2.66), g, { cast: false });
+    this.tail = mat('#c4121f', { e: 0xff1020, ei: 0.25, r: .3, unique: true }); for (const sx of [-1, 1]) box(0.12, 0.45, 0.06, this.tail, V(sx * 0.9, 1.0, -2.61), g, { cast: false });
+    box(0.03, 1.9, 0.03, dark, V(0, 1.42, -2.6), g, { cast: false });
+    for (const sx of [-1, 1]) sbox(0.2, 0.2, 0.08, 0.03, dark, V(sx * 1.12, 1.75, 1.8), g);
+    const pr = new THREE.Mesh(new THREE.PlaneGeometry(0.52, 0.13), new THREE.MeshStandardMaterial({ map: plateTex(o.plate || 'WV17 VAN', '#f5c518') })); pr.position.set(0, 0.5, -2.75); pr.rotation.y = Math.PI; g.add(pr);
+    const pf = new THREE.Mesh(new THREE.PlaneGeometry(0.52, 0.13), new THREE.MeshStandardMaterial({ map: plateTex(o.plate || 'WV17 VAN', '#f4f4f0') })); pf.position.set(0, 0.5, 2.8); g.add(pf);
+    // cab interior
+    const seat = mat('#3a3e46', { r: .9 });
+    box(1.8, 0.3, 0.4, mat('#454a52', { r: .8 }), V(0, 1.25, 1.75), g);
+    this.wheelG = new THREE.Group(); this.wheelG.position.set(-0.45, 1.35, 1.45); this.wheelG.rotation.x = -0.9; g.add(this.wheelG);
+    mesh(new THREE.TorusGeometry(0.2, 0.03, 10, 32), mat('#2b2e34', { r: .45 }), V(0, 0, 0), this.wheelG);
+    for (const sx of [-0.45, 0.45]) { sbox(0.55, 0.14, 0.5, 0.05, seat, V(sx, 0.98, 0.98), g); sbox(0.55, 0.75, 0.14, 0.05, seat, V(sx, 1.35, 0.6), g); }
+    box(1.9, 1.9, 0.05, mat('#2b2e33'), V(0, 1.42, 0.47), g, { cast: false });
+    this.wheels = []; const tyre = mat('#141414', { r: .9 }), rim = mat('#9aa1ab', { r: .3, m: .7 });
+    for (const sx of [-1, 1]) for (const z of [1.75, -1.75]) {
+      const wg = new THREE.Group(); wg.position.set(sx * 0.9, 0.38, z); g.add(wg);
+      cyl(0.32, 0.32, 0.22, tyre, V(0, 0, 0), wg, { rot: [0, 0, Math.PI / 2], seg: 32 }); const ty = mesh(new THREE.TorusGeometry(0.28, 0.09, 10, 32), tyre, V(0, 0, 0), wg); ty.rotation.y = Math.PI / 2;
+      const hub = new THREE.Group(); hub.position.x = sx * 0.12; wg.add(hub); cyl(0.2, 0.2, 0.02, rim, V(0, 0, 0), hub, { rot: [0, 0, Math.PI / 2], seg: 20 });
+      for (let k = 0; k < 5; k++) { const s = box(0.03, 0.36, 0.05, mat('#7d848e', { m: .6, r: .35 }), V(sx * 0.012, 0, 0), hub); s.rotation.x = k * Math.PI / 2.5; }
+      this.wheels.push(hub); const a = mesh(new THREE.TorusGeometry(0.42, 0.05, 8, 24, Math.PI), trim, V(sx * 0.98, 0.38, z), g, { cast: false }); a.rotation.y = Math.PI / 2;
+    }
+    this.x = 0; this.z = 0; this.h = 0; this.dist = 0;
+  }
+  seat(p, side = -0.45) { this.g.add(p.g); p.g.scale.setScalar(0.74); p.g.position.set(side, 1.05, 0.88); p.sit(0.1); return p; }
+  set(x, z, h) { this.dist += Math.hypot(x - this.x, z - this.z); return this.place(x, z, h); }
+  place(x, z, h, dist) { this.x = x; this.z = z; this.h = h; this.dist = dist ?? this.dist; this.g.position.set(x, 0, z); this.g.rotation.y = h; for (const w of this.wheels) w.rotation.x = this.dist / 0.38; return this; }
+  brake(on) { this.tail.emissiveIntensity = on ? 2.6 : 0.25; }
+  world(lx, ly, lz) { return this.g.localToWorld(V(lx, ly, lz)); }
+}
+// flashing indicators on one side of a vehicle (side +1 = left / nearside in the UK, -1 = right). o: half width, front z, rear z, y
+export function indicators(v, side = 1, o = {}) {
+  const w = o.w ?? 0.9, zf = o.zf ?? 2.15, zr = o.zr ?? -2.15, y = o.y ?? 0.78;
+  const m = new THREE.MeshStandardMaterial({ color: 0xff9a1f, emissive: 0xff8a00, emissiveIntensity: 0.15, roughness: .3 });
+  for (const z of [zf, zr]) sbox(0.16, 0.1, 0.08, 0.03, m, V(side * (w - 0.08), y, z + Math.sign(z) * 0.02), v.g, { cast: false });
+  const glow = []; for (const z of [zf, zr]) { const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowMat().map, color: 0xffa020, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending })); s.scale.set(0.7, 0.7, 1); s.position.set(side * (w - 0.08), y, z + Math.sign(z) * 0.1); v.g.add(s); glow.push(s); }
+  return (t, on) => { const lit = on && Math.floor(t * 2.6) % 2 === 0; m.emissiveIntensity = lit ? 3.2 : 0.15; glow.forEach(s => s.visible = lit); };
+}
