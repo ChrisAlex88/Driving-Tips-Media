@@ -1,0 +1,82 @@
+[
+ {
+  "say": "This BMW is one metre off Gary's bumper. At *seventy.* And it's about to get worse.",
+  "lead": 0.1,
+  "hold": 0.4
+ },
+ {
+  "say": "Case six. The *tailgater.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Dual carriageway. Seventy limit. Gary's in the right lane, overtaking a line of *lorries.* Doing exactly seventy.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Then, Brandon. Black BMW. He comes up fast, and sits right on Gary's *bumper.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "One metre. At seventy miles an hour. If Gary brakes, there's *no* time to stop.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Then the full beams. Flash. Flash. Flash. *Move* *over!*",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "But Gary *can't* move over. The lorries are still on his left.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "So Gary does what a lot of us *want* to do. He taps the brakes. *Hard.*",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "Brandon locks up, and *swerves.* Inches from a crash.",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "And three cars back, a *police* car saw the lot. It pulls them *both* over.",
+  "lead": 0.2,
+  "hold": 0.4
+ },
+ {
+  "say": "So, who's *right?*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Rule one two six. Leave at least a *two* *second* gap. Tailgating can be careless driving. A hundred pound fine and three points.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "And rule one one zero. Only flash your headlights to let others know you're there. *Never* to intimidate.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "But braking hard to teach him a *lesson?* That can cause the very crash Gary was worried about. It can count as careless driving *too.*",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "The right move? Ease off *gently,* finish the overtake, then move left, and let him go.",
+  "lead": 0.2,
+  "hold": 0.3
+ },
+ {
+  "say": "Brandon, *guilty.* Gary, *half* *right.* Would you have tapped the brakes? Follow for case seven.",
+  "lead": 0.2,
+  "hold": 0.6
+ }
+]

@@ -1,0 +1,1479 @@
+{
+ "total": 86.05,
+ "segments": [
+  {
+   "start": 0.0,
+   "dur": 6.395,
+   "say": "This BMW is one metre off Gary's bumper. At seventy. And it's about to get worse.",
+   "words": [
+    {
+     "w": "This",
+     "t0": 0.16,
+     "t1": 0.397,
+     "k": false
+    },
+    {
+     "w": "BMW",
+     "t0": 0.397,
+     "t1": 1.423,
+     "k": false
+    },
+    {
+     "w": "is",
+     "t0": 1.423,
+     "t1": 1.581,
+     "k": false
+    },
+    {
+     "w": "one",
+     "t0": 1.581,
+     "t1": 1.818,
+     "k": false
+    },
+    {
+     "w": "metre",
+     "t0": 1.818,
+     "t1": 2.213,
+     "k": false
+    },
+    {
+     "w": "off",
+     "t0": 2.213,
+     "t1": 2.371,
+     "k": false
+    },
+    {
+     "w": "Gary's",
+     "t0": 2.371,
+     "t1": 2.765,
+     "k": false
+    },
+    {
+     "w": "bumper.",
+     "t0": 2.765,
+     "t1": 3.16,
+     "k": false
+    },
+    {
+     "w": "At",
+     "t0": 3.52,
+     "t1": 3.684,
+     "k": false
+    },
+    {
+     "w": "seventy.",
+     "t0": 3.684,
+     "t1": 4.26,
+     "k": true
+    },
+    {
+     "w": "And",
+     "t0": 4.62,
+     "t1": 4.809,
+     "k": false
+    },
+    {
+     "w": "it's",
+     "t0": 4.809,
+     "t1": 4.999,
+     "k": false
+    },
+    {
+     "w": "about",
+     "t0": 4.999,
+     "t1": 5.314,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 5.314,
+     "t1": 5.503,
+     "k": false
+    },
+    {
+     "w": "get",
+     "t0": 5.503,
+     "t1": 5.693,
+     "k": false
+    },
+    {
+     "w": "worse.",
+     "t0": 5.693,
+     "t1": 5.945,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 6.395,
+   "dur": 2.355,
+   "say": "Case six. The tailgater.",
+   "words": [
+    {
+     "w": "Case",
+     "t0": 0.26,
+     "t1": 0.575,
+     "k": false
+    },
+    {
+     "w": "six.",
+     "t0": 0.575,
+     "t1": 0.89,
+     "k": false
+    },
+    {
+     "w": "The",
+     "t0": 1.06,
+     "t1": 1.232,
+     "k": false
+    },
+    {
+     "w": "tailgater.",
+     "t0": 1.232,
+     "t1": 2.005,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 8.75,
+   "dur": 7.675,
+   "say": "Dual carriageway. Seventy limit. Gary's in the right lane, overtaking a line of lorries. Doing exactly seventy.",
+   "words": [
+    {
+     "w": "Dual",
+     "t0": 0.26,
+     "t1": 0.624,
+     "k": false
+    },
+    {
+     "w": "carriageway.",
+     "t0": 0.624,
+     "t1": 1.17,
+     "k": false
+    },
+    {
+     "w": "Seventy",
+     "t0": 1.44,
+     "t1": 1.947,
+     "k": false
+    },
+    {
+     "w": "limit.",
+     "t0": 1.948,
+     "t1": 2.31,
+     "k": false
+    },
+    {
+     "w": "Gary's",
+     "t0": 2.72,
+     "t1": 3.046,
+     "k": false
+    },
+    {
+     "w": "in",
+     "t0": 3.046,
+     "t1": 3.177,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.177,
+     "t1": 3.307,
+     "k": false
+    },
+    {
+     "w": "right",
+     "t0": 3.307,
+     "t1": 3.568,
+     "k": false
+    },
+    {
+     "w": "lane,",
+     "t0": 3.568,
+     "t1": 3.829,
+     "k": false
+    },
+    {
+     "w": "overtaking",
+     "t0": 3.829,
+     "t1": 4.634,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 4.634,
+     "t1": 4.795,
+     "k": false
+    },
+    {
+     "w": "line",
+     "t0": 4.795,
+     "t1": 5.117,
+     "k": false
+    },
+    {
+     "w": "of",
+     "t0": 5.117,
+     "t1": 5.278,
+     "k": false
+    },
+    {
+     "w": "lorries.",
+     "t0": 5.278,
+     "t1": 5.68,
+     "k": true
+    },
+    {
+     "w": "Doing",
+     "t0": 6.01,
+     "t1": 6.339,
+     "k": false
+    },
+    {
+     "w": "exactly",
+     "t0": 6.339,
+     "t1": 6.865,
+     "k": false
+    },
+    {
+     "w": "seventy.",
+     "t0": 6.865,
+     "t1": 7.325,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 16.425,
+   "dur": 6.035,
+   "say": "Then, Brandon. Black BMW. He comes up fast, and sits right on Gary's bumper.",
+   "words": [
+    {
+     "w": "Then,",
+     "t0": 0.26,
+     "t1": 1.08,
+     "k": false
+    },
+    {
+     "w": "Brandon.",
+     "t0": 1.31,
+     "t1": 1.45,
+     "k": false
+    },
+    {
+     "w": "Black",
+     "t0": 1.6,
+     "t1": 1.788,
+     "k": false
+    },
+    {
+     "w": "BMW.",
+     "t0": 1.788,
+     "t1": 2.4,
+     "k": false
+    },
+    {
+     "w": "He",
+     "t0": 2.78,
+     "t1": 3.011,
+     "k": false
+    },
+    {
+     "w": "comes",
+     "t0": 3.011,
+     "t1": 3.318,
+     "k": false
+    },
+    {
+     "w": "up",
+     "t0": 3.318,
+     "t1": 3.472,
+     "k": false
+    },
+    {
+     "w": "fast,",
+     "t0": 3.472,
+     "t1": 3.78,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 3.95,
+     "t1": 4.176,
+     "k": false
+    },
+    {
+     "w": "sits",
+     "t0": 4.176,
+     "t1": 4.478,
+     "k": false
+    },
+    {
+     "w": "right",
+     "t0": 4.478,
+     "t1": 4.78,
+     "k": false
+    },
+    {
+     "w": "on",
+     "t0": 4.78,
+     "t1": 4.931,
+     "k": false
+    },
+    {
+     "w": "Gary's",
+     "t0": 4.931,
+     "t1": 5.308,
+     "k": false
+    },
+    {
+     "w": "bumper.",
+     "t0": 5.308,
+     "t1": 5.685,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 22.46,
+   "dur": 5.455,
+   "say": "One metre. At seventy miles an hour. If Gary brakes, there's no time to stop.",
+   "words": [
+    {
+     "w": "One",
+     "t0": 0.26,
+     "t1": 0.489,
+     "k": false
+    },
+    {
+     "w": "metre.",
+     "t0": 0.489,
+     "t1": 0.87,
+     "k": false
+    },
+    {
+     "w": "At",
+     "t0": 1.07,
+     "t1": 1.229,
+     "k": false
+    },
+    {
+     "w": "seventy",
+     "t0": 1.229,
+     "t1": 1.785,
+     "k": false
+    },
+    {
+     "w": "miles",
+     "t0": 1.785,
+     "t1": 2.183,
+     "k": false
+    },
+    {
+     "w": "an",
+     "t0": 2.183,
+     "t1": 2.342,
+     "k": false
+    },
+    {
+     "w": "hour.",
+     "t0": 2.342,
+     "t1": 2.58,
+     "k": false
+    },
+    {
+     "w": "If",
+     "t0": 2.9,
+     "t1": 3.045,
+     "k": false
+    },
+    {
+     "w": "Gary",
+     "t0": 3.045,
+     "t1": 3.335,
+     "k": false
+    },
+    {
+     "w": "brakes,",
+     "t0": 3.335,
+     "t1": 3.77,
+     "k": false
+    },
+    {
+     "w": "there's",
+     "t0": 3.96,
+     "t1": 4.214,
+     "k": false
+    },
+    {
+     "w": "no",
+     "t0": 4.214,
+     "t1": 4.405,
+     "k": true
+    },
+    {
+     "w": "time",
+     "t0": 4.405,
+     "t1": 4.66,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 4.66,
+     "t1": 4.851,
+     "k": false
+    },
+    {
+     "w": "stop.",
+     "t0": 4.851,
+     "t1": 5.105,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 27.915,
+   "dur": 3.915,
+   "say": "Then the full beams. Flash. Flash. Flash. Move over!",
+   "words": [
+    {
+     "w": "Then",
+     "t0": 0.26,
+     "t1": 0.458,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 0.458,
+     "t1": 0.591,
+     "k": false
+    },
+    {
+     "w": "full",
+     "t0": 0.591,
+     "t1": 0.789,
+     "k": false
+    },
+    {
+     "w": "beams.",
+     "t0": 0.789,
+     "t1": 1.12,
+     "k": false
+    },
+    {
+     "w": "Flash.",
+     "t0": 1.35,
+     "t1": 1.74,
+     "k": false
+    },
+    {
+     "w": "Flash.",
+     "t0": 1.9,
+     "t1": 2.27,
+     "k": false
+    },
+    {
+     "w": "Flash.",
+     "t0": 2.43,
+     "t1": 2.711,
+     "k": false
+    },
+    {
+     "w": "Move",
+     "t0": 2.711,
+     "t1": 3.088,
+     "k": true
+    },
+    {
+     "w": "over!",
+     "t0": 3.088,
+     "t1": 3.465,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 31.83,
+   "dur": 3.865,
+   "say": "But Gary can't move over. The lorries are still on his left.",
+   "words": [
+    {
+     "w": "But",
+     "t0": 0.26,
+     "t1": 0.458,
+     "k": false
+    },
+    {
+     "w": "Gary",
+     "t0": 0.458,
+     "t1": 0.722,
+     "k": false
+    },
+    {
+     "w": "can't",
+     "t0": 0.722,
+     "t1": 1.052,
+     "k": true
+    },
+    {
+     "w": "move",
+     "t0": 1.052,
+     "t1": 1.316,
+     "k": false
+    },
+    {
+     "w": "over.",
+     "t0": 1.316,
+     "t1": 1.58,
+     "k": false
+    },
+    {
+     "w": "The",
+     "t0": 1.88,
+     "t1": 2.029,
+     "k": false
+    },
+    {
+     "w": "lorries",
+     "t0": 2.029,
+     "t1": 2.4,
+     "k": false
+    },
+    {
+     "w": "are",
+     "t0": 2.4,
+     "t1": 2.549,
+     "k": false
+    },
+    {
+     "w": "still",
+     "t0": 2.549,
+     "t1": 2.846,
+     "k": false
+    },
+    {
+     "w": "on",
+     "t0": 2.846,
+     "t1": 2.995,
+     "k": false
+    },
+    {
+     "w": "his",
+     "t0": 2.995,
+     "t1": 3.218,
+     "k": false
+    },
+    {
+     "w": "left.",
+     "t0": 3.218,
+     "t1": 3.515,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 35.695,
+   "dur": 4.685,
+   "say": "So Gary does what a lot of us want to do. He taps the brakes. Hard.",
+   "words": [
+    {
+     "w": "So",
+     "t0": 0.26,
+     "t1": 0.449,
+     "k": false
+    },
+    {
+     "w": "Gary",
+     "t0": 0.449,
+     "t1": 0.702,
+     "k": false
+    },
+    {
+     "w": "does",
+     "t0": 0.702,
+     "t1": 0.891,
+     "k": false
+    },
+    {
+     "w": "what",
+     "t0": 0.891,
+     "t1": 1.081,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 1.081,
+     "t1": 1.207,
+     "k": false
+    },
+    {
+     "w": "lot",
+     "t0": 1.207,
+     "t1": 1.396,
+     "k": false
+    },
+    {
+     "w": "of",
+     "t0": 1.396,
+     "t1": 1.523,
+     "k": false
+    },
+    {
+     "w": "us",
+     "t0": 1.523,
+     "t1": 1.649,
+     "k": false
+    },
+    {
+     "w": "want",
+     "t0": 1.649,
+     "t1": 1.901,
+     "k": true
+    },
+    {
+     "w": "to",
+     "t0": 1.901,
+     "t1": 2.091,
+     "k": false
+    },
+    {
+     "w": "do.",
+     "t0": 2.091,
+     "t1": 2.28,
+     "k": false
+    },
+    {
+     "w": "He",
+     "t0": 2.51,
+     "t1": 2.71,
+     "k": false
+    },
+    {
+     "w": "taps",
+     "t0": 2.71,
+     "t1": 2.977,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.977,
+     "t1": 3.11,
+     "k": false
+    },
+    {
+     "w": "brakes.",
+     "t0": 3.11,
+     "t1": 3.51,
+     "k": false
+    },
+    {
+     "w": "Hard.",
+     "t0": 3.83,
+     "t1": 4.235,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 40.38,
+   "dur": 3.825,
+   "say": "Brandon locks up, and swerves. Inches from a crash.",
+   "words": [
+    {
+     "w": "Brandon",
+     "t0": 0.26,
+     "t1": 0.702,
+     "k": false
+    },
+    {
+     "w": "locks",
+     "t0": 0.702,
+     "t1": 0.954,
+     "k": false
+    },
+    {
+     "w": "up,",
+     "t0": 0.954,
+     "t1": 1.08,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 1.3,
+     "t1": 1.533,
+     "k": false
+    },
+    {
+     "w": "swerves.",
+     "t0": 1.533,
+     "t1": 2.0,
+     "k": true
+    },
+    {
+     "w": "Inches",
+     "t0": 2.29,
+     "t1": 2.697,
+     "k": false
+    },
+    {
+     "w": "from",
+     "t0": 2.697,
+     "t1": 2.968,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 2.968,
+     "t1": 3.104,
+     "k": false
+    },
+    {
+     "w": "crash.",
+     "t0": 3.104,
+     "t1": 3.375,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 44.205,
+   "dur": 5.175,
+   "say": "And three cars back, a police car saw the lot. It pulls them both over.",
+   "words": [
+    {
+     "w": "And",
+     "t0": 0.26,
+     "t1": 0.483,
+     "k": false
+    },
+    {
+     "w": "three",
+     "t0": 0.483,
+     "t1": 0.78,
+     "k": false
+    },
+    {
+     "w": "cars",
+     "t0": 0.78,
+     "t1": 1.077,
+     "k": false
+    },
+    {
+     "w": "back,",
+     "t0": 1.077,
+     "t1": 1.3,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 1.61,
+     "t1": 1.761,
+     "k": false
+    },
+    {
+     "w": "police",
+     "t0": 1.761,
+     "t1": 2.212,
+     "k": true
+    },
+    {
+     "w": "car",
+     "t0": 2.212,
+     "t1": 2.438,
+     "k": false
+    },
+    {
+     "w": "saw",
+     "t0": 2.438,
+     "t1": 2.664,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.664,
+     "t1": 2.814,
+     "k": false
+    },
+    {
+     "w": "lot.",
+     "t0": 2.814,
+     "t1": 3.04,
+     "k": false
+    },
+    {
+     "w": "It",
+     "t0": 3.4,
+     "t1": 3.556,
+     "k": false
+    },
+    {
+     "w": "pulls",
+     "t0": 3.556,
+     "t1": 3.868,
+     "k": false
+    },
+    {
+     "w": "them",
+     "t0": 3.868,
+     "t1": 4.101,
+     "k": false
+    },
+    {
+     "w": "both",
+     "t0": 4.101,
+     "t1": 4.413,
+     "k": true
+    },
+    {
+     "w": "over.",
+     "t0": 4.413,
+     "t1": 4.725,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 49.38,
+   "dur": 1.615,
+   "say": "So, who's right?",
+   "words": [
+    {
+     "w": "So,",
+     "t0": 0.26,
+     "t1": 0.504,
+     "k": false
+    },
+    {
+     "w": "who's",
+     "t0": 0.504,
+     "t1": 0.885,
+     "k": false
+    },
+    {
+     "w": "right?",
+     "t0": 0.885,
+     "t1": 1.265,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 50.995,
+   "dur": 8.555,
+   "say": "Rule one two six. Leave at least a two second gap. Tailgating can be careless driving. A hundred pound fine and three points.",
+   "words": [
+    {
+     "w": "Rule",
+     "t0": 0.26,
+     "t1": 0.591,
+     "k": false
+    },
+    {
+     "w": "one",
+     "t0": 0.591,
+     "t1": 0.84,
+     "k": false
+    },
+    {
+     "w": "two",
+     "t0": 0.84,
+     "t1": 1.089,
+     "k": false
+    },
+    {
+     "w": "six.",
+     "t0": 1.089,
+     "t1": 1.42,
+     "k": false
+    },
+    {
+     "w": "Leave",
+     "t0": 1.75,
+     "t1": 1.992,
+     "k": false
+    },
+    {
+     "w": "at",
+     "t0": 1.992,
+     "t1": 2.112,
+     "k": false
+    },
+    {
+     "w": "least",
+     "t0": 2.112,
+     "t1": 2.414,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 2.414,
+     "t1": 2.535,
+     "k": false
+    },
+    {
+     "w": "two",
+     "t0": 2.535,
+     "t1": 2.716,
+     "k": true
+    },
+    {
+     "w": "second",
+     "t0": 2.716,
+     "t1": 3.079,
+     "k": true
+    },
+    {
+     "w": "gap.",
+     "t0": 3.079,
+     "t1": 3.26,
+     "k": false
+    },
+    {
+     "w": "Tailgating",
+     "t0": 3.69,
+     "t1": 4.335,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 4.335,
+     "t1": 4.528,
+     "k": false
+    },
+    {
+     "w": "be",
+     "t0": 4.528,
+     "t1": 4.722,
+     "k": false
+    },
+    {
+     "w": "careless",
+     "t0": 4.722,
+     "t1": 5.109,
+     "k": false
+    },
+    {
+     "w": "driving.",
+     "t0": 5.109,
+     "t1": 5.56,
+     "k": false
+    },
+    {
+     "w": "A",
+     "t0": 5.91,
+     "t1": 6.058,
+     "k": false
+    },
+    {
+     "w": "hundred",
+     "t0": 6.058,
+     "t1": 6.576,
+     "k": false
+    },
+    {
+     "w": "pound",
+     "t0": 6.576,
+     "t1": 6.946,
+     "k": false
+    },
+    {
+     "w": "fine",
+     "t0": 6.946,
+     "t1": 7.243,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 7.243,
+     "t1": 7.465,
+     "k": false
+    },
+    {
+     "w": "three",
+     "t0": 7.465,
+     "t1": 7.761,
+     "k": false
+    },
+    {
+     "w": "points.",
+     "t0": 7.761,
+     "t1": 8.205,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 59.55,
+   "dur": 6.615,
+   "say": "And rule one one zero. Only flash your headlights to let others know you're there. Never to intimidate.",
+   "words": [
+    {
+     "w": "And",
+     "t0": 0.26,
+     "t1": 0.478,
+     "k": false
+    },
+    {
+     "w": "rule",
+     "t0": 0.478,
+     "t1": 0.768,
+     "k": false
+    },
+    {
+     "w": "one",
+     "t0": 0.768,
+     "t1": 0.986,
+     "k": false
+    },
+    {
+     "w": "one",
+     "t0": 0.986,
+     "t1": 1.204,
+     "k": false
+    },
+    {
+     "w": "zero.",
+     "t0": 1.204,
+     "t1": 1.64,
+     "k": false
+    },
+    {
+     "w": "Only",
+     "t0": 2.0,
+     "t1": 2.35,
+     "k": false
+    },
+    {
+     "w": "flash",
+     "t0": 2.35,
+     "t1": 2.63,
+     "k": false
+    },
+    {
+     "w": "your",
+     "t0": 2.63,
+     "t1": 2.84,
+     "k": false
+    },
+    {
+     "w": "headlights",
+     "t0": 2.84,
+     "t1": 3.4,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 3.4,
+     "t1": 3.61,
+     "k": false
+    },
+    {
+     "w": "let",
+     "t0": 3.61,
+     "t1": 3.82,
+     "k": false
+    },
+    {
+     "w": "others",
+     "t0": 3.82,
+     "t1": 4.1,
+     "k": false
+    },
+    {
+     "w": "know",
+     "t0": 4.1,
+     "t1": 4.31,
+     "k": false
+    },
+    {
+     "w": "you're",
+     "t0": 4.31,
+     "t1": 4.52,
+     "k": false
+    },
+    {
+     "w": "there.",
+     "t0": 4.52,
+     "t1": 4.73,
+     "k": false
+    },
+    {
+     "w": "Never",
+     "t0": 5.08,
+     "t1": 5.359,
+     "k": true
+    },
+    {
+     "w": "to",
+     "t0": 5.359,
+     "t1": 5.568,
+     "k": false
+    },
+    {
+     "w": "intimidate.",
+     "t0": 5.568,
+     "t1": 6.265,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 66.165,
+   "dur": 8.195,
+   "say": "But braking hard to teach him a lesson? That can cause the very crash Gary was worried about. It can count as careless driving too.",
+   "words": [
+    {
+     "w": "But",
+     "t0": 0.26,
+     "t1": 0.431,
+     "k": false
+    },
+    {
+     "w": "braking",
+     "t0": 0.431,
+     "t1": 0.829,
+     "k": false
+    },
+    {
+     "w": "hard",
+     "t0": 0.829,
+     "t1": 1.056,
+     "k": false
+    },
+    {
+     "w": "to",
+     "t0": 1.056,
+     "t1": 1.227,
+     "k": false
+    },
+    {
+     "w": "teach",
+     "t0": 1.227,
+     "t1": 1.511,
+     "k": false
+    },
+    {
+     "w": "him",
+     "t0": 1.511,
+     "t1": 1.682,
+     "k": false
+    },
+    {
+     "w": "a",
+     "t0": 1.682,
+     "t1": 1.796,
+     "k": false
+    },
+    {
+     "w": "lesson?",
+     "t0": 1.796,
+     "t1": 2.08,
+     "k": true
+    },
+    {
+     "w": "That",
+     "t0": 2.46,
+     "t1": 2.689,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 2.689,
+     "t1": 2.917,
+     "k": false
+    },
+    {
+     "w": "cause",
+     "t0": 2.917,
+     "t1": 3.222,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.222,
+     "t1": 3.375,
+     "k": false
+    },
+    {
+     "w": "very",
+     "t0": 3.375,
+     "t1": 3.679,
+     "k": false
+    },
+    {
+     "w": "crash",
+     "t0": 3.679,
+     "t1": 3.984,
+     "k": false
+    },
+    {
+     "w": "Gary",
+     "t0": 3.984,
+     "t1": 4.289,
+     "k": false
+    },
+    {
+     "w": "was",
+     "t0": 4.289,
+     "t1": 4.518,
+     "k": false
+    },
+    {
+     "w": "worried",
+     "t0": 4.518,
+     "t1": 4.899,
+     "k": false
+    },
+    {
+     "w": "about.",
+     "t0": 4.899,
+     "t1": 5.28,
+     "k": false
+    },
+    {
+     "w": "It",
+     "t0": 5.68,
+     "t1": 5.835,
+     "k": false
+    },
+    {
+     "w": "can",
+     "t0": 5.835,
+     "t1": 6.067,
+     "k": false
+    },
+    {
+     "w": "count",
+     "t0": 6.067,
+     "t1": 6.453,
+     "k": false
+    },
+    {
+     "w": "as",
+     "t0": 6.453,
+     "t1": 6.608,
+     "k": false
+    },
+    {
+     "w": "careless",
+     "t0": 6.608,
+     "t1": 7.072,
+     "k": false
+    },
+    {
+     "w": "driving",
+     "t0": 7.072,
+     "t1": 7.613,
+     "k": false
+    },
+    {
+     "w": "too.",
+     "t0": 7.613,
+     "t1": 7.845,
+     "k": true
+    }
+   ]
+  },
+  {
+   "start": 74.36,
+   "dur": 5.905,
+   "say": "The right move? Ease off gently, finish the overtake, then move left, and let him go.",
+   "words": [
+    {
+     "w": "The",
+     "t0": 0.26,
+     "t1": 0.408,
+     "k": false
+    },
+    {
+     "w": "right",
+     "t0": 0.408,
+     "t1": 0.704,
+     "k": false
+    },
+    {
+     "w": "move?",
+     "t0": 0.704,
+     "t1": 1.0,
+     "k": false
+    },
+    {
+     "w": "Ease",
+     "t0": 1.38,
+     "t1": 1.63,
+     "k": false
+    },
+    {
+     "w": "off",
+     "t0": 1.63,
+     "t1": 1.797,
+     "k": false
+    },
+    {
+     "w": "gently,",
+     "t0": 1.797,
+     "t1": 2.38,
+     "k": true
+    },
+    {
+     "w": "finish",
+     "t0": 2.52,
+     "t1": 2.84,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 2.84,
+     "t1": 2.968,
+     "k": false
+    },
+    {
+     "w": "overtake,",
+     "t0": 2.968,
+     "t1": 3.48,
+     "k": false
+    },
+    {
+     "w": "then",
+     "t0": 3.75,
+     "t1": 3.971,
+     "k": false
+    },
+    {
+     "w": "move",
+     "t0": 3.971,
+     "t1": 4.265,
+     "k": false
+    },
+    {
+     "w": "left,",
+     "t0": 4.265,
+     "t1": 4.56,
+     "k": false
+    },
+    {
+     "w": "and",
+     "t0": 4.71,
+     "t1": 4.921,
+     "k": false
+    },
+    {
+     "w": "let",
+     "t0": 4.921,
+     "t1": 5.133,
+     "k": false
+    },
+    {
+     "w": "him",
+     "t0": 5.132,
+     "t1": 5.344,
+     "k": false
+    },
+    {
+     "w": "go.",
+     "t0": 5.344,
+     "t1": 5.555,
+     "k": false
+    }
+   ]
+  },
+  {
+   "start": 80.265,
+   "dur": 5.785,
+   "say": "Brandon, guilty. Gary, half right. Would you have tapped the brakes? Follow for case seven.",
+   "words": [
+    {
+     "w": "Brandon,",
+     "t0": 0.26,
+     "t1": 1.21,
+     "k": false
+    },
+    {
+     "w": "guilty.",
+     "t0": 1.34,
+     "t1": 1.165,
+     "k": true
+    },
+    {
+     "w": "Gary,",
+     "t0": 1.165,
+     "t1": 1.21,
+     "k": false
+    },
+    {
+     "w": "half",
+     "t0": 1.34,
+     "t1": 1.775,
+     "k": true
+    },
+    {
+     "w": "right.",
+     "t0": 1.775,
+     "t1": 2.21,
+     "k": true
+    },
+    {
+     "w": "Would",
+     "t0": 2.5,
+     "t1": 2.657,
+     "k": false
+    },
+    {
+     "w": "you",
+     "t0": 2.657,
+     "t1": 2.814,
+     "k": false
+    },
+    {
+     "w": "have",
+     "t0": 2.814,
+     "t1": 2.971,
+     "k": false
+    },
+    {
+     "w": "tapped",
+     "t0": 2.971,
+     "t1": 3.181,
+     "k": false
+    },
+    {
+     "w": "the",
+     "t0": 3.181,
+     "t1": 3.286,
+     "k": false
+    },
+    {
+     "w": "brakes?",
+     "t0": 3.286,
+     "t1": 3.6,
+     "k": false
+    },
+    {
+     "w": "Follow",
+     "t0": 3.94,
+     "t1": 4.291,
+     "k": false
+    },
+    {
+     "w": "for",
+     "t0": 4.291,
+     "t1": 4.502,
+     "k": false
+    },
+    {
+     "w": "case",
+     "t0": 4.502,
+     "t1": 4.784,
+     "k": false
+    },
+    {
+     "w": "seven.",
+     "t0": 4.784,
+     "t1": 5.135,
+     "k": false
+    }
+   ]
+  }
+ ]
+}

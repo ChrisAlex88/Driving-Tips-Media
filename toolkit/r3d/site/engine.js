@@ -762,3 +762,40 @@ export function indicators(v, side = 1, o = {}) {
   const glow = []; for (const z of [zf, zr]) { const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowMat().map, color: 0xffa020, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending })); s.scale.set(0.7, 0.7, 1); s.position.set(side * (w - 0.08), y, z + Math.sign(z) * 0.1); v.g.add(s); glow.push(s); }
   return (t, on) => { const lit = on && Math.floor(t * 2.6) % 2 === 0; m.emissiveIntensity = lit ? 3.2 : 0.15; glow.forEach(s => s.visible = lit); };
 }
+
+// ================================================================ v6: articulated lorry (front at +z), set/place/brake like cars
+export class Lorry {
+  constructor(cab = '#1f4e8c', trailer = '#eef0f2', o = {}) {
+    const g = this.g = new THREE.Group(); scene.add(g);
+    const cm = paint(cab), tm = mat(trailer, { r: .55 }), dark = mat('#16181b', { r: .6 }), trim = mat('#2a2d32', { r: .5 });
+    sbox(2.45, 2.6, 2.3, 0.18, cm, V(0, 2.05, 7.0), g);                       // cab
+    const gl = mesh(new RoundedBoxGeometry(2.3, 0.9, 0.12, 3, 0.04), mat('#0b0e14', { r: .1, m: .4 }), V(0, 2.55, 8.15), g, { cast: false });
+    sbox(2.5, 0.35, 0.3, 0.1, trim, V(0, 0.75, 8.2), g); box(1.6, 0.5, 0.06, dark, V(0, 1.35, 8.17), g, { cast: false });
+    for (const sx of [-1, 1]) { sbox(0.12, 0.5, 0.08, 0.03, dark, V(sx * 1.35, 2.6, 7.9), g); sbox(0.34, 0.18, 0.06, 0.04, mat('#f4f6ff', { e: 0xffffff, ei: 0.2 }), V(sx * 0.9, 0.95, 8.19), g, { cast: false }); }
+    box(2.3, 0.4, 2.0, dark, V(0, 0.75, 5.4), g);                                // fifth wheel deck
+    box(2.55, 3.0, 13.4, tm, V(0, 2.5, -1.2), g);                               // trailer box
+    box(2.57, 0.25, 13.4, mat(o.stripe || '#c8102e', { r: .5 }), V(0, 1.4, -1.2), g, { cast: false });
+    box(2.4, 0.3, 13.2, dark, V(0, 0.85, -1.2), g);
+    this.tail = mat('#c4121f', { e: 0xff1020, ei: 0.25, r: .3, unique: true }); for (const sx of [-1, 1]) box(0.3, 0.16, 0.06, this.tail, V(sx * 1.0, 0.95, -7.92), g, { cast: false });
+    const chev = canvasTex(256, 64, (c, w, h) => { for (let i = -4; i < 12; i++) { c.fillStyle = i % 2 ? '#ffd31a' : '#d4202a'; c.beginPath(); c.moveTo(i * 32, h); c.lineTo(i * 32 + 32, h); c.lineTo(i * 32 + 64, 0); c.lineTo(i * 32 + 32, 0); c.fill(); } });
+    const cb = new THREE.Mesh(new THREE.PlaneGeometry(2.4, 0.22), new THREE.MeshStandardMaterial({ map: chev })); cb.position.set(0, 0.7, -7.95); cb.rotation.y = Math.PI; g.add(cb);
+    const pr = new THREE.Mesh(new THREE.PlaneGeometry(0.52, 0.13), new THREE.MeshStandardMaterial({ map: plateTex(o.plate || 'LR12 HGV', '#f5c518') })); pr.position.set(0, 1.1, -7.96); pr.rotation.y = Math.PI; g.add(pr);
+    this.wheels = []; const tyre = mat('#141414', { r: .9 }), rim = mat('#9aa1ab', { r: .3, m: .7 });
+    for (const z of [7.2, 4.6, 3.3, -4.6, -5.9, -7.2]) for (const sx of [-1, 1]) {
+      const wg = new THREE.Group(); wg.position.set(sx * 1.0, 0.52, z); g.add(wg);
+      cyl(0.52, 0.52, 0.4, tyre, V(0, 0, 0), wg, { rot: [0, 0, Math.PI / 2], seg: 24 });
+      const hub = new THREE.Group(); hub.position.x = sx * 0.21; wg.add(hub); cyl(0.3, 0.3, 0.02, rim, V(0, 0, 0), hub, { rot: [0, 0, Math.PI / 2], seg: 16 });
+      box(0.03, 0.5, 0.06, mat('#7d848e'), V(sx * 0.012, 0, 0), hub); this.wheels.push(hub);
+    }
+    this.x = 0; this.z = 0; this.h = 0; this.dist = 0;
+  }
+  set(x, z, h) { this.dist += Math.hypot(x - this.x, z - this.z); return this.place(x, z, h); }
+  place(x, z, h, dist) { this.x = x; this.z = z; this.h = h; this.dist = dist ?? this.dist; this.g.position.set(x, 0, z); this.g.rotation.y = h; for (const w of this.wheels) w.rotation.x = this.dist / 0.52; return this; }
+  brake(on) { this.tail.emissiveIntensity = on ? 2.6 : 0.25; }
+  world(lx, ly, lz) { return this.g.localToWorld(V(lx, ly, lz)); }
+}
+// full-beam flash on a car's headlights: big glow sprites at the front
+export function fullBeam(car, zf = 2.25, y = 0.78, w = 0.58) {
+  const s = []; for (const sx of [-1, 1]) { const g = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowMat().map, color: 0xf2f6ff, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending })); g.scale.set(2.6, 2.6, 1); g.position.set(sx * w, y, zf); car.g.add(g); s.push(g); }
+  return (on) => { s.forEach(g => g.visible = on); car.head.emissiveIntensity = on ? 4 : 0.2; };
+}
